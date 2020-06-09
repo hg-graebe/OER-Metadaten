@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>(Convert {name = Just ["aller ableitbaren Wörter der Grammatik G=({a,b}, {S, A, B}, P, S) mit"&#13;
+                      ,"P = { S -&gt; aA | bS | Epsilon,"&#13;
+                      ,"      A -&gt; bS | aB | bB | a | b,"&#13;
+                      ,"      B -&gt; aS | bA | a}"]&#13;
+         , input = NFA&#13;
+     (NFA&#13;
+         { alphabet = mkSet "ab" , states = mkSet [ 0 , 1 , 2 , 3 ]&#13;
+         , starts = mkSet [ 0 ] , finals = mkSet [ 0 , 3 ]&#13;
+         , trans = collect [ ( 0 , 'a' , 1 ) , ( 0 , 'b' , 0 )&#13;
+                           , ( 1 , 'b' , 0 ) , ( 1 , 'a' , 2 ) , ( 1 , 'a' , 3 ) , ( 1 , 'b' , 2 ) , ( 1 , 'b' , 3 )&#13;
+                           , ( 2 , 'a' , 0 ) , ( 2 , 'a' , 3 ) , ( 2 , 'b' , 1 )&#13;
+                           ]&#13;
+         })},&#13;
+   [ Alphabet (mkSet "ab")&#13;
+   , Sane&#13;
+   , Min_Size 4&#13;
+   , Max_Size 4&#13;
+   , Non_Deterministic] )</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Property.html#t%3AProperty" &gt;NFA.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>b8c11715be6867126c137e8e9b476e91d0dcf2d4</signature>
+<description>Folgen Sie dem Verfahren zur Umwandlung regulärer Grammatiken in endliche Automaten aus der Vorlesung.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

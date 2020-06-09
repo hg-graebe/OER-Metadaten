@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.Fun" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "Fun" , conditions = [ ] , arity = 2 , op = x1 ^ x2&#13;
+    , num_args = 10 , max_arg = 15 , cut = 150000&#13;
+    , checks = [ Builtins&#13;
+                     [ Plus , Times ]&#13;
+               ]&#13;
+    , start = PR 2&#13;
+              [ Proj 1 1&#13;
+              , Sub 3&#13;
+                [ Succ 1&#13;
+                , Proj 3 3&#13;
+                ]&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Fun-Type.html#t%3AProperty" &gt;Fun.Type.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Fun-Type.html#t%3AFun" &gt;Fun.Type.Fun&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>65d2e0685afc678b6648b8f59b3d220a4bb394fd</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

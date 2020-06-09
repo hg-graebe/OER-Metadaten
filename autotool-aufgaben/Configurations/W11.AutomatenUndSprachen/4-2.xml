@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Nerode_Incongruent-Direct" type_scoring="d"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Instance&#13;
+    { language = Language&#13;
+                     { implementation = Regular_Expression&#13;
+                                            { alphabet = mkSet "ab" , expression = (a^2 + b^3)^* }&#13;
+                     , description = Nothing&#13;
+                     }&#13;
+    , wanted = 4&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Nerode-Incongruent-Instance.html#t%3AInstance" &gt;NFA.Nerode.Incongruent.Instance.Instance&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>8d6edac3c97f0ff5a15ea10da3fd3b99357a552f</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

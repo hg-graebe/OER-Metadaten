@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Quiz&#13;
+    { generate = From_NFA&#13;
+                     [ Alphabet&#13;
+                           (mkSet "ab")&#13;
+                     , Max_Size&#13;
+                           4&#13;
+                     ]&#13;
+    , solve = [ Alphabet&#13;
+                    (mkSet "ab")&#13;
+              , Deterministic , Complete&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Quiz.html#t%3AQuiz" &gt;NFA.Quiz.Quiz&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>ba7431849375cb4431f3607a2f2c05a017fd8cbc</signature>
+<description>Wenden Sie die Potenzautomatenkonstruktion zur Lösung an.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

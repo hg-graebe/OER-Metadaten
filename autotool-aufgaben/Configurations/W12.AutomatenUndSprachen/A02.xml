@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( Convert&#13;
+      { name = Just&#13;
+                   [ "der Wörter aus {a,c}* oder"&#13;
+                   , "aus  { ubv | u aus {a,c}*, v aus {a,b,c}*,"&#13;
+                   , "             so dass gilt: wenn 2 | |u|_c, dann ist v nicht aus {a,b,c}*{c} }"&#13;
+                   ]&#13;
+      , input = Exp&#13;
+                    ((a + c)^*) +&#13;
+                    ((c^2^* $ a^* $ c) b All) +&#13;
+                    ((c^2^* $ a^* )    b (Eps + (All (a + b))))&#13;
+      }&#13;
+, [ Alphabet&#13;
+        (mkSet "abc")&#13;
+  ]&#13;
+)</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Property.html#t%3AProperty" &gt;NFA.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>b6a79368af09c260889ab6b80027b9f0ad73ad8c</signature>
+<description>Verstehen Sie zunächst die beschriebene Sprache in Form einer&#13;
+Wenn-Dann-Aussage.&#13;
+&#13;
+Der formale Ausdruck |u|_c steht für die Anzahl von c's in u.&#13;
+Das zweite Auftreten des Zeichens | ist als Teilbarkeit zu lesen.&#13;
+0 gilt in dieser Aufgabe auch als durch 2 teilbar.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT autotoolnode (tasktype, taskconfiguration, configuration, server_conn)*>
+<!ELEMENT tasktype EMPTY>
+<!ATTLIST tasktype type_name CDATA #REQUIRED
+                   type_scoring CDATA #REQUIRED>
+<!ELEMENT taskconfiguration (auth_comment, conf_text, doc_text, signature, description)>
+<!ATTLIST taskconfiguration is_altered CDATA #REQUIRED>
+<!ELEMENT auth_comment (#PCDATA)>
+<!ELEMENT conf_text (#PCDATA)>
+<!ELEMENT doc_text (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT configuration (scorepoints)>
+<!ELEMENT scorepoints (#PCDATA)>
+<!ELEMENT server_conn EMPTY>
+<!ATTLIST server_conn name CDATA #REQUIRED
+                      version CDATA #REQUIRED>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Boolean2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>BI&#13;
+    { formula = t &lt;-&gt; (a &lt;-&gt; b)&#13;
+    , constraints = [ Normalform Konjunktiv, Operators&#13;
+                          [  ! , || , &amp;&amp;&#13;
+                          ] ] &#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/Boolean2-Instance.html#t:BI"&gt;BI&lt;/Link&gt;</doc_text>
+<signature>a5a965ddcc9f62c82a5098327df3281ef63d5e92</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

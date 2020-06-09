@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="PCProblem-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Param&#13;
+    { alpha = "01" , paare = 3 , breite = 2 , nah = 2 , fern = 5&#13;
+    , viel = 1000&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/PCProblem-Param.html#t%3AParam"&gt;PCProblem.Param.Param&lt;/Link&gt;</doc_text>
+<signature>f1fd6bc60e7e9331c83d60169af0f84713dbb6ae</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,399 @@
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.10
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:potts@tu-chemnitz.de
+PRODID:ONYX Editor 5.6.1
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.14
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Potts;Daniel;;;
+FN:Daniel Potts
+EMAIL:daniel.potts@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Potts;Daniel;;;
+FN:Daniel Potts
+EMAIL:daniel.potts@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.10
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.14
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Hielscher;Ralf;;;
+FN:Ralf Hielscher
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.106
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:kimel@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.5
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Barz;Christian;;;
+FN:Christian Barz
+EMAIL:christian.barz@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:morc@hrz.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:kimel@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.3
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Reinhardt;Martin;;;
+FN:Martin Reinhardt
+EMAIL:martin.reinhardt@math.tu-freiberg.de
+PRODID:ONYX Editor 5.9.10a
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:cmorsche@htwk-leipzig.de
+PRODID:ONYX Editor 5.9.1
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.7
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Hielscher;Ralf;;;
+FN:Ralf Hielscher
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.10a
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.5
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Hielscher;Ralf;;;
+FN:Ralf Hielscher
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.7.1
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kalmes;Thomas;;;
+FN:Thomas Kalmes
+EMAIL:thomas.kalmes@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.13
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Seidel;Markus;;;
+FN:Markus Seidel
+EMAIL:markus.seidel@fh-zwickau.de
+PRODID:ONYX Editor 5.9.6
+END:VCARD
+nesfr@tu-chemnitz.deBEGIN:VCARD
+VERSION:4.0
+FN:reinhar2@tu-freiberg.de
+PRODID:ONYX Editor 5.9
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.9
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kalmes;Thomas;;;
+FN:Thomas Kalmes
+EMAIL:thomas.kalmes@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.6
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Gräbe;Hans-Gert;;;
+FN:Hans-Gert Gräbe
+EMAIL:graebe@informatik.uni-leipzig.de
+PRODID:ONYX Editor 5.9.7a
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Koksch;Norbert;;;
+FN:Norbert Koksch
+EMAIL:norbert.koksch@tu-dresden.de
+PRODID:ONYX Editor 5.9.106
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Seidel;Markus;;;
+FN:Markus Seidel
+EMAIL:markus.seidel@fh-zwickau.de
+PRODID:ONYX Editor 5.9.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Grüttmüller;Martin;;;
+FN:Martin Grüttmüller
+EMAIL:martin.gruettmueller@htwk-leipzig.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.10a
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Hielscher;Ralf;;;
+FN:Ralf Hielscher
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.13
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:cmorsche@htwk-leipzig.de
+PRODID:ONYX Editor 5.9.5
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.13
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.6.3
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Seidel;Markus;;;
+FN:Markus Seidel
+EMAIL:markus.seidel@fh-zwickau.de
+PRODID:ONYX Editor 5.9.13
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:reinhar2@tu-freiberg.de
+PRODID:ONYX Editor 5.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Koksch;Norbert;;;
+FN:Norbert Koksch
+EMAIL:norbert.koksch@tu-dresden.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Seidel;Markus;;;
+FN:Markus Seidel
+EMAIL:markus.seidel@fh-zwickau.de
+PRODID:ONYX Editor 5.9.14
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@htwk-leipzig.de
+PRODID:ONYX Editor 5.9.6
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Nestler;Franziska;;;
+FN:Franziska Nestler
+EMAIL:franziska.nestler@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.2
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.6
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.6.1
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Seidel;Markus;;;
+FN:Markus Seidel
+EMAIL:markus.seidel@fh-zwickau.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:kimel@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.4
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:mgruttm@htwk-leipzig.de
+PRODID:ONYX Editor 5.6.1
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.106
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Hielscher;Ralf;;;
+FN:Ralf Hielscher
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.10
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Potts;Daniel;;;
+FN:Daniel Potts
+EMAIL:daniel.potts@mathematik.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.106
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.9
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.3
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.8
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.9.4
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Kircheis;Melanie;;;
+FN:Melanie Kircheis
+EMAIL:melanie.kircheis@s2013.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.11
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Morschel;Christoph;;;
+FN:Christoph Morschel
+EMAIL:christoph.morschel@verwaltung.tu-chemnitz.de
+PRODID:ONYX Editor 5.9.12
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+N;LANGUAGE=de:Grüttmüller;Martin;;;
+FN:Martin Grüttmüller
+EMAIL:martin.gruettmueller@htwk-leipzig.de
+PRODID:ONYX Editor 5.9.6
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+FN:nesfr@tu-chemnitz.de
+PRODID:ONYX Editor 5.6.4
+END:VCARD

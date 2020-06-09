@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.Turing-Maschine (als Computer)" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "Turing-Maschine (als Computer)" , conditions = [ ]&#13;
+    , arity = 1 , op = x1 * x1 , num_args = 20 , max_arg = 10&#13;
+    , cut = 10000 , checks = [ Sane ]&#13;
+    , start = Turing&#13;
+      { eingabealphabet = mkSet ".1" , arbeitsalphabet = mkSet ".1$xy#"&#13;
+      , leerzeichen = '#'&#13;
+      , zustandsmenge = mkSet [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ]&#13;
+, tafel = collect [ ( '1' , 0 , '1' , 0 , R ) , ( '1' , 0 , '$' , 1 , O )&#13;
+, ( '#' , 1 , '#' , 0 , L ) , ( '1' , 1 , '1' , 2 , L )&#13;
+, ( '1' , 2 , 'x' , 4 , R )&#13;
+, ( 'y' , 4 , 'y' , 4 , O )&#13;
+]&#13;
+      , startzustand = 0 , endzustandsmenge = mkSet [ 2 , 6 ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Property.html#t%3AProperty" &gt;Turing.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Type.html#t%3ATuring" &gt;Turing.Type.Turing&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AInt" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>c74ce5b11006ff34b46977f2f3984b4ae42c79d7</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

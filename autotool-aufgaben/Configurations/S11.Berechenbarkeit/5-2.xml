@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-Turing-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { lang = NoPower&#13;
+                 "ab" 2&#13;
+    , max_length = 10 , max_num = 100 , properties = [ ]&#13;
+    , cut = 1000000&#13;
+    , start = Turing&#13;
+                  { eingabealphabet = mkSet "ab" , arbeitsalphabet = mkSet "#abc"&#13;
+                  , leerzeichen = '#' , zustandsmenge = mkSet [ 0 , 1 , 2 ]&#13;
+                  , tafel = collect [ ( 'a' , 0 , 'b' , 1 , R )&#13;
+                                    , ( 'a' , 2 , 'a' , 2 , L ) , ( 'b' , 1 , '#' , 2 , L )&#13;
+                                    ]&#13;
+                  , startzustand = 0 , endzustandsmenge = mkSet [ 2 ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Config.html#t%3AConfig"&gt;Turing.Config.Config&lt;/Link&gt;</doc_text>
+<signature>947316a8209a13aab385c487feb3f354813a8217</signature>
+<description>Konstruieren Sie eine Turingmaschine für die Sprache {w | w ist nicht vv für alle v} über dem Alphabet {a,b}.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

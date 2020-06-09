@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.RAM" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "RAM" , conditions = [ ] , arity = 1 , op = fib x1&#13;
+    , num_args = 15 , max_arg = 25 , cut = 350000&#13;
+    , checks = [ Builtins [ Copy ]&#13;
+               , No_While&#13;
+               ]&#13;
+    , start = [ Inc x2&#13;
+              , Builtin { name = Copy , res = tempvar , args = [ x2 ] }&#13;
+              , Loop tempvar&#13;
+                [ Builtin { name = Copy , res = x0 , args = [ x2 ] }&#13;
+                , Inc x2&#13;
+                ]&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Property.html#t%3AProperty" &gt;RAM.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Type.html#t%3AStatement" &gt;RAM.Type.Statement&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>f32351fb0eb867a7121c4ddf469351e4303f9c09</signature>
+<description>Geben Sie ein LOOP-Programm an, das die Fibonacci-Funktion berechnet.&#13;
+&#13;
+Hierbei sind nur einfache LOOP-Programme (nach Autotool-Definition, vgl. Dokumentation) zugelassen, zuzüglich des Kopierens von Variablenwerten.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,178 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/2-1>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A={a,b} anzugeben, der die Sprache L={w ∈ A^* | w endet auf ba} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/2-1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "4b8606e0f6c1948e8a1a98550363ab4be5476bd7" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/2-1" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/2-2>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={w ∈ A^* | #b(w) < 4} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/2-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "468a8d5d48c5417cb891ac82864eb57b3d46a46b" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/2-2" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/2-3>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b} anzugeben, der die Sprache L={w ∈ A^* | #a(w) und #b(w) haben denselben Rest bei Division durch 2} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/2-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "f761e6805d4eda91ab47e4f837af5ce27629d161" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/2-3" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/2-4>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b} anzugeben, der die Sprache L={w ∈ A^* | w endet nicht auf bab} erkennt. " ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/2-4.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "ac59b47fc5f8b0d804e49a7f3ed354e7890fe39a" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/2-4" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/3-1>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={wx ∈ A^* |  x ∈ A kommt in w vor} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/3-1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "5225c0f6535176fb62473c412665007be02487c1" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/3-1" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/3-2>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={wx ∈ A^* |  x ∈ A kommt in w nicht vor} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/3-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "7dbcbfe2814e4079967b9d50e1aeacf0906ad0c6" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/3-2" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/3-3>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {0,1} anzugeben, der die Sprache L(10+((1+0)0)*1) erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/3-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "6f0b6611ce72d74b90e75524e468e5512fdbf21e" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/3-3" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/3-4>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {0,1} anzugeben, der die Sprache L(((0+1)(0+1))*+((0+1)(0+1)(0+1))*) erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/3-4.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "37aabf2af6bcecd5c6548b8dddca1b2aa7ea8ed1" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/3-4" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/4-1>
+    at:Aufgabenstellung "Sei L ⊆ {a, b}* die durch den rationalen Ausdruck (a + bb)* beschriebene Sprache. Geben Sie drei verschiedene Wörter w ∈ {a, b}* mit |w| ≥ 6 an, für die ab R_L w gilt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Nerode-Congruent-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/4-1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "37d8b997465be8464dd787a3aa69d113944da953" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/4-1" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/4-2>
+    at:Aufgabenstellung "Sei L ⊆ {a, b}* die durch den regulären Ausdruck (aa + bbb)* beschriebene Sprache. Geben Sie vier verschiedene Wörter u0,u1,u2,u3 ∈ {a, b}* an, so dass u0, u1, u2 und u3 paarweise nicht äquivalent sind, also so dass für alle i,j ∈ {0,..,3} mit i<j nicht gilt: ui R_L uj. Geben Sie für jedes dieser Paare (i,j) ein Wort w an für das gilt: ui.w ist in L genau dann, wenn uj.w ist nicht in L." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Nerode-Incongruent-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/4-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "8d6edac3c97f0ff5a15ea10da3fd3b99357a552f" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/4-2" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/4-3>
+    at:Aufgabenstellung "Gesucht ist ein regulärer Ausdruck für eine Sprache L, so dass die Wörter u0=abb, u1=abab, u2=aaa paarweise nicht äquivalent sind. Geben Sie für jedes Paar (i,j) mit i<j ein Wort w an, so dass ui.w aus L ist genau dann wenn uj.w nicht aus L ist." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Nerode-Separation-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/4-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "0f912744f4eb6754f36759ad6f346f664c0747b6" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/4-3" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/5-1>
+    at:Aufgabenstellung "AutoTool-Aufgabe 2#a(w)=#b(w)" ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType  <http://symbolicdata.org/autotool/Type/CFG2-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/5-1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "ca38a3c599a6a91287f4378fc185bb9fc91697bd" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/5-1" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/5-2>
+    at:Aufgabenstellung "Geben Sie für die Grammatik ({A,C,S,T},{a,b,c},{A->a,A->aA,C->cc,C->ccC,S->AT,S->ATC,T->ε, T->aTb},S) eine Grammatik in CNF an, die die gleiche Sprache erzeugt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/CFG2-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/5-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "7141a7bc86ee37e327ce02f0b39803ad4e6b0528" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/5-2" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/5-3>
+    at:Aufgabenstellung "Geben Sie eine kontextfreie Grammatik in CNF für die Sprache {w ∈ {a,b}* | w=w_1...w_n mit w_1...w_n ≠ w_n...w_1 und w_1,...,w_n  ∈  {a,b}} an." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType  <http://symbolicdata.org/autotool/Type/CFG2-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/5-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "892f9ccd951af3479317128a0f7b350ac6df217a" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/5-3" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/6-1>
+    at:Aufgabenstellung "Es ist ein NEA über dem Alphabet A={a,b,c} anzugeben, der die Sprache L={ubv | u∈{a,c}* und v∈A* so dass gilt: wenn 2 teilt #_c(u), dann nicht v∈A*c} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/6-1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "b48dd80d24ad91366b90c3708c336758b5660808" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/6-1" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/6-2>
+    at:Aufgabenstellung "Gesucht ist ein regulärer Ausdruck für die Sprache L={w∈{a,b,c}* | w enthält nicht aba}." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Convert_To_Exp-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/6-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "783ef2c75960da4fd8d86c3fcc01f6b15b6a8d9c" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/6-2" .
+
+<http://symbolicdata.org/autotool/Configuration/W11.AutomatenUndSprachen/6-3>
+    at:Aufgabenstellung "AutoTool-Aufgabe GNF" ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasType <http://symbolicdata.org/autotool/Type/CFG2-Direct> ;
+    at:hasXMLFile "W11.AutomatenUndSprachen/6-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen> ;
+    at:signature "c9e5ee978673bfd6524d657cb41b29b4ebdb5079" ;
+    a at:Config ;
+    rdfs:label "W11.AutomatenUndSprachen/6-3" .
+

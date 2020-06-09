@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1: <http://symbolicdata.org/autotool/Configuration/S10.Berechenbarkeit/> .
+
+ns1:A01
+    at:Aufgabenstellung "Deterministische Turingmaschine für {a,b}-Palindrome" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A01.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "f3bbef6f4c5e579095e820cee0852d1433b16735" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A01" .
+
+ns1:A02
+    at:Aufgabenstellung "Turingmaschine für f(x) = x^2" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    at:hasXMLFile "S10.Berechenbarkeit/S10.Ber.A02.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "c74ce5b11006ff34b46977f2f3984b4ae42c79d7" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A02" .
+
+ns1:A03
+    at:Aufgabenstellung "Fibonacci-Funktion mit Variablenkopien" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A03.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "f32351fb0eb867a7121c4ddf469351e4303f9c09" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A03" .
+
+ns1:A04
+    at:Aufgabenstellung "Fibonacci-Funktion ohne Hilfsmittel berechnen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A04.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "044ee67ba1f579f2d7925ee8d4ff45777c7e9afd" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A04" .
+
+ns1:A05
+    at:Aufgabenstellung "Exponentialfunktion als WHILE-Programm" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A05.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "a85cef0ecbbcc8eac4b2bbd226fb2f3024627dc4" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A05" .
+
+ns1:A06
+    at:Aufgabenstellung "Exponentialfunktion primitiv rekursiv darstellen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Fun> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A06.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "65d2e0685afc678b6648b8f59b3d220a4bb394fd" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A06" .
+
+ns1:A07
+    at:Aufgabenstellung "Zufalls-PCP lösen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/PCProblem-Quiz> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A07.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "f1fd6bc60e7e9331c83d60169af0f84713dbb6ae" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A07" .
+
+ns1:A08
+    at:Aufgabenstellung "PCP über dem Alphabet {a,b}" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/PCProblem-Direct> ;
+    at:hasXMLFile "S10.Berechenbarkeit/A08.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit> ;
+    at:signature "9e317755a5ef8ef3498c26e08b2982297bc1fbae" ;
+    a at:Config ;
+    rdfs:label "S10.Berechenbarkeit/A08" .
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-NPDA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Make { machine_desc = "Kellerautomat"&#13;
+     , source = Sampler { language = From_Grammatik (Grammatik { terminale = mkSet "ab"&#13;
+                                                               , variablen = mkSet "ST"&#13;
+                                                               , start = 'S'&#13;
+                                                               , regeln = mkSet [ ( "S" , "TT" )&#13;
+                                                                                , ( "S" , "a" )&#13;
+                                                                                , ( "T" , "SS" )&#13;
+                                                                                , ( "T" , "b" )&#13;
+                                                                                ]&#13;
+                                                               })&#13;
+                        , num_samples = 50 , min_sample_length = 4 , max_sample_length = 40&#13;
+                        }&#13;
+     , cut = 1000 , properties = [ ]&#13;
+     , start = NPDA { eingabealphabet = mkSet "ab"&#13;
+                    , kelleralphabet = mkSet "AX" , zustandsmenge = mkSet [ 0 , 1 ]&#13;
+                    , startzustand = 0 , startsymbol = 'X' , akzeptiert = Zustand (mkSet [ 1 ])&#13;
+                    , transitionen = collect [ ( Just 'a' , 0 , 'A' , 0 , "AA" )&#13;
+                                             , ( Just 'a' , 0 , 'X' , 0 , "AX" )&#13;
+                                             , ( Just 'b' , 0 , 'A' , 1 , "" )&#13;
+                                             , ( Just 'b' , 1 , 'A' , 1 , "" )&#13;
+                                             ]&#13;
+                    }&#13;
+     }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Acceptor-Type2.html#t%3AType" &gt;Machine.Acceptor.Type2.Type&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Type.html#t%3ANPDA" &gt;NPDA.Type.NPDA&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AInt" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Property.html#t%3AProperty" &gt;NPDA.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>8f1a064a9386eab96211a115abe1eb939f4117fb</signature>
+<description>Zu dieser Aufgabe: folgen Sie hier dem Verfahren aus der Vorlesung&#13;
+zur Umwandlung von kontextfreien Grammatiken in Kellerautomaten. Überlegen Sie sich bzw. überprüfen Sie die passende Akzeptanzbedingung.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

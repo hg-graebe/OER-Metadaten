@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="CFG2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { source = Sampler&#13;
+                   { language = From_Grammatik&#13;
+                                    (Grammatik&#13;
+                                         { terminale = mkSet "ab" , variablen = mkSet "ABCS"&#13;
+                                         , start = 'S'&#13;
+                                         , regeln = mkSet [ ( "S" , "ACa" ) , ( "S" , "a" )&#13;
+                                                          , ( "A" , "bA" ) , ( "A" , "CC" )&#13;
+                                                          , ( "B" , "Sab" ) , ( "B" , "a" )&#13;
+                                                          , ( "C" , "" ) , ( "C" , "B" ) &#13;
+                                                          , ( "C" , "aCb" )     &#13;
+                                                          ]&#13;
+                                         })&#13;
+                   , num_samples = 1 , min_sample_length = 2 , max_sample_length = 5&#13;
+                   }&#13;
+    , properties = [ Kontextfrei , Chomsky_Normal ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Grammatik-CF-Instance-Config2.html#t%3AConfig"&gt;Grammatik.CF.Instance.Config2.Config&lt;/Link&gt;</doc_text>
+<signature>8b2d6ab68a55ec238d2434cdd8eeef0f7d4951a4</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,186 @@
+\documentclass{beamer}
+\usepackage{ngerman,url}
+\usepackage[utf8]{inputenc}
+\parskip1em
+
+\usetheme{}
+\beamertemplatenavigationsymbolsempty
+
+\author{Hans-Gert Gräbe}
+
+\institute{Institut für Informatik der
+  Univ. Leipzig\\ \url{http://bis.informatik.uni-leipzig.de/HansGertGraebe}}
+
+\title{ELMAT als OER -- die Metadaten-Perspektive\vskip1em}
+
+\subtitle{Vortrag auf dem 5. Treffen des Netzwerks\\ Mathematik/Physik und
+  E-Learning, HTW Dresden}
+
+\date{30. September 2015}
+\begin{document}
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}{Open Educational Resources}
+Das Konzept der OER – \emph{Open Educational Resources} – gewinnt zunehmend an
+Aufmerksamkeit und Bedeutung. Der Begriff wurde erstmals vom \emph{UNESCO 2002
+  Forum on the Impact of Open Courseware for Higher Education in Developing
+  Countries} verwendet.
+
+Mit diesem Ansatz wird insbesondere der Gedanke einer einfachen Nachnutzung und
+Anpassung verbunden, die drei wesentliche Aspekte zu berücksichtigen hat:
+\begin{itemize}
+\item rechtliche Aspekte -- Open,
+\item inhaltliche Aspekte -- Qualität der Educational Resource,
+\item Aspekte der Verfügbarkeit und Indexierbarkeit -- die Metadaten-Perspektive.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{ELMAT Metadaten -- LOM}
+
+ELMAT-Aufgaben werden in einer zip-Datei ausgeliefert, die ein IMS Manifest
+enthält sowie die eigentlichen Aufgabenressourcen als XML-Dateien in einem
+Format, das im Onyx-Player abgespielt werden kann.
+
+Das IMS Manifest enthält Metainformationen zur Aufgabe im LOM-Format (Learning
+Object Metadata) 
+\begin{center}\small
+  \url{https://en.wikipedia.org/wiki/Learning_object_metadata}
+\end{center}
+LOM ist im Kern ein Datenmodell für Metadaten von Lerner-Objekten und ein
+IEEE-Standard, der zusammen mit dem IMS erarbeitet wurde.  Die aktuelle Version
+ist aus dem Jahr 2002.  
+\end{frame}
+
+\begin{frame}{LOM-Bindings}
+
+Für digitale Zwecke muss der Standard an Beschreibungssprachen gebunden werden.
+Es sind Bindings an XML (IEEE 1484.12.3) und RDF (IEEE 1484.12.4) spezifiziert.
+
+Die beiden Bindings unterscheiden sich in ihrer Aussagekraft deutlich. XML ist
+eine Markup Language und vom Sprachkonzept her nur dafür entworfen,
+\emph{syntaktische} Auszeichnungen vorzunehmen.  RDF ist entworfen, um
+\emph{semantische} Informationen auf einheitliche Weise darzustellen, die in
+XML in je spezifischer Weise in einem XSchema kodiert werden können. 
+
+ELMAT/Onyx setzt auf dem XML-Binding von LOM auf und kann damit semantische
+Informationen nur informell oder auf speziell zu vereinbarende Weise innerhalb
+des verwendeten LOM-Dialekts darstellen. 
+\end{frame}
+
+\begin{frame}{LOM, XML, RDF und Dublin Core}
+2002--2005 gab es intensive Versuche, einen XML-RDF-Parser für einzelne
+LOM-Dialekte zu entwerfen, um die im Manifest vorhandenen semantischen
+Informationen in ein allgemein verständliches Sprachformat zu bringen.
+
+Mit der Festigung und Etablierung von DC (Dublin Core) und der zunehmenden
+Bedeutung der DCMI (Dublin Core Meta Initiative) als übergreifendes Format und
+Projekt zur Herstellung von Interoperabilität im Bereich der Metadaten zu
+digitalen Ressourcen, insbesondere mit den weltweiten
+Standardisierungsprojekten um „Resource Description and Access“ (RDA) im
+Bereich der Bibliotheken wurden diese Versuche weitgehend eingestellt. 
+
+LOM ist damit zur Herstellung von Interoperabilität auf Metadaten-Ebene in
+einer Linked Open Data Welt nur sehr bedingt geeignet.
+\end{frame}
+
+\begin{frame}{Metadaten auf RDF-Basis}
+RDF bedeutet \emph{Resource Description Framework} und stellt darauf ab, dass
+es sinnvoll ist, eine deutliche Trennung von Ressourcen (Daten) und
+Ressourcen-Beschreibungen (Metadaten) vorzunehmen, da letztere eine
+eigenständige Bedeutung sowohl in technischer als auch sozialer Hinsicht haben,
+vergleichbar dem Unterschied zwischen den Büchern einer Bibliothek und dem
+Katalog.  
+
+Ressourcen können verteilt verwaltet werden, Metadaten müssen zusammengeführt
+werden (können), um eine Gesamtsicht zu triggern. Hierfür haben sich
+\emph{Linked Open Data} Prinzipen und Standards auf RDF-Basis bewährt. 
+\end{frame}
+
+\begin{frame}{ELMAT Metadaten-Repository -- prinzipielle Überlegungen}
+Es wäre deshalb spannend, auf diesen Standards ein Metadaten-Repository zu
+ELMAT aufzubauen, das unabhängig von der Onyx-Realisierung der eigentlichen
+Ressourcen ist, nach Linked Open Data Standards entworfen ist und von einem
+offenen Community-Prozess zur Qualitätssicherung der Aufgaben begleitet wird. 
+
+Ein diesbezügliches Proposal als Teilprojektskizze zum Schwerpunkt „Offene
+Infrastrukturen und Lehr-/Lernsysteme“ zum Aufruf zur Bildung von
+Projektkonsortien für Verbundvorhaben in strategischen Handlungsfeldern im
+Rahmen der Initiative „Bildungsportal Sachsen“ in den Jahren 2015 und 2016 kam
+allerdings nicht einmal in die engere Auswahl.
+\end{frame}
+
+\begin{frame}{ELMAT Metadaten-Repository -- eine erste Skizze}
+In einer ersten Skizze wurde ein Dump der ELMAT-Aufgaben vom Februar 2015 (933
+Aufgaben) analysiert, aus den IMS Manifesten ein Teil der Metadaten extrahiert,
+in RDF umgewandelt und im RDF-Store 
+\begin{center}
+  \url{http://pcai003.informatik.uni-leipzig.de/kosemnet/} 
+\end{center}
+als Kern der Metadaten eines OER-Portals nach Open Data Standards (zunächst als
+Unterprojekt im SymbolicData-Kontext) verfügbar gemacht.
+\end{frame}
+
+\begin{frame}{ELMAT Metadaten-Repository -- eine erste Skizze}
+Der Datenbestand kann damit mit SPARQL-Anfragen an den Endpunkt 
+\begin{center}
+  \url{http://pcai003.informatik.uni-leipzig.de:8893/sparql}
+\end{center}
+untersucht werden. Bereits eine erste oberflächliche Untersuchung zeigt die
+geringe Qualität der aktuell gespeichertn Metadaten, die kaum kuratiert (selbst
+die Autorendaten sind sehr heterogen) und damit wenig für eine strukturierte
+Vernetzung geeignet sind. Dasselbe gilt für die Verschlagwortung mit
+Schlüsselworten.
+
+Das Konzept eines solchen OER-Portal mit Metainformationen zu verfügbaren
+OE-Ressourcen lässt sich leicht auf andere OER-Sammlungen erweitern und hat
+sich bereits in den Projekten \emph{SymbolicData} und \emph{KoSemNet} bewährt. 
+\end{frame}
+
+\begin{frame}{edu-sharing}
+  \begin{itemize}
+  \item Netzwerk, das sich seit 2013 entwickelt
+  \item Primär auf die Verwaltung von Ressourcen gerichtet, nicht von
+    Ressourcenbeschreibungen 
+  \item Suche nach „edu share linked open data“ -- keine sinnvollen Treffer 
+  \item Keinerlei Verbindung zu den Bemühungen einer Verlinkung auf
+    Metadatenebene der deutschen (und internationalen) Bibliotheken wie etwa
+    RDA (\url{http://www.dnb.de/rda})
+  \end{itemize}
+
+  Im Rahmen der Internationalisierung der deutschen Standards beteiligt sich
+  die Arbeitsstelle für Standardisierung der DNB im Auftrag des
+  Standardisierungsausschusses aktiv am Entstehungsprozess des neuen
+  internationalen Standards „Resource Description and Access (RDA)“.
+\end{frame}
+
+\begin{frame}{OER-Metadatenökologie}
+
+„Auf dem Weg zu einer offenen OER-Metadatenökologie“ (Untersuchungen von Adrian
+  Pohl, Stand 2013)
+
+Ergebnisse dort auf einem Etherpad zusammengefasst
+
+Siehe auch seinen kompletten Bericht zur OER-Konferenz 2013 auf 
+  \url{https://wiki1.hbz-nrw.de/pages/viewpage.action?pageId=10453369}
+
+Kompetenzzentrum Interoperable Metadaten (KIM), eine DINI AG
+\url{https://wiki.dnb.de/pages/viewpage.action?pageId=43523047}
+
+Dort gibt es auch eine OER-Metadaten-Gruppe, Leitung Adrian Pohl
+\url{https://wiki.dnb.de/display/DINIAGKIM/OER-Metadaten-Gruppe}
+\end{frame}
+\end{document}
+
+http://od.fmi.uni-leipzig.de:8893/sparql
+
+PREFIX at: <http://symbolicdata.org/autotool/Model/> 
+select ?t ?l ?pn ?np ?ne
+from <http://symbolicdata.org/autotool/Configurations/>
+where {
+ ?a a at:Course; rdfs:label ?l; at:designedBy ?p ; at:hasTitle ?t .
+optional {?a at:numberOfExams ?ne .} 
+optional {?a at:numberOfParticipants ?np . }
+ ?p foaf:name ?pn .
+}

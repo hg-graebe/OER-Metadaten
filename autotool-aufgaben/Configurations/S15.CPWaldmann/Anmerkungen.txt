@@ -1,0 +1,10 @@
+Erfolgsrate der Autotool-Aufgaben:
+
+Martin Finke, HTWK     - 7/9 versucht, 5/9 bestanden
+Nicole Scheeren, Uni   - 9/9 versucht, 0/9 bestanden
+Tom Burke, Uni         - 3/9 versucht, 0/9 bestanden
+Andreas Linz, Uni      - 9/9 versucht, 0/9 bestanden
+Lucas Stadler, Uni     - 7/9 versucht, 0/9 bestanden
+Julian Müller, Uni     - 9/9 versucht, 1/9 bestanden
+Arnold Scherer, Uni    - 9/9 versucht, 8/9 bestanden
+Dan Häberlein, Uni     - 5/9 versucht, 4/9 bestanden

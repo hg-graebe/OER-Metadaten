@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( Convert&#13;
+      { name = Just&#13;
+                   [ "der W\246rter aus {a,c}* oder"&#13;
+                   , "aus  { ubv | u aus {a,c}*, v aus {a,b,c}*,"&#13;
+                   , "             so dass gilt: wenn 2 | |u|_c, dann ist v nicht aus {a,b,c}*c }"&#13;
+                   ]&#13;
+      , input = Exp (a + c)^* + (c^2^* $ a^* $ c) b All&#13;
+                    +&#13;
+                    (c^2^* $ a^*) b (Eps + All (a + b))&#13;
+      }&#13;
+, [ Alphabet&#13;
+        (mkSet "abc")&#13;
+  ]&#13;
+)</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Property.html#t%3AProperty" &gt;NFA.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>b48dd80d24ad91366b90c3708c336758b5660808</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

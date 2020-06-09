@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="CFG2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { source = Sampler&#13;
+                   { language = Regular&#13;
+                                    "ab" "( a^* b^* b ) ( Eps + a (a + b)^* )"&#13;
+                   , num_samples = 13 , min_sample_length = 3 , max_sample_length = 10&#13;
+                   }&#13;
+    , properties = [ Kontextfrei , Rechtslinear ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Grammatik-CF-Instance-Config2.html#t%3AConfig"&gt;Grammatik.CF.Instance.Config2.Config&lt;/Link&gt;</doc_text>
+<signature>5d456990b093226ce28d95d34d158b888c8da345</signature>
+<description>&lt;pre&gt;&#13;
+Empfehlung: Betrachten Sie statt des technisch&#13;
+nötigen regulären Ausdrucks den folgenden&#13;
+äquivalenten endlichen Automaten und folgen Sie&#13;
+dem Verfahren aus der Vorlesung, diesen in eine&#13;
+reguläre Grammatik zu überführen.&#13;
+&#13;
+gegeben: Überführungsfunktion,&#13;
+         -&gt; kennzeichnet Startzustand,&#13;
+         * Endzustände:&#13;
+&#13;
+      |  a    b &#13;
+   --------------&#13;
+-&gt; 0  |  0    1&#13;
+ * 1  |  2    1&#13;
+ * 2  |  2    2&#13;
+&lt;/pre&gt;</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

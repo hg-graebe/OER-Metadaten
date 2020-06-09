@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="CNF_Optimize-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( (a &lt;-&gt; b) &lt;-&gt; (c &lt;-&gt; d) , 100 )</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autolib-rewriting/Autolib-TES-Raw.html#t:Term" &gt;Term&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autolib-rewriting/Autolib-TES-Identifier.html#t:Identifier" &gt;Identifier&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/Expression-Op.html#t:Op" &gt;Op&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://hackage.haskell.org/package/obdd/docs/OBDD-Data.html#t:OBDD" &gt;OBDD&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autolib-rewriting/Autolib-TES-Identifier.html#t:Identifier" &gt;Identifier&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Link href="http://hackage.haskell.org/package/ghc-prim/docs/GHC-Types.html#t:Int" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>3bbb3cfd3565891ee2bdfb197c6ebdb24ca0ce32</signature>
+<description>Bsp. für CNF-Notation:   a &amp;&amp; (b || not c)</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>(Convert { name = Just [ "{ w in {a,b}^* | |w|_a mod 3 != 1 }" ]&#13;
+         , input = Exp ( a^3^* + a^3^* a a ) $ b^*&#13;
+         } ,&#13;
+         [ Min_Size 2 , Max_Size 7 ,&#13;
+           Alphabet (mkSet "ab"), Sane,&#13;
+           Deterministic, Complete ] )</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Property.html#t%3AProperty" &gt;NFA.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>e44ba8fc493a29b8e2547dc9d8b068451e45c2c9</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

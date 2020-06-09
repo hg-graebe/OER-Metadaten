@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( Convert&#13;
+      { name = Just&#13;
+                   [ "des folgenden Epsilon-Automaten akzeptiert"&#13;
+                   , "(Überführungsfunktion, -&gt; kennzeichnet Startzustand, * Endzustände):"&#13;
+                   , " " , "      |   0     1   epsilon"&#13;
+                   , "   -----------------------"&#13;
+                   , "-&gt; 0  |  {0}   {2,4} {3}"&#13;
+                   , "  *1  |  {}    {}    {4}"&#13;
+                   , "   2  |  {}    {}    {6}"&#13;
+                   , "  *3  |  {0}   {1}   {}"&#13;
+                   , "   4  |  {}    {}    {5}"&#13;
+                   , "   5  |  {3}   {}    {1}"&#13;
+                   , "  *6  |  {}    {}    {}" , " "&#13;
+                   ]&#13;
+      , input = Exp&#13;
+                    (10 + 0)^* (1 + Eps)&#13;
+      }&#13;
+, [ Alphabet&#13;
+        (mkSet "01")&#13;
+  , Sane , Reduced&#13;
+  , Min_Size&#13;
+        5&#13;
+  , Max_Size&#13;
+        5&#13;
+  , Non_Deterministic&#13;
+  ]&#13;
+)</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Property.html#t%3AProperty" &gt;NFA.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>7a49ea85547ec3342b3b98588db0e8e6a622ad6f</signature>
+<description>Konstruieren Sie den Automaten entsprechend des aus Vorlesung bzw. Übung bekannten Verfahrens, um direkt aus einem eNEA einen NEA zu erhalten. Lassen Sie bei der Eingabe ins Autotool alle unerreichbar gewordenen Zustände entfallen.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

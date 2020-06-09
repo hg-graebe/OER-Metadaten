@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-NPDA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Make&#13;
+    { machine_desc = "Kellerautomat"&#13;
+    , source = Sampler&#13;
+                   { language = From_Grammatik&#13;
+                                    (Grammatik&#13;
+                                         { terminale = mkSet "abc" , variablen = mkSet "ABCST"&#13;
+                                         , start = 'S'&#13;
+                                         , regeln = mkSet [ ( "A" , "a" ) , ( "A" , "aA" )&#13;
+                                                          , ( "B" , "b" ) , ( "B" , "bB" )&#13;
+                                                          , ( "C" , "" ) , ( "C" , "cC" )&#13;
+                                                          , ( "S" , "ATC" ) , ( "S" , "TBC" )&#13;
+                                                          , ( "S" , "ca" ) , ( "T" , "aTb" )&#13;
+                                                          , ( "T" , "ab" )&#13;
+                                                          ]&#13;
+                                         })&#13;
+                   , num_samples = 50 , min_sample_length = 4 , max_sample_length = 40&#13;
+                   }&#13;
+    , cut = 1000&#13;
+    , properties = [ Accept_by&#13;
+                         Empty_Stack&#13;
+                   ]&#13;
+    , start = NPDA&#13;
+                  { eingabealphabet = mkSet "abc" , kelleralphabet = mkSet "AX"&#13;
+                  , zustandsmenge = mkSet [ 0 , 1 ] , startzustand = 0&#13;
+                  , startsymbol = 'X' , akzeptiert = Leerer_Keller&#13;
+                  , transitionen = collect [ ( Nothing , 0 , 'A' , 0 , "AA" )&#13;
+                                           , ( Just&#13;
+                                                   'a'&#13;
+                                             , 0 , 'X' , 0 , "AX"&#13;
+                                             )&#13;
+                                           , ( Just&#13;
+                                                   'b'&#13;
+                                             , 0 , 'A' , 1 , ""&#13;
+                                             )&#13;
+                                           , ( Just&#13;
+                                                   'b'&#13;
+                                             , 1 , 'A' , 1 , ""&#13;
+                                             )&#13;
+                                           ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Acceptor-Type2.html#t%3AType" &gt;Machine.Acceptor.Type2.Type&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Type.html#t%3ANPDA" &gt;NPDA.Type.NPDA&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AInt" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Property.html#t%3AProperty" &gt;NPDA.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>66e7db7998a598f3b5c5445fb8c7f936f6b8e4d7</signature>
+<description>ACHTUNG: Die eigentliche Aufgabe hier lautet: Geben Sie einen Kellerautomaten an,&#13;
+der die Sprache L mit leerem Keller akzeptiert, wobei L definiert ist durch:&#13;
+&#13;
+{ a^i b^j c^k | i != j und i,j &gt; 0 } vereinigt mit { ca }.  &#13;
+&#13;
+Lassen Sie beim Lösen die in der Autotool-Aufgabenstellung ersichtliche Grammatik&#13;
+außer Acht und konstruieren Sie einen Automaten mit mehreren Zuständen.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

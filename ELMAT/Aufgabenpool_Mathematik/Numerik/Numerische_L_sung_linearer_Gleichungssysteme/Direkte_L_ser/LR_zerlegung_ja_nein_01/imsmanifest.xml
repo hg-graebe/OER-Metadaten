@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+	xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd 
+											http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1p1.xsd 
+											http://www.imsglobal.org/xsd/imsqti_metadata_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1p1.xsd
+											http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"
+	identifier="manifestID">
+	<metadata>
+		<schema>QTIv2.1 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+  </metadata>
+	<organizations />
+	<resources>
+		<resource identifier="idf97d3428_ed8e_4845_9d29_025b0362aa90" type="imsqti_item_xmlv2p1" href="idf97d3428-ed8e-4845-9d29-025b0362aa90.xml"><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general ><identifier><entry>idf97d3428-ed8e-4845-9d29-025b0362aa90</entry></identifier><title><string language="en_US">LR_zerlegung_ja/nein_01</string></title></general><lifeCycle ><contribute><role><source>LOMv1.0</source><value>author</value></role><entity>nesfr@tu-chemnitz.de</entity><date><dateTime>2014-04-23T10:43:25</dateTime></date></contribute></lifeCycle><educational ><learningResourceType><source>QTIv2.1</source><value>AssessmentItem</value></learningResourceType></educational><qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1"><interactionType >SINGLE_CHOICE</interactionType><toolName >ONYX Editor</toolName><toolVersion >5.4</toolVersion><toolVendor >BPS Bildungsportal Sachsen GmbH</toolVendor></qtiMetadata></lom></metadata><file href="idf97d3428-ed8e-4845-9d29-025b0362aa90.xml" /><file href="media/ccf71c12b9114f579d8a459e70304b4c.png" /><file href="media/9c4af013273747b5b5173c617d81c25b.png" /><file href="media/a1a604c5516b46e1ab5b565c5df24d29.png" /><file href="media/1567770f36c64062b909a6d929ab7703.png" /><file href="media/4dc3ae6732904d93a827d56307102fdf.png" /></resource>
+	</resources>
+</manifest>

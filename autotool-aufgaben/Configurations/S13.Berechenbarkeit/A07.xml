@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="PCProblem-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>PCP&#13;
+    [ ( "ab" , "abb" ) , ( "aaa" , "a" ) , ( "aba" , "aa" ) , ( "b" , "ab" ) ]</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/PCProblem-Data.html#t%3APCP"&gt;PCProblem.Data.PCP&lt;/Link&gt;</doc_text>
+<signature>9e317755a5ef8ef3498c26e08b2982297bc1fbae</signature>
+<description>Die Lösungen sind als Liste der Indizes/Positionen im Problem einzugeben, z.B. [ 1 , 1 , 2 ]. Die Zählung der Indizes/Positionen beginnt dabei mit 1, der Wert 0 ist somit nicht zulässig.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

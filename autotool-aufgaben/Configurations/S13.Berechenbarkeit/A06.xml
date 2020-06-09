@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.Fun" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config { name = "Fun" , conditions = [ ] , arity = 2&#13;
+       , op = (x1 `max` x2) , num_args = 10 , max_arg = 20 , cut = 10000&#13;
+       , checks = [ Builtins [ Plus , Pre ] ]&#13;
+       , start = PR 2 [ Proj 1 1 , Sub 3 [ Builtin 1 Pre , Proj 3 3 ] ]&#13;
+       }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Fun-Type.html#t%3AProperty" &gt;Fun.Type.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Fun-Type.html#t%3AFun" &gt;Fun.Type.Fun&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>9ade0c054d320adc0bbd846fcdab8129a157601f</signature>
+<description>Beachten Sie die von der Vorlesung abweichende Form primitiv-rekursiver Funktionen im Autotool und vergleichen Sie dazu die Autotool-Dokumentation.&#13;
+Wichtiges in Kürze: An konstanten Funktionen sind nur alle Funktionen (beliebiger Stelligkeit) mit dem konstanten Wert 0 verfügbar. Die primitive Rekursion wird über das letzte Argument geführt, anstatt über das erste wie in der Vorlesung.&#13;
+Achten Sie zudem auf korrekte Stelligkeiten der Funktionen, ansonsten können Fehler während der Prüfung einer Einsendung auftreten.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

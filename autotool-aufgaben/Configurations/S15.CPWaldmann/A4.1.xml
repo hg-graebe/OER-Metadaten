@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Construct_BDD-Quiz" type_scoring="d"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { formula_size = 12&#13;
+    , operators = Binu&#13;
+          { binary = [ &amp;&amp; , || , &lt;-&gt; ]&#13;
+          , unary = [ not ]&#13;
+          , nullary = [ ] &#13;
+          }&#13;
+    , variables = [ p , q , r , s ]&#13;
+    , bdd_size = 12&#13;
+    , bdd_candidates = 1000 &#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/BDD-Quiz.html#t:Config"&gt;Config&lt;/Link&gt;</doc_text>
+<signature>92d7502f0897be929087ec23351f84fcf6e6ea88</signature>
+<description>Operatorpräzedenzen: siehe http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/src/Boolean-Op.html</description>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

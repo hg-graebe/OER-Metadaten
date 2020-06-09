@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="CFG2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { source = Sampler&#13;
+                   { language = Regular&#13;
+                                    "ab" "(b + a)^* aa (a + b)^*"&#13;
+                   , num_samples = 50 , min_sample_length = 3 , max_sample_length = 40&#13;
+                   }&#13;
+    , properties = [ Kontextfrei , Rechtslinear ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Grammatik-CF-Instance-Config2.html#t%3AConfig"&gt;Grammatik.CF.Instance.Config2.Config&lt;/Link&gt;</doc_text>
+<signature>f2256df0bf93ca3e9489df958e057b0e68778a16</signature>
+<description>Die Eigenschaft "Rechtslinear" im Autotool entspricht in der Vorlesung der Eigenschaft "regulär".</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

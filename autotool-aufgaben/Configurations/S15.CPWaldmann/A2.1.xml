@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="DPLL-Quiz" type_scoring="n"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { modus = Modus&#13;
+          { require_complete_propagation = False&#13;
+          , decisions_must_be_negative = True&#13;
+          , clause_learning = False&#13;
+          , variable_elimination = False &#13;
+          }&#13;
+    , solution_length_target = 15&#13;
+    , require_max_solution_length = Yes&#13;
+          { allow_extra = 1 }&#13;
+    , num_variables = 4&#13;
+    , num_literals_in_clause = ( 2&#13;
+                               , 4 )&#13;
+    , num_clauses = 10&#13;
+    , num_candidates = 100&#13;
+    , solve_best_of = 10 &#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/DPLL-Roll.html#t:Config"&gt;Config&lt;/Link&gt;</doc_text>
+<signature>d1064266d219a65fa1e5e410575eafa13136fc16</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

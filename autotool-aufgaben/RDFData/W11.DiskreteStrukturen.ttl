@@ -1,0 +1,212 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1: <http://symbolicdata.org/autotool/Configuration/W11.DiskreteStrukturen/> .
+
+ns1:A01
+    at:Aufgabenstellung "Mengentheoretische Ausdrücke 1" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Algebraic_Set-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A01.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Zu den hier zu bildenden Ausdrücken über Mengen: 
+ 
+a) zwei- bzw. einstellige Symbole: 
+   +    entspricht der Vereinigung 
+   &    entspricht dem Durchschnitt 
+   -    entspricht der Mengendifferenz 
+   pow  entspricht der Bildung der Potenzmenge 
+ 
+b) nullstellige Symbole 
+   Die nullstelligen Symbole bezeichnen Einermengen, z.B. ergibt das Symbol 0
+   in einem Ausdruck bei dessen Auswertung die Menge {0}, Symbol 1 erzeugt {1}, usw.
+ 
+Beispiele: 
+Der Ausdruck 0+1 hat demnach die Bedeutung {0, 1} (die Vereinigung von {0} und {1}).
+
+Der Ausdruck pow (0) hat die Bedeutung {{}, {0}} (die Potenzmenge von {0}).
+ 
+ACHTUNG: 
+1.) In der vorgegebenen /Bedeutung/ bezeichnen die Zahlsymbole Zahlen, d.h. sie
+    sind dort verschieden von der Bedeutung der oben erklärten /Symbole/ in den
+    Ausdrücken.
+
+2.) Die Verwendung von Zahlen als Symbole in den Ausdrücken dient nur der
+    Vereinfachung der Ausdrücke. Die Zahlen selbst sind natürlich verschieden
+    von \"ihrer\" Einermenge, z.B. 1 != {1} in Mengentheorie. Aber in dieser
+    konkreten Aufgabe bezeichnet das Symbol 1 die Menge {1}, wenn es in einem
+    Ausdruck vorkommt.
+ 
+/Konstanten/ lesen Sie wie die vorgegebene /Bedeutung/, d.h. Zahlsymbole darin als Zahl. 
+ 
+Die Größe eines Ausdrucks ist die Anzahl des Auftretens von Operatoren. """ ;
+    at:signature "87413e4bf7d4eb1bc191fa164b63658a79a6a836" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A01" .
+
+ns1:A02
+    at:Aufgabenstellung "Mengentheoretische Ausdrücke 2" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Algebraic_Set-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A02.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Zu den hier zu bildenden Ausdrücken über Mengen: 
+ 
+a) zwei- bzw. einstellige Symbole: 
+   +    entspricht der Vereinigung 
+   &    entspricht dem Durchschnitt 
+   -    entspricht der Mengendifferenz 
+   pow  entspricht der Bildung der Potenzmenge 
+ 
+b) nullstellige Symbole 
+   Die nullstelligen Symbole bezeichnen Einermengen, 
+   z.B. ergibt das Symbol 0 in einem Ausdruck bei dessen 
+   Auswertung die Menge {0}, Symbol 1 erzeugt {1}, usw. 
+ 
+Beispiele: 
+Der Ausdruck 0+1 hat demnach die Bedeutung {0, 1} 
+(die Vereinigung von {0} und {1}). 
+Der Ausdruck pow (0) hat die Bedeutung {{}, {0}} 
+(die Potenzmenge von {0}). 
+ 
+ACHTUNG: 1.) In der vorgegebenen /Bedeutung/ bezeichnen die 
+             Zahlsymbole Zahlen, d.h. sie sind dort verschieden 
+             von der Bedeutung der oben erklärten /Symbole/ 
+             in den Ausdrücken. 
+         2.) Die Verwendung von Zahlen als Symbole in den Ausdrücken 
+             dient nur der Vereinfachung der Ausdrücke. Die Zahlen 
+             selbst sind natürlich verschieden von \"ihrer\" Einermenge, 
+             z.B. 1 != {1} in Mengentheorie. Aber in dieser konkreten 
+             Aufgabe bezeichnet das Symbol 1 die Menge {1}, wenn es 
+             in einem Ausdruck vorkommt. 
+ 
+ 
+/Konstanten/ lesen Sie wie die vorgegebene /Bedeutung/, d.h. Zahlsymbole darin als Zahl. 
+ 
+Die Größe eines Ausdrucks ist die Anzahl des Auftretens von Operatoren. """ ;
+    at:signature "ecc71895bdd5115b2a88ca118260f39dc953c9bd" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A02" .
+
+ns1:A03
+    at:Aufgabenstellung "Rückführung Disjunktion auf Implikation und Negation" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A03.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Kodierung der aussagenlogischen Operatoren: 
+1. ! für \"nicht\", einstellig 
+2. && für \"und\", zweistellig 
+3. || für \"oder\", zweistellig 
+4. -> für \"impliziert\"/\"wenn-dann\", zweistellig 
+5. <-> für \"äquivalent mit\"/\"genau dann, wenn\", zweistellig 
+6. true für eine Tautologie (immer wahre Aussage) 
+7. false für eine Kontradiktion (Widerspruch, immer falsche Aussage) 
+ 
+Ggf. müssen Sie Klammerungen hinzufügen. Ohne Klammern gelten die üblichen Vorrangregeln. 
+ 
+Bug bei Negation: Sie müssen ein Leerzeichen nach dem Negationszeichen ! lassen, 
+da ansonsten ein Syntaxfehler angezeigt wird. 
+Beispielsweise wird \"!p\" als Syntaxfehler angezeigt, Abhilfe schafft \"! p\". """ ;
+    at:signature "07c447ca509f2e2d825efee86310e0a645526836" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A03" .
+
+ns1:A04
+    at:Aufgabenstellung "Rückführung Konjunktion auf Implikation und Negation" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A04.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Kodierung der aussagenlogischen Operatoren: 
+1. ! für \"nicht\", einstellig 
+2. && für \"und\", zweistellig 
+3. || für \"oder\", zweistellig 
+4. -> für \"impliziert\"/\"wenn-dann\", zweistellig 
+5. <-> für \"äquivalent mit\"/\"genau dann, wenn\", zweistellig 
+6. true für eine Tautologie (immer wahre Aussage) 
+7. false für eine Kontradiktion (Widerspruch, immer falsche Aussage) 
+ 
+Ggf. müssen Sie Klammerungen hinzufügen. Ohne Klammern gelten die üblichen Vorrangregeln. 
+ 
+Bug bei Negation: Sie müssen ein Leerzeichen nach dem Negationszeichen ! lassen, 
+da ansonsten ein Syntaxfehler angezeigt wird. 
+Beispielsweise wird \"!p\" als Syntaxfehler angezeigt, Abhilfe schafft \"! p\". """ ;
+    at:signature "faea2337eff0d888707b45458b9eb86ff5baf08b" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A04" .
+
+ns1:A05
+    at:Aufgabenstellung "Aussagenlogische Umformung" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A05.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Kodierung der aussagenlogischen Operatoren: 
+1. ! für \"nicht\", einstellig 
+2. && für \"und\", zweistellig 
+3. || für \"oder\", zweistellig 
+4. -> für \"impliziert\"/\"wenn-dann\", zweistellig 
+5. <-> für \"äquivalent mit\"/\"genau dann, wenn\", zweistellig 
+6. true für eine Tautologie (immer wahre Aussage) 
+7. false für eine Kontradiktion (Widerspruch, immer falsche Aussage) 
+ 
+Ggf. müssen Sie Klammerungen hinzufügen. Ohne Klammern gelten die üblichen Vorrangregeln. 
+ 
+Bug bei Negation: Sie müssen ein Leerzeichen nach dem Negationszeichen ! lassen, 
+da ansonsten ein Syntaxfehler angezeigt wird. 
+Beispielsweise wird \"!p\" als Syntaxfehler angezeigt, Abhilfe schafft \"! p\". """ ;
+    at:signature "4ef9b4bd5cd1876f703c184488783477615d5e19" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A05" .
+
+ns1:A06
+    at:Aufgabenstellung "Personenbezogene Umformungsaufgabe" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Quiz> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A06.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark """Kodierung der aussagenlogischen Operatoren: 
+1. ! für \"nicht\", einstellig 
+2. && für \"und\", zweistellig 
+3. || für \"oder\", zweistellig 
+4. -> für \"impliziert\"/\"wenn-dann\", zweistellig 
+5. <-> für \"äquivalent mit\"/\"genau dann, wenn\", zweistellig 
+6. true für eine Tautologie (immer wahre Aussage) 
+7. false für eine Kontradiktion (Widerspruch, immer falsche Aussage) 
+ 
+Ggf. müssen Sie Klammerungen hinzufügen. Ohne Klammern gelten die üblichen Vorrangregeln. 
+ 
+Bug bei Negation: Sie müssen ein Leerzeichen nach dem Negationszeichen ! lassen, 
+da ansonsten ein Syntaxfehler angezeigt wird. 
+Beispielsweise wird \"!p\" als Syntaxfehler angezeigt, Abhilfe schafft \"! p\". """ ;
+    at:signature "8ed9677f868af86719b23083d34b2b11177a02b1" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A06" .
+
+ns1:A07
+    at:Aufgabenstellung "Umwandlung in KNF" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Direct> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A07.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark "Gesucht ist eine äquivalente Formel in Konjunktiver Normalform." ;
+    at:signature "29175ef9ca2c5cd895bbf1ea97264c1447fe90de" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A07" .
+
+ns1:A08
+    at:Aufgabenstellung "Umwandlung in KNF (Quiz)" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Quiz> ;
+    at:hasXMLFile "W11.DiskreteStrukturen/A08.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen> ;
+    at:remark "Gesucht ist eine äquivalente Formel in KNF." ;
+    at:signature "4e0106a857ca722ea2c8227bc05ed3ae1c5e0fdb" ;
+    a at:Config ;
+    rdfs:label "W11.DiskreteStrukturen/A08" .
+

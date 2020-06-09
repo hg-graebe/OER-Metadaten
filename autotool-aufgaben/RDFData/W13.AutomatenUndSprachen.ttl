@@ -1,0 +1,465 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix att: <http://symbolicdata.org/autotool/Type/> .
+@prefix ns5: <http://symbolicdata.org/autotool/Configuration/W13.AutomatenUndSprachen/> .
+
+ns5:AH01
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    { w in {a,b}^* | |w|_a mod 3 != 1 }
+akzeptiert und folgende Eigenschaften hat:
+    [ Min_Size 2 , Max_Size 7 , Alphabet (mkSet \"ab\") , Sane , Deterministic , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH01.xml" ;
+    at:longTitle "AH01 - DFA mit a mod 3 != 1" ;
+    at:nodeIdent "88515960630023" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "e44ba8fc493a29b8e2547dc9d8b068451e45c2c9" ;
+    a at:Config ;
+    rdfs:label "AH01 - DFA a mod 3 != 1" .
+
+ns5:AH02
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    { der Wörter mit mindestens Länge 1, in denen jedes a vor jedem c auftritt }
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"abc\") , Sane , Deterministic , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH02.xml" ;
+    at:longTitle "AH02 - DFA Jedes a vor jedem c." ;
+    at:nodeIdent "88515960628406" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "4ad7ad89aed55c816f134f7ba7318e5669a2fa26" ;
+    a at:Config ;
+    rdfs:label "AH02 - DFA as vor cs" .
+
+ns5:AH03
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    { uxv | u aus {a,b,c}*, x aus {b,c}, v aus {b,c}*, so dass gilt: x = c genau dann, wenn 2 | |u|_a }
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"abc\") , Sane ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH03.xml" ;
+    at:longTitle "AH03 - DFA für uxv, in dem x durch u bestimmt wird" ;
+    at:nodeIdent "88515960630646" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "751951f9a6dec12c85f4a3657f2f20b3885429d3" ;
+    a at:Config ;
+    rdfs:label "AH03 - DFA uxv, u best. x" .
+
+ns5:AH04
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    aller Wörter über {a,b,c}, die weder bb noch cc enthalten,
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"abc\") , Sane , Deterministic , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH04.xml" ;
+    at:longTitle "AH04 - DFA für Wörter, die weder bb noch cc enthalten" ;
+    at:nodeIdent "88515961103702" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "b29d7376322023d98a01f2a94cea500e0f4e7e55" ;
+    a at:Config ;
+    rdfs:label "AH04 - DFA kein bb,cc" .
+
+ns5:AH05
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die von diesem Automaten akzeptierte Sprache:
+        NFA
+            { alphabet = mkSet \"ab\" , states = mkSet [ 1 , 2 , 3 , 4 ]
+            , starts = mkSet [ 3 ] , finals = mkSet [ 4 ]
+            , trans = collect [ ( 1 , 'a' , 3 ) , ( 2 , 'a' , 3 )
+                              , ( 2 , 'a' , 4 ) , ( 3 , 'a' , 1 ) , ( 3 , 'a' , 3 )
+                              , ( 3 , 'a' , 4 ) , ( 4 , 'a' , 2 ) , ( 4 , 'b' , 3 )
+                              ]
+            }
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ab\") , Sane , Deterministic , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Quiz ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH05.xml" ;
+    at:learningObjectives "<p>Wenden Sie die Potenzautomatenkonstruktion zur Lösung an.</p>" ;
+    at:longTitle "AH05 - NFA -> DFA (ind.)" ;
+    at:nodeIdent "88515961104837" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark "Wenden Sie die Potenzautomatenkonstruktion zur Lösung an." ;
+    at:signature "ba7431849375cb4431f3607a2f2c05a017fd8cbc" ;
+    a at:Config ;
+    rdfs:label "AH05 - NFA -> DFA" .
+
+ns5:AH06
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    des folgenden Epsilon-Automaten akzeptiert
+    (Übergangsfunktion, -> kennzeichnet Startzustand, * Endzustände):
+     
+          |    a      b   epsilon
+       --------------------------
+    -> 0* |  {0,1}   {1}   {1}
+       1  |  {0,2}   {3}   {}
+       2  |   {3}    {3}   {1,3}
+       3  |   {0}    {2}   {1}
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ab\"), Sane, Min_Size 4, Max_Size 4, Deterministic, Complete, Reduced ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH06.xml" ;
+    at:learningObjectives """<p>Wandeln Sie den angegebenen Epsilon-NEA entsprechend dem Verfahren aus Vorlesung bzw. Übung direkt in einen DEA um. Geben Sie als Lösung einen Automaten an, der nur erreichbare Zustnde enthlt.</p>""" ;
+    at:longTitle "AH06 - eNFA -> DFA" ;
+    at:nodeIdent "88515961107627" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark "Wandeln Sie den angegebenen Epsilon-NEA entsprechend dem Verfahren aus Vorlesung bzw. Übung direkt in einen DEA um. Geben Sie als Lösung einen Automaten an, der nur erreichbare Zustände enthält." ;
+    at:signature "6245189bcec29be50cbd7e3faa7ec967854a991f" ;
+    a at:Config ;
+    rdfs:label "AH06 - eNFA -> DFA" .
+
+ns5:AH07
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache des folgenden Epsilon-Automaten akzeptiert
+    (Überführungsfunktion, -> kennzeichnet Startzustand, * Endzustände):
+     
+          |   a     b   epsilon
+       -----------------------
+       0  |  {5}   {}    {1}
+       1  |  {}    {3}   {4}
+    -> 2  |  {5}   {}    {1}
+       3  |  {}    {6}   {0}
+       4  |  {5}   {}    {}
+       5  |  {}    {}    {4,5,6}
+      *6  |  {}    {}    {}
+     
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ab\") , Sane , Reduced , Min_Size 4 , Max_Size 4 , Non_Deterministic ]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH07.xml" ;
+    at:learningObjectives "<p>Folgen Sie dem Verfahren aus der Vorlesung bzw. Übung zur Umwandlung von Epsilon-Automaten in NEAs und reduzieren Sie den Automaten danach um nicht erreichbare sowie nicht erzeugende Zustnde, um den gesuchten NEA in passender Größe zu erzeugen.</p>" ;
+    at:longTitle "AH07 - eNFA -> NFA" ;
+    at:nodeIdent "88515962671898" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark """Folgen Sie dem Verfahren aus der Vorlesung bzw. Übung zur
+Umwandlung von Epsilon-Automaten in NEAs und reduzieren Sie den Automaten
+danach um nicht erreichbare sowie nicht erzeugende Zustände, um den gesuchten
+NEA in passender Größe zu erzeugen.
+ 
+Achtung: Sie können und müssen hier keinen Epsilon-Automaten eingeben.""", "Konstruieren Sie den Automaten entsprechend des aus Vorlesung bzw. Übung bekannten Verfahrens, um direkt aus einem eNEA einen NEA zu erhalten. Lassen Sie bei der Eingabe ins Autotool alle unerreichbar gewordenen Zustände entfallen." ;
+    at:signature "fce3080ed24efa40626ab2aeaa5f3d4493ed0d70" ;
+    a at:Config ;
+    rdfs:label "AH07 - eNFA -> NFA" .
+
+ns5:AH08
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache des Durchschnitts von
+    L1 = a*bb*    und    L2 = { w | Die Anzahl von a's in w ist gerade (inkl. 0) }.
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ab\") , Sane , Deterministic , Min_Size 4 ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH08.xml" ;
+    at:longTitle "AH08 - Produktautomat" ;
+    at:nodeIdent "88515962672824" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark """Entwerfen Sie zwei DEAs A1, A2 über {a, b} für die Sprachen
+  L1 = a*bb*   und L2 = { w | Die Anzahl von a's in w ist gerade (inkl. 0) }
+
+Entwickeln Sie aus A1 und A2 einen Automaten für den Durchschnitt von L1 und L2 über die Konstruktion des Kreuzproduktautomaten und geben Sie diesen als Lösung an.
+
+Wenn Sie diesem Verfahren folgen, wird Ihre (nicht reduzierte) Lösung mindestens 4 Zustände aufweisen. Beachten Sie bei der Konstruktion ggf. den Umgang mit fehlenden Kanten, im Fall nicht vollständiger DEAs A1 oder A2.
+
+Liegt Ihr Ergebnis unmittelbar als DEA vor? Warum?""", """Entwerfen Sie zwei DEAs A1, A2 über {a, b} für die Sprachen 
+L1 = a*bb* und L2 = { w | Die Anzahl von a's in w ist gerade (inkl. 0) } 
+ 
+Entwickeln Sie aus A1 und A2 einen Automaten für den Durchschnitt von L1 und L2 
+über die Konstruktion des Kreuzproduktautomaten und geben Sie diesen als Lösung an. 
+ 
+Wenn Sie diesem Verfahren folgen, wird Ihre (nicht reduzierte) Lösung
+mindestens 4 Zustände aufweisen. Beachten Sie bei der Konstruktion ggf. den
+Umgang mit fehlenden Kanten, im Fall nicht vollständiger DEAs A1 oder A2.
+ 
+Liegt Ihr Ergebnis unmittelbar als DEA vor? Warum?""" ;
+    at:signature "1540065bd6f18678a0e9b01aa1b8323510e7cbe7" ;
+    a at:Config ;
+    rdfs:label "AH08 - Produktautomat" .
+
+ns5:AH09
+    at:Aufgabentext """Gesucht ist ein regulärer Ausdruck, der die Sprache
+    Wörter der Mindestlänge 4 über {0,1}, die genau dann mit 00 beginnen, wenn sie mit 11 enden
+    erzeugt und folgende Eigenschaften hat:
+    [ Simple , Alphabet (mkSet \"01\") , AllowedKeys (mkSet [ \"Empty\" , \"Eps\" ])]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_Exp-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH09.xml" ;
+    at:longTitle "AH09 - RA angeben" ;
+    at:nodeIdent "88515962695018" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "f6d3f0d2fd081bec4313ebf41cfca20efab6a2ee" ;
+    a at:Config ;
+    rdfs:label "AH09 - RA angeben" .
+
+ns5:AH10
+    at:Aufgabentext """Gesucht ist ein regulärer Ausdruck, der dieselbe Sprache wie der Ausdruck
+    (a + b + (a^* b^* + Eps)^* + b) (a + c)^* (ac + c + cc) + (a + Eps) Empty a^* (a + c + b + c)
+    der Größe 46 erzeugt und die Eigenschaften
+
+    [ Simple , Alphabet (mkSet \"abc\") , AllowedKeys (mkSet [ \"Empty\" , \"Eps\" ]), Max_Size 25 ]
+
+    hat. """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Exp_Smaller-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH10.xml" ;
+    at:longTitle "AH10 - RA vereinfachen" ;
+    at:nodeIdent "88515962695904" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "d1f392dca439e0a1a08ab137c6600ea02d3cb0c0" ;
+    a at:Config ;
+    rdfs:label "AH10 - RA vereinfachen" .
+
+ns5:AH11
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die von diesem Ausdruck erzeugte Sprache:
+        (b (bba)^*)^*
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ab\") , Sane , Deterministic , Minimal ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Quiz ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH11.xml" ;
+    at:longTitle "AH11 - RA -> minDEA" ;
+    at:nodeIdent "88515963702325" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark "Vereinfachen Sie den Ausdruck, sofern möglich, bevor Sie mit dem Automaten beginnen." ;
+    at:signature "9c8fac065827d9b9e2d8d53497bb53dc5eba598c" ;
+    a at:Config ;
+    rdfs:label "AH11 - RA -> minDEA" .
+
+ns5:AH12
+    at:Aufgabentext """Gesucht ist ein regulärer Ausdruck, der die Sprache des folgenden Automaten akzeptiert
+    (Überführungsfunktion, -> kennzeichnet Startzustand, * Endzustände):
+     
+          |   a     b
+       -----------------
+    -> 1  |  {2}   {3}
+       2  |  {2}   {1}
+       3  |  {2}   {3}
+erzeugt und folgende Eigenschaften hat:
+
+    [ Simple , Alphabet (mkSet \"ab\") , AllowedKeys (mkSet [ \"Empty\" , \"Eps\" ]), Max_Size 8 ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_Exp-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH12.xml" ;
+    at:learningObjectives """<p>Achtung: In der Aufgabenstellung fehlt leider die Kennzeichnung der Endzustnde des Automaten. Dies sind Zustand 1 und Zustand 3, entsprechend dem Hinweis, dass es sich um den gleichen Automaten wie in H4.1 handelt. Bitte suchen Sie Lösungen unter dieser zustzlichen Annahme (ggü. der Darstellung der Aufgabe).</p>""" ;
+    at:longTitle "AH12 - EA -> RA (!)" ;
+    at:nodeIdent "88515963702845" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark "Sie benötigen hier ein unkonventionelles Herangehen. Es handelt sich erneut um den Automaten aus der schriftlichen Hausaufgabe H4.1. Überlegen Sie sich anhand des bisherigen Vorlesungsstoffs eine Kombination von Verfahren/Techniken, um einen möglichst kurzen regulären Ausdruck für den Automaten zu ermitteln." ;
+    at:signature "8084d69ed04bc077f7fff3e9aa148947f50cb0f7" ;
+    a at:Config ;
+    rdfs:label "AH12 - EA -> RA (!)" .
+
+ns5:AH13
+    at:Aufgabentext """Gesucht ist eine kontextfreie Grammatik für die Sprache
+    { w : w = xay  und  |x|=|y| }
+über dem Alphabet mkSet "abc"
+
+Die Grammatik soll diese Eigenschaften haben:
+    [ Kontextfrei ] """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:CFG2-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH13.xml" ;
+    at:longTitle "AH13 - kfG xay" ;
+    at:nodeIdent "88515963704814" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "9c60f319a6c99315441f5d9c0a64a6635a38b480" ;
+    a at:Config ;
+    rdfs:label "AH13 - kfG xay" .
+
+ns5:AH14
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    aller ableitbaren Wörter der Grammatik G=({a,b}, {S, A, B}, P, S) mit
+    P = { S -> aA | bS | Epsilon,
+          A -> bS | aB | bB | a | b,
+          B -> aS | bA | a}
+akzeptiert und folgende Eigenschaften hat:
+
+    [ Alphabet (mkSet \"ab\") , Sane , Min_Size 4 , Max_Size 4 , Non_Deterministic ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH14.xml" ;
+    at:longTitle "AH14 - regG -> EA" ;
+    at:nodeIdent "88515965019775" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark "Folgen Sie dem Verfahren zur Umwandlung regulärer Grammatiken in endliche Automaten aus der Vorlesung." ;
+    at:signature "b8c11715be6867126c137e8e9b476e91d0dcf2d4" ;
+    a at:Config ;
+    rdfs:label "AH14 - regG -> EA" .
+
+ns5:AH15
+    at:Aufgabentext """Gesucht ist eine kontextfreie Grammatik für die durch die Grammatik
+        { terminale = mkSet \"ab\" , variablen = mkSet \"ABCST\" , start = 'T'
+        , regeln = mkSet [ ( \"A\" , \"\" ) , ( \"A\" , \"C\" ) , ( \"A\" , \"aB\" )
+                         , ( \"B\" , \"A\" ) , ( \"B\" , \"b\" ) , ( \"C\" , \"B\" ) , ( \"S\" , \"ABC\" )
+                         , ( \"T\" , \"aS\" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet \"ab\"
+
+Die Grammatik soll diese Eigenschaften haben:
+    [ Kontextfrei , Chomsky_Normal ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:CFG2-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH15.xml" ;
+    at:longTitle "AH15 - CNF" ;
+    at:nodeIdent "88515965103802" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "52abe082902cc52774c3aeacbb70927b83285531" ;
+    a at:Config ;
+    rdfs:label "AH15 - CNF" .
+
+ns5:AH16
+    at:Aufgabentext """Gesucht ist eine kontextfreie Grammatik für die Sprache
+    { w : 2|w|_a = |w|_b }
+über dem Alphabet mkSet "ab"
+
+Die Grammatik soll diese Eigenschaften haben:
+    [ Kontextfrei ] """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:CFG2-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH16.xml" ;
+    at:longTitle "AH16 - kfG 2|w|_a = |w|_b" ;
+    at:nodeIdent "88515966049855" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "78971cecde831fdc2e03fb6fbcf39ef4dcf95f1c" ;
+    a at:Config ;
+    rdfs:label "AH16 - kfG 2|w|_a = |w|_b" .
+
+ns5:AH17
+    at:Aufgabentext """Gesucht ist ein Kellerautomat für die Sprache { w : |w|_a = |w|_b }
+ über dem Alphabet mkSet \"ab\" mit diesen Eigenschaften [ ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Acceptor-NPDA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH17.xml" ;
+    at:longTitle "AH17 - KA |w|_a = |w|_b" ;
+    at:nodeIdent "88515966084462" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark """Empfehlung: Lösen Sie die Aufgabe unmittelbar mit Kellerautomaten, 
+anstatt z.B. eine Grammatik für die Sprache in einen Kellerautomaten umzuwandeln.""" ;
+    at:signature "17f6bdd4b8de843945ebb71f7413efc0b80dc579" ;
+    a at:Config ;
+    rdfs:label "AH17 - KA |w|_a = |w|_b" .
+
+ns5:AH18
+    at:Aufgabentext """Gesucht ist eine kontextfreie Grammatik für die durch die Grammatik
+        { terminale = mkSet \"ab\" , variablen = mkSet \"ABCS\" , start = 'S'
+        , regeln = mkSet [ ( \"A\" , \"CC\" ) , ( \"A\" , \"bA\" )
+                         , ( \"B\" , \"Sab\" ) , ( \"B\" , \"a\" ) , ( \"C\" , \"\" ) , ( \"C\" , \"B\" )
+                         , ( \"C\" , \"aCb\" ) , ( \"S\" , \"ACa\" ) , ( \"S\" , \"a\" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet \"ab\".
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei , Chomsky_Normal ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:CFG2-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH18.xml" ;
+    at:longTitle "AH18 - kfG -> CNF" ;
+    at:nodeIdent "88515966325543" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "8b2d6ab68a55ec238d2434cdd8eeef0f7d4951a4" ;
+    a at:Config ;
+    rdfs:label "AH18 - kfG -> CNF" .
+
+ns5:AH19
+    at:Aufgabentext """Gesucht ist ein Kellerautomat für die durch die Grammatik
+        { terminale = mkSet \"ab\" , variablen = mkSet \"ST\" , start = 'S'
+        , regeln = mkSet [ ( \"S\" , \"TT\" ) , ( \"S\" , \"a\" ) , ( \"T\" , \"SS\" )
+                         , ( \"T\" , \"b\" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet \"ab\" mit diesen Eigenschaften [ ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Acceptor-NPDA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH19.xml" ;
+    at:longTitle "AH19 - KA aus kfG konstruieren" ;
+    at:nodeIdent "88515966328312" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark """Folgen Sie hier dem Verfahren aus der Vorlesung zur Umwandlung von kfG in Kellerautomaten. 
+Überlegen Sie sich bzw. überprüfen Sie die passende Akzeptanzbedingung.""" ;
+    at:signature "8f1a064a9386eab96211a115abe1eb939f4117fb" ;
+    a at:Config ;
+    rdfs:label "AH19 - kfG -> KA" .
+
+ns5:AH20
+    at:Aufgabentext """Gesucht ist ein Kellerautomat für die durch die Grammatik
+        { terminale = mkSet \"abc\" , variablen = mkSet \"ABCST\" , start = 'S'
+        , regeln = mkSet [ ( \"A\" , \"a\" ) , ( \"A\" , \"aA\" ) , ( \"B\" , \"b\" )
+                         , ( \"B\" , \"bB\" ) , ( \"C\" , \"\" ) , ( \"C\" , \"cC\" ) , ( \"S\" , \"ATC\" )
+                         , ( \"S\" , \"TBC\" ) , ( \"S\" , \"ca\" ) , ( \"T\" , \"aTb\" )
+                         , ( \"T\" , \"ab\" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet \"abc\" 
+mit diesen Eigenschaften [ Accept_by Empty_Stack ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Acceptor-NPDA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AH20.xml" ;
+    at:longTitle "AH20 - KA für i != j ..." ;
+    at:nodeIdent "88515966334699" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:remark """ACHTUNG: Die eigentliche Aufgabe hier lautet: Geben Sie einen Kellerautomaten an, 
+der die Sprache L mit leerem Keller akzeptiert, wobei L definiert ist durch:
+
+{ a^i b^j c^k | i != j und i,j > 0 } vereinigt mit { ca }.   
+
+Lassen Sie beim Lösen die in der Autotool-Aufgabenstellung ersichtliche Grammatik 
+außer Acht und konstruieren Sie einen Automaten mit mehreren Zuständen.""" ;
+    at:signature "66e7db7998a598f3b5c5445fb8c7f936f6b8e4d7" ;
+    a at:Config ;
+    rdfs:label "AH20 - KA für i != j ..." .
+
+ns5:AS01
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    { ve | v in {e,f}* }
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ef\"), Deterministic , Sane , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AS01.xml" ;
+    at:learningObjectives "<p>vgl. Aufgabe S0.6</p>" ;
+    at:longTitle "AS01 - DFA { ve | v in {e,f}* }" ;
+    at:nodeIdent "88432856023708" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "b14337600bad5cf99166983dac45e0a58be44d1f" ;
+    a at:Config ;
+    rdfs:label "AS01 - DFA { ve | ... }" .
+
+ns5:AS02
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    der Wörter, die nicht auf \"e\" enden akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ef\"), Deterministic , Sane , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AS02.xml" ;
+    at:learningObjectives "<p>vgl. Aufgabe S0.6</p>" ;
+    at:longTitle "AS02 - DFA: Wörter, die nicht mit e enden" ;
+    at:nodeIdent "88432856024501" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "13c530dbd03a94e897aa659e3d4ce68143f0cd0e" ;
+    a at:Config ;
+    rdfs:label "AS02 - DFA: Ende kein e" .
+
+ns5:AS03
+    at:Aufgabentext """Gesucht ist ein endlicher Automat, der die Sprache
+    { ev | v in {e,f}* }
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet \"ef\"), Deterministic , Sane , Complete ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType att:Convert_To_NFA-Direct ;
+    at:hasXMLFile "W13.AutomatenUndSprachen/AS03.xml" ;
+    at:learningObjectives "<p>vgl. Aufgabe S0.6</p>" ;
+    at:longTitle "AS03 – DFA: { ev | v in {e,f}+ }" ;
+    at:nodeIdent "88432856026151" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen> ;
+    at:signature "2b437a17f925b64f497cf2b7370055a1b584a529" ;
+    a at:Config ;
+    rdfs:label "AS03 - DFA: { ev | ... } " .
+

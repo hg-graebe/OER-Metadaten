@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_Exp-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( Convert&#13;
+      { name = Just&#13;
+                   [ "Wörter über {a,b,c}, die kein  bab  enthalten" ]&#13;
+      , input = Exp&#13;
+                    All - All b a b All&#13;
+      }&#13;
+, [ Simple&#13;
+  , Alphabet&#13;
+        (mkSet "abc")&#13;
+  , AllowedKeys&#13;
+        (mkSet [ "Empty" , "Eps" ])&#13;
+  ]&#13;
+)</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Exp-Property.html#t%3AProperty" &gt;Exp.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>837ac64aecdde2c52a3279c78a67c8d81d3bc87f</signature>
+<description>Empfehlung: Wandeln Sie den zugehörigen DEA (Lösung aus Aufgabe A01) in einen RA um.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

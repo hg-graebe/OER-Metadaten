@@ -1,0 +1,147 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1: <http://symbolicdata.org/autotool/Configuration/S13.Berechenbarkeit/> .
+
+ns1:A01
+    at:Aufgabentext """Gesucht ist ein Turing-Maschine (als Akzeptor) für die Sprache Pali \"ab\" 
+mit diesen Eigenschaften [ Sane , Det ]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A01.xml" ;
+    at:learningObjectives """<p>Entwerfen Sie eine deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert.<br />
+(Ein Wort w ist ein Palindrom, wenn w rückwrts gelesen ebenfalls w ergibt.)<br /><br />[Sonstige Hinweise zu Turingmaschinenaufgaben: siehe Link &quot;Doku (Turingmaschinen)&quot; unter &quot;Autotool allgemein&quot;.]</p>""" ;
+    at:longTitle "Deterministische Turingmaschine für {a,b}-Palindrome" ;
+    at:nodeIdent "81281349201354" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Entwerfen Sie eine deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert. 
+(Ein Wort w ist ein Palindrom, wenn w rückwärts gelesen ebenfalls w ergibt.)""" ;
+    at:signature "f3bbef6f4c5e579095e820cee0852d1433b16735" ;
+    a at:Config ;
+    rdfs:label "A01 Det. TM für w=w^R" .
+
+ns1:A02
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> fib x1 berechnet!
+Die Maschine soll die folgenden Bedingungen erfüllen:
+    * Builtins [ Copy ]
+    * No_While""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A02.xml" ;
+    at:learningObjectives """<p>Geben Sie ein LOOP-Programm an, das die Fibonacci-Funktion berechnet.</p>
+<p>Hierbei sind nur einfache LOOP-Programme (nach Autotool-Definition, vgl. Dokumentation) zugelassen, zuzüglich des Kopierens von Variablenwerten.</p>""" ;
+    at:longTitle "Fibonacci-Funktion" ;
+    at:nodeIdent "81384268588968" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Geben Sie ein LOOP-Programm an, das die Fibonacci-Funktion berechnet.
+Hierbei sind nur einfache LOOP-Programme (nach Autotool-Definition, vgl. Dokumentation) zugelassen, zuzüglich des Kopierens von Variablenwerten.""" ;
+    at:shortTitle "A02 Fibonacci (loop)" ;
+    at:signature "f32351fb0eb867a7121c4ddf469351e4303f9c09" ;
+    a at:Config ;
+    rdfs:label "A02 Fibonacci (loop)" .
+
+ns1:A03
+    at:Aufgabentext """Konstruieren Sie eine Maschine, 
+die die Funktion [ x1 , x2 , x3 ] -> ((x1 `max` x2) `max` x3) berechnet!
+Die Maschine soll die folgenden Bedingungen erfüllen:
+    * Builtins [ Plus , Minus , Times , Div , Mod , Copy ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A03.xml" ;
+    at:learningObjectives """<p>Geben Sie ein WHILE-Programm für das Maximum von drei Werten an, d.h. für die Funktion f(x1,x2,x3) = max {x1, x2, x3}.</p>
+<p>Hierbei sind nur WHILE-Programme (nach Autotool-Definition,  vgl. Dokumentation) zugelassen, dabei einige BuiltIn-Funktionen (vgl. Dokumentation).</p>""" ;
+    at:longTitle "A03 Maximum dreier Zahlen bestimmen" ;
+    at:nodeIdent "87570194095352" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """vgl. Doku zu WHILE-Programmen im Autotool und deren Builtins unter
+https://wiki.imise.uni-leipzig.de/Groups/ISYS/Public/Lehre/AutotoolDoku#h5506-29""" ;
+    at:shortTitle "A03 Maximum (while)" ;
+    at:signature "31f0a8392543a1a03499b8187aa81ee6b537b8bd" ;
+    a at:Config ;
+    rdfs:label "A03 Maximum (while)" .
+
+ns1:A04
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> fac x1 berechnet!
+Die Maschine soll die folgenden Bedingungen erfüllen:
+    * Builtins [ Plus , Times ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Fun> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A04.xml" ;
+    at:longTitle "A04 Fakultät als prim.-rek. Fkt." ;
+    at:nodeIdent "87630097105693" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Definieren Sie die Fakultätsfunktion als primitiv-rekursive Funktion.
+Beachten Sie die von der Vorlesung abweichende Form primitiv-rekursiver Funktionen im Autotool und vergleichen Sie dazu die Autotool-Dokumentation.
+Wichtiges in Kürze: An konstanten Funktionen sind nur alle Funktionen (beliebiger Stelligkeit) mit dem konstanten Wert 0 verfügbar. Die primitive Rekursion wird über das letzte Argument geführt, anstatt über das erste wie in der Vorlesung.
+Achten Sie zudem auf korrekte Stelligkeiten der Funktionen, ansonsten können Fehler während der Prüfung einer Einsendung auftreten.""" ;
+    at:signature "49bb73feeb3df582b4dc0d524f812d7b0d6fa0a7" ;
+    a at:Config ;
+    rdfs:label "A04 Fakultät (prim-rek)" .
+
+ns1:A05
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> x1 `mod` 2 berechnet!
+Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ Plus , Minus , Times ] """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Fun> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A05.xml" ;
+    at:longTitle "A05 x mod 2 als prim.-rek. Funktion" ;
+    at:nodeIdent "87630097106367" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Beachten Sie die von der Vorlesung abweichende Form primitiv-rekursiver Funktionen im Autotool und vergleichen Sie dazu die Autotool-Dokumentation.
+Wichtiges in Kürze: An konstanten Funktionen sind nur alle Funktionen (beliebiger Stelligkeit) mit dem konstanten Wert 0 verfügbar. Die primitive Rekursion wird über das letzte Argument geführt, anstatt über das erste wie in der Vorlesung.
+Achten Sie zudem auf korrekte Stelligkeiten der Funktionen, ansonsten können Fehler während der Prüfung einer Einsendung auftreten.""" ;
+    at:signature "2451e5943102c5c920be34e0394eda8057b3d89d" ;
+    a at:Config ;
+    rdfs:label "A05 x mod 2 (prim-rek)" .
+
+ns1:A06
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 , x2 ] -> (x1 `max` x2) berechnet!
+Die Maschine soll die folgenden Bedingungen erfüllen:
+    * Builtins [ Plus , Pre ]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Fun> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A06.xml" ;
+    at:longTitle "A06 Maximum (prim-rek)" ;
+    at:nodeIdent "87630097106990" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Beachten Sie die von der Vorlesung abweichende Form primitiv-rekursiver Funktionen im Autotool und vergleichen Sie dazu die Autotool-Dokumentation.
+Wichtiges in Kürze: An konstanten Funktionen sind nur alle Funktionen (beliebiger Stelligkeit) mit dem konstanten Wert 0 verfügbar. Die primitive Rekursion wird über das letzte Argument geführt, anstatt über das erste wie in der Vorlesung.
+Achten Sie zudem auf korrekte Stelligkeiten der Funktionen, ansonsten können Fehler während der Prüfung einer Einsendung auftreten.""" ;
+    at:signature "9ade0c054d320adc0bbd846fcdab8129a157601f" ;
+    a at:Config ;
+    rdfs:label "A06 Maximum (prim-rek)" .
+
+ns1:A07
+    at:Aufgabentext """Lösen Sie diese Instanz des Postschen Korrespondenz-Problems:
+    PCP [ ( \"ab\" , \"abb\" ) , ( \"aaa\" , \"a\" ) , ( \"aba\" , \"aa\" ), ( \"b\" , \"ab\" ) ]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/PCProblem-Direct> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A07.xml" ;
+    at:longTitle "A07 PCP über {a,b}" ;
+    at:nodeIdent "87791541208719" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Die Lösungen sind als Liste der Indizes/Positionen im Problem einzugeben, z.B. [ 1 , 1 , 2 ]. 
+Die Zählung der Indizes/Positionen beginnt dabei mit 1, der Wert 0 ist somit nicht zulässig.""" ;
+    at:signature "9e317755a5ef8ef3498c26e08b2982297bc1fbae" ;
+    a at:Config ;
+    rdfs:label "A07 PCP über {a,b}" .
+
+ns1:A08
+    at:Aufgabentext """Lösen Sie diese Instanz des Postschen Korrespondenz-Problems:
+    PCP [ ( \"11\" , \"1011\" ) , ( \"01\" , \"00\" ) , ( \"10\" , \"1\" ) ]""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasType <http://symbolicdata.org/autotool/Type/PCProblem-Quiz> ;
+    at:hasXMLFile "S13.Berechenbarkeit/A08.xml" ;
+    at:longTitle "A08 PCP über {0,1}" ;
+    at:nodeIdent "87791541209406" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit> ;
+    at:remark """Die Lösungen sind als Liste der Indizes/Positionen im Problem einzugeben, z.B. [ 1 , 1 , 2 ]. 
+Die Zählung der Indizes/Positionen beginnt dabei mit 1, der Wert 0 ist somit nicht zulässig.""" ;
+    at:signature "f1fd6bc60e7e9331c83d60169af0f84713dbb6ae" ;
+    a at:Config ;
+    rdfs:label "A08 PCP über {0,1}" .
+

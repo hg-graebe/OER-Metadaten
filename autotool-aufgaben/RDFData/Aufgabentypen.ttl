@@ -1,0 +1,1280 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix att: <http://symbolicdata.org/autotool/Type/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://symbolicdata.org/autotool/Aufgabentypen/>
+    a owl:Ontology ;
+    rdfs:comment "Aus src_Inter_Collector.hs extrahiert und mit Beispielen von Frank Loebe abgeglichen" ;
+    rdfs:label "Autotool Exercises Ontology" .
+
+at:Type a owl:Class, skos:Concept ; rdfs:label "Autotool Type" ; skos:prefLabel "Autotool Type" .
+
+at:Heading a owl:Class, skos:Concept ; rdfs:label "Autotool Category" ; skos:prefLabel  "Autotool Category" .
+
+<http://symbolicdata.org/autotool/Type/Acceptor-Grammatik-Quiz>
+    at:createCommand "Grammatik.Akzeptor.acceptor" ;
+    a at:Type ;
+    rdfs:label "Acceptor-Grammatik-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Acceptor-NPDA-Direct>
+    at:createCommand "NPDA.Inter.make" ;
+    a at:Type ;
+    rdfs:label "Acceptor-NPDA-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Acceptor-NPDA-Quiz>
+    at:createCommand "NPDA.Inter2.make" ;
+    a at:Type ;
+    rdfs:label "Acceptor-NPDA-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz>
+    at:createCommand "Turing.Make.acceptor" ;
+    a at:Type ;
+    rdfs:label "Acceptor-Turing-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Machine.Numerical.Fun>
+    a at:Type ;
+    rdfs:comment "Item \"Berechnungsmodelle/Primitiv rekursive Funktionen (alt)/Machine.Numerical.Fun\" fehlt" ;
+    rdfs:label "Machine.Numerical.Fun" .
+
+<http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM>
+    a at:Type ;
+    rdfs:comment "Item \"Berechnungsmodelle/Machine.Numerical.RAM\" fehlt" ;
+    rdfs:label "Machine.Numerical.RAM" .
+
+<http://symbolicdata.org/autotool/Type/Machine.Numerical.Turing-Maschine>
+    a at:Type ;
+    rdfs:comment "Item \"Berechnungsmodelle/Machine.Numerical.Turing-Maschine (als Computer)\" fehlt" ;
+    rdfs:label "Machine.Numerical.Turing-Maschine" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Graph-Direct>
+    at:createCommand "$ Algebraic.Central.make Algebraic_Graph" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Graph-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Graph-Quiz>
+    at:createCommand "$ Algebraic.Central.make Algebraic_STGraph" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Graph-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Integer-Direct>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Integer" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Integer-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Integer-Quiz>
+    at:createCommand "$ Algebraic2-Quiz.make Algebraic_Integer" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Integer-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Relation-Direct>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Relation" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Relation-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Relation-Quiz>
+    at:createCommand "$ Algebraic2-Quiz.make Algebraic_Relation" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Relation-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Direct>
+    at:createCommand "$ Algebraic-Quiz.make Algebraic_Graph" ;
+    a at:Type ;
+    rdfs:label "Algebraic_STGraph-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Quiz>
+    at:createCommand "$ Algebraic-Quiz.make Algebraic_STGraph" ;
+    a at:Type ;
+    rdfs:label "Algebraic_STGraph-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Set-Direct>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Set" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Set-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Algebraic_Set-Quiz>
+    at:createCommand "$ Algebraic2-Quiz.make Algebraic_Set" ;
+    a at:Type ;
+    rdfs:label "Algebraic_Set-Quiz" .
+
+att:Algorithmen
+    skos:narrower att:Sortiernetze, att:Sortierprogramme, att:String-Matching ;
+    a at:Heading ;
+    rdfs:label "Algorithmen" .
+
+att:Aufgaben
+    skos:narrower att:Algorithmen, att:Automaten_und_Formale_Sprachen, att:Berechnungsmodelle, att:Codierung_Kompression_Verschluesselung, att:Datenstrukturen, att:Graphen, att:Kombinatorik, att:Kombinatorische_Logik, att:Lambda-Kalkuel, att:Logik, att:Mengen_und_Relationen, att:NP-vollstaendige_Probleme, att:Programmierung, att:Rest, att:Terme_Ersetzungssysteme, att:Zahlensysteme, att:Zahlentheorie ;
+    a at:Heading ;
+    rdfs:label "Aufgaben" .
+
+att:Aussagenlogik
+    skos:narrower att:CNF_Optimize, att:CNF_SAT, att:Hilbert, att:Resolution, att:Umformen_alt, att:Umformen_neu ;
+    a at:Heading ;
+    rdfs:label "Aussagenlogik" .
+
+att:Automaten_und_Formale_Sprachen
+    skos:narrower att:Grammatiken, att:Kellerautomaten, att:Nerode-Kongruenz, att:Pumping-Lemma, att:Turing-Maschine_als_Akzeptor, att:endliche_Automaten, att:regulaere_Ausdruecke ;
+    a at:Heading ;
+    rdfs:label "Automaten und Formale Sprachen" .
+
+att:Baeume
+    at:relatedType <http://symbolicdata.org/autotool/Type/Baum.AVL-Quiz>, <http://symbolicdata.org/autotool/Type/Baum.Binary-Quiz>, <http://symbolicdata.org/autotool/Type/Baum.Reconstruct-Direct>, <http://symbolicdata.org/autotool/Type/Baum.Reconstruct-Quiz>, <http://symbolicdata.org/autotool/Type/Baum.RedBlack-Quiz>, <http://symbolicdata.org/autotool/Type/Baum.ZweiDrei-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Bäume" .
+
+<http://symbolicdata.org/autotool/Type/Baum.AVL-Quiz>
+    at:createCommand "Baum.AVL.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Baum.AVL-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Baum.Binary-Quiz>
+    at:createCommand "Baum.Binary.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Baum.Binary-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Baum.Reconstruct-Direct>
+    at:createCommand "Baum.Reconstruct.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Baum.Reconstruct-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Baum.Reconstruct-Quiz>
+    at:createCommand "Baum.Reconstruct.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Baum.Reconstruct-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Baum.RedBlack-Quiz>
+    at:createCommand "Baum.RedBlack.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Baum.RedBlack-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Baum.ZweiDrei-Quiz>
+    at:createCommand "Baum.ZweiDrei.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Baum.ZweiDrei-Quiz" .
+
+att:Berechnungsmodelle
+    at:relatedType <http://symbolicdata.org/autotool/Type/CM.Brainfuck>, <http://symbolicdata.org/autotool/Type/CM.JVM>, <http://symbolicdata.org/autotool/Type/CM.RAM>, <http://symbolicdata.org/autotool/Type/CM.RM>, <http://symbolicdata.org/autotool/Type/CM.Turing>, <http://symbolicdata.org/autotool/Type/Program.Cexp.Interface> ;
+    skos:narrower att:Peano-Zahlen_und_Folds, att:Primitiv_rekursive_Funktionen, att:Programme_mit_Arrays, att:Programme_mit_Listen_Stacks_Queues ;
+    a at:Heading ;
+    rdfs:label "Berechnungsmodelle" .
+
+<http://symbolicdata.org/autotool/Type/Binpack.FFD-Direct>
+    at:createCommand "Binpack.FFD.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Binpack.FFD-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Binpack.Interface-Direct>
+    at:createCommand "Binpack.Interface.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Binpack.Interface-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Binpack.Interface-Quiz>
+    at:createCommand "Binpack.Interface.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Binpack.Interface-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Boolean-Direct>
+    at:createCommand "Boolean.Instance.make" ;
+    a at:Type ;
+    rdfs:label "Boolean-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Boolean-Quiz>
+    at:createCommand "Boolean-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Boolean-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Boolean2-Direct>
+    at:createCommand "Boolean2.Instance.make" ;
+    a at:Type ;
+    rdfs:label "Boolean2-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Boolean2-Quiz>
+    at:createCommand "Boolean2-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Boolean2-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/CFG-Quiz>
+    at:createCommand "Grammatik.CF.Interface.make" ;
+    a at:Type ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "CFG-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/CFG2-Direct>
+    at:createCommand "Grammatik.CF.Interface2.make" ;
+    a at:Type ;
+    rdfs:label "CFG2-Direct" .
+
+<http://symbolicdata.org/autotool/Type/CL.Find-Direct>
+    at:createCommand "$ CL.Find.make_fixed" ;
+    a at:Type ;
+    rdfs:label "CL.Find-Direct" .
+
+<http://symbolicdata.org/autotool/Type/CM.Brainfuck>
+    at:createCommand "Brainfuck.Make.computer" ;
+    a at:Type ;
+    rdfs:label "CM.Brainfuck" .
+
+<http://symbolicdata.org/autotool/Type/CM.JVM>
+    at:createCommand "JVM.Make.make" ;
+    a at:Type ;
+    rdfs:label "CM.JVM" .
+
+<http://symbolicdata.org/autotool/Type/CM.RAM>
+    at:createCommand "RAM.Make.make" ;
+    a at:Type ;
+    rdfs:label "CM.RAM" .
+
+<http://symbolicdata.org/autotool/Type/CM.RM>
+    at:createCommand "RM.Make.make" ;
+    a at:Type ;
+    rdfs:label "CM.RM" .
+
+<http://symbolicdata.org/autotool/Type/CM.Turing>
+    at:createCommand "Turing.Make.computer" ;
+    a at:Type ;
+    rdfs:label "CM.Turing" .
+
+att:CNF_Optimize
+    at:relatedType <http://symbolicdata.org/autotool/Type/CNF_Optimize-Direct> ;
+    a at:Heading ;
+    rdfs:label "CNF-Optimize" .
+
+<http://symbolicdata.org/autotool/Type/CNF_Optimize-Direct>
+    at:createCommand "CNF.Optimize.make_fixed" ;
+    a at:Type ;
+    rdfs:label "CNF_Optimize-Direct" .
+
+att:CNF_SAT
+    at:relatedType <http://symbolicdata.org/autotool/Type/CNF_SAT-Direct>, <http://symbolicdata.org/autotool/Type/CNF_SAT-Quiz> ;
+    a at:Heading ;
+    rdfs:label "CNF-SAT" .
+
+<http://symbolicdata.org/autotool/Type/CNF_SAT-Direct>
+    at:createCommand "SAT.SAT.make_fixed" ;
+    a at:Type ;
+    rdfs:label "CNF_SAT-Direct" .
+
+<http://symbolicdata.org/autotool/Type/CNF_SAT-Quiz>
+    at:createCommand "SAT.SAT.make_quiz" ;
+    a at:Type ;
+    rdfs:label "CNF_SAT-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.BW.dec-Direct>
+    at:createCommand "$ Code.Class.dec BW.Burrows_Wheeler ( \"abracadabra\", 2 )" ;
+    a at:Type ;
+    rdfs:label "Code.BW.dec-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Code.BW.dec-Quiz>
+    at:createCommand "$ Code-Quiz.dec BW.Burrows_Wheeler" ;
+    a at:Type ;
+    rdfs:label "Code.BW.dec-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.BW.enc-Direct>
+    at:createCommand "$ Code.Class.enc BW.Burrows_Wheeler" ;
+    a at:Type ;
+    rdfs:label "Code.BW.enc-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Code.BW.enc-Quiz>
+    at:createCommand "$ Code-Quiz.enc BW.Burrows_Wheeler" ;
+    a at:Type ;
+    rdfs:label "Code.BW.enc-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.Hamming>
+    at:createCommand "Code.Hamming.make" ;
+    a at:Type ;
+    rdfs:label "Code.Hamming" .
+
+<http://symbolicdata.org/autotool/Type/Code.Huffman.Boiler-Direct>
+    at:createCommand "Code.Huffman.Boiler.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Code.Huffman.Boiler-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Code.Huffman.Boiler-Quiz>
+    at:createCommand "Code.Huffman.Boiler.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Code.Huffman.Boiler-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.MTW.dec-Quiz>
+    at:createCommand "$ Code-Quiz.dec MTF.Move_To_Front" ;
+    a at:Type ;
+    rdfs:label "Code.MTW.dec-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.MTW.enc-Quiz>
+    at:createCommand "$ Code-Quiz.enc MTF.Move_To_Front" ;
+    a at:Type ;
+    rdfs:label "Code.MTW.enc-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.Nocode-Direct>
+    at:createCommand "Code.Nocode.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Code.Nocode-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Code.Nocode-Quiz>
+    at:createCommand "Code.Nocode.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Code.Nocode-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Code.Nonprefix-Direct>
+    at:createCommand "Code.Nonprefix.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Code.Nonprefix-Direct" .
+
+att:Codierung
+    at:relatedType <http://symbolicdata.org/autotool/Type/Code.BW.dec-Direct>, <http://symbolicdata.org/autotool/Type/Code.BW.dec-Quiz>, <http://symbolicdata.org/autotool/Type/Code.BW.enc-Direct>, <http://symbolicdata.org/autotool/Type/Code.BW.enc-Quiz>, <http://symbolicdata.org/autotool/Type/Code.Hamming>, <http://symbolicdata.org/autotool/Type/Code.Huffman.Boiler-Direct>, <http://symbolicdata.org/autotool/Type/Code.Huffman.Boiler-Quiz>, <http://symbolicdata.org/autotool/Type/Code.MTF.dec-Quiz>, <http://symbolicdata.org/autotool/Type/Code.MTF.enc-Quiz>, <http://symbolicdata.org/autotool/Type/Code.Nocode-Direct>, <http://symbolicdata.org/autotool/Type/Code.Nocode-Quiz>, <http://symbolicdata.org/autotool/Type/Code.Nonprefix-Direct> ;
+    a at:Heading ;
+    rdfs:label "Codierung" .
+
+att:Codierung_Kompression_Verschluesselung
+    skos:narrower att:Codierung, att:Kompression, att:Verschluesselung ;
+    a at:Heading ;
+    rdfs:label "Codierung, Kompression, Verschlüsselung" .
+
+<http://symbolicdata.org/autotool/Type/Collatz.Inverse-Direct>
+    at:createCommand "Collatz.Inverse.make" ;
+    a at:Type ;
+    rdfs:label "Collatz.Inverse-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Collatz.Inverse-Quiz>
+    at:createCommand "Collatz.Inverse.qmake" ;
+    a at:Type ;
+    rdfs:label "Collatz.Inverse-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Collatz.Long-Direct>
+    at:createCommand "Collatz.Long.make" ;
+    a at:Type ;
+    rdfs:label "Collatz.Long-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Collatz.Plain-Direct>
+    at:createCommand "Collatz.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Collatz.Plain-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Collatz.Plain-Quiz>
+    at:createCommand "Collatz.Plain.qmake" ;
+    a at:Type ;
+    rdfs:label "Collatz.Plain-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Compress.LZ77-Direct>
+    at:createCommand "$ Code.Compress.make_fixed Code.LZ.Lempel_Ziv_77" ;
+    a at:Type ;
+    rdfs:label "Compress.LZ77-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Compress.LZ77-Quiz>
+    at:createCommand "$ Code.Compress.make_quiz Code.LZ.Lempel_Ziv_77" ;
+    a at:Type ;
+    rdfs:label "Compress.LZ77-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Compress.LZW-Quiz>
+    at:createCommand "$ Code.Compress.make_quiz Code.LZ.Lempel_Ziv_Welch" ;
+    a at:Type ;
+    rdfs:label "Compress.LZW-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Convert_To_Exp-Direct>
+    at:createCommand "Exp.Convert.make" ;
+    a at:Type ;
+    rdfs:label "Convert_To_Exp-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Convert_To_Exp-Quiz>
+    at:createCommand "Exp.Convert.qmake" ;
+    a at:Type ;
+    rdfs:label "Convert_To_Exp-Quiz" .
+
+att:Convert_To_NFA
+    at:relatedType <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct>, <http://symbolicdata.org/autotool/Type/Convert_To_NFA-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Convert to NFA" .
+
+<http://symbolicdata.org/autotool/Type/Convert_To_NFA-Direct>
+    at:createCommand "NFA.Convert.make" ;
+    a at:Type ;
+    rdfs:label "Convert_To_NFA-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Convert_To_NFA-Quiz>
+    at:createCommand "NFA.Convert.qmake" ;
+    a at:Type ;
+    rdfs:label "Convert_To_NFA-Quiz" .
+
+att:DFA_Compress
+    at:relatedType <http://symbolicdata.org/autotool/Type/DFA_Compress-Direct>, <http://symbolicdata.org/autotool/Type/DFA_Compress-Quiz> ;
+    a at:Heading ;
+    rdfs:label "DFA Compress" .
+
+<http://symbolicdata.org/autotool/Type/DFA_Compress-Direct>
+    at:createCommand "NFA.Compress.Inter.make_fixed" ;
+    a at:Type ;
+    rdfs:label "DFA_Compress-Direct" .
+
+<http://symbolicdata.org/autotool/Type/DFA_Compress-Quiz>
+    at:createCommand "NFA.Compress.Inter.make_quiz" ;
+    a at:Type ;
+    rdfs:label "DFA_Compress-Quiz" .
+
+att:Datenstrukturen
+    skos:narrower att:Baeume, att:Programme_mit_Arrays, att:Programme_mit_Listen ;
+    a at:Heading ;
+    rdfs:label "Datenstrukturen" .
+
+<http://symbolicdata.org/autotool/Type/Diffie_Hellman.Break>
+    at:createCommand "Diffie_Hellman.Break.make" ;
+    a at:Type ;
+    rdfs:label "Diffie_Hellman.Break" .
+
+<http://symbolicdata.org/autotool/Type/Diffie_Hellman-Quiz>
+    at:createCommand "Diffie_Hellman-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Diffie_Hellman-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Equiv-Direct>
+    at:createCommand "NFA.Equiv.Challenger.make" ;
+    a at:Type ;
+    rdfs:label "Equiv-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Equiv-Quiz>
+    at:createCommand "NFA.Equiv.Challenger.qmake" ;
+    a at:Type ;
+    rdfs:label "Equiv-Quiz" .
+
+att:Equiv_Challenge
+    at:relatedType <http://symbolicdata.org/autotool/Type/Equiv-Direct>, <http://symbolicdata.org/autotool/Type/Equiv-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Equiv Challenge" .
+
+<http://symbolicdata.org/autotool/Type/Exp.Shortest_Missing>
+    at:createCommand "Exp.Shortest_Missing.make" ;
+    a at:Type ;
+    rdfs:label "Exp.Shortest_Missing" .
+
+<http://symbolicdata.org/autotool/Type/Exp_Smaller-Direct>
+    at:createCommand "Exp.Smaller.make" ;
+    a at:Type ;
+    rdfs:label "Exp_Smaller-Direct" .
+
+<http://symbolicdata.org/autotool/Type/FP-Direct>
+    at:createCommand "FP-Direct.make" ;
+    a at:Type ;
+    rdfs:label "FP-Direct" .
+
+<http://symbolicdata.org/autotool/Type/FP-Quiz>
+    at:createCommand "FP-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "FP-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Euklid-Direct>
+    at:createCommand "Faktor.Euklid.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Faktor.Euklid-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Euklid-Quiz>
+    at:createCommand "Faktor.Euklid.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Faktor.Euklid-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Faktor-Direct>
+    at:createCommand "Faktor.Faktor.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Faktor.Faktor-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Faktor-Quiz>
+    at:createCommand "Faktor.Faktor.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Faktor.Faktor-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Inverse-Direct>
+    at:createCommand "Faktor.Inverse.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Faktor.Inverse-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Inverse-Quiz>
+    at:createCommand "Faktor.Inverse.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Faktor.Inverse-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Times-Direct>
+    at:createCommand "Faktor.Times.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Faktor.Times-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Faktor.Times-Quiz>
+    at:createCommand "Faktor.Times.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Faktor.Times-Quiz" .
+
+att:Find_Model
+    at:relatedType <http://symbolicdata.org/autotool/Type/Find_Model-Direct> ;
+    a at:Heading ;
+    rdfs:label "Find Model" .
+
+<http://symbolicdata.org/autotool/Type/Find_Model-Direct>
+    at:createCommand "PL.Find_Model.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Find_Model-Direct" .
+
+att:Goto_to_Struct
+    at:createCommand "Flow.Central.goto_to_struct_fixed" ;
+    a at:Type ;
+    rdfs:label "Goto_to_Struct" .
+
+att:Grammatiken
+    at:relatedType <http://symbolicdata.org/autotool/Type/Acceptor-Grammatik-Quiz>, <http://symbolicdata.org/autotool/Type/CFG-Quiz>, <http://symbolicdata.org/autotool/Type/CFG2-Direct> ;
+    a at:Heading ;
+    rdfs:label "Grammatiken" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Bi-Direct>
+    at:createCommand "Graph.Bi.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Bi-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Bi-Quiz>
+    at:createCommand "Graph.Bi-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Bi-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Bisekt-Direct>
+    at:createCommand "Graph.Bisekt.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Bisekt-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Bisekt-Quiz>
+    at:createCommand "Graph.Bisekt-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Bisekt-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Cage>
+    at:createCommand "Graph.Cage.Central.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Cage" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Circle-Direct>
+    at:createCommand "Graph.Circle.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Circle-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Circle-Quiz>
+    at:createCommand "Graph.Circle-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Circle-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Col-Direct>
+    at:createCommand "Graph.Col.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Col-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Col.Gadget>
+    at:createCommand "Graph.Col.Gadget.Central.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Col.Gadget" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Col.Greedy>
+    at:createCommand "Graph.Col.Greedy.Central.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Col.Greedy" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Col-Quiz>
+    at:createCommand "Graph.Col-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Col-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Cross>
+    at:createCommand "Graph.Cross.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Cross" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Graceful>
+    at:createCommand "Graph.Graceful.Central.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Graceful" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Hamilton-Direct>
+    at:createCommand "Graph.Hamilton.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Hamilton-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Hamilton-Quiz>
+    at:createCommand "Graph.Hamilton-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Hamilton-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.MST-Direct>
+    at:createCommand "Graph.MST.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.MST-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.MST-Quiz>
+    at:createCommand "Graph.MST-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.MST-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.MinSep>
+    at:createCommand "Graph.MinSep.make" ;
+    a at:Type ;
+    rdfs:label "Graph.MinSep" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Nachbar>
+    at:createCommand "Graph.Nachbar.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Nachbar" .
+
+<http://symbolicdata.org/autotool/Type/Graph.PartialKTree-Direct>
+    at:createCommand "Graph.PartialKTree.make" ;
+    a at:Type ;
+    rdfs:label "Graph.PartialKTree-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.PartialKTree-Quiz>
+    at:createCommand "Graph.PartialKTree.qmake" ;
+    a at:Type ;
+    rdfs:label "Graph.PartialKTree-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Ramsey>
+    at:createCommand "Graph.Ramsey.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Ramsey" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Selfcom>
+    at:createCommand "Graph.Selfcom.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Selfcom" .
+
+<http://symbolicdata.org/autotool/Type/Graph.TSP-Direct>
+    at:createCommand "Graph.TSP.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.TSP-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.TSP-Quiz>
+    at:createCommand "Graph.TSP-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.TSP-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.TreeWidth>
+    at:createCommand "Graph.TreeWidth.make" ;
+    a at:Type ;
+    rdfs:label "Graph.TreeWidth" .
+
+<http://symbolicdata.org/autotool/Type/Graph.VC.Central-Direct>
+    at:createCommand "Graph.VC.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Graph.VC.Central-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.VC.Central-Quiz>
+    at:createCommand "Graph.VC.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Graph.VC.Central-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.VC.VCSAT-Direct>
+    at:createCommand "Graph.VC.VCSAT.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Graph.VC.VCSAT-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.VC.VCSAT-Quiz>
+    at:createCommand "Graph.VC.VCSAT.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Graph.VC.VCSAT-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Van_der_Waerden>
+    at:createCommand "Graph.Van_der_Waerden.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Van_der_Waerden" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Way-Direct>
+    at:createCommand "Graph.Way.Plain.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Way-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Graph.Way-Quiz>
+    at:createCommand "Graph.Way-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Graph.Way-Quiz" .
+
+att:Graphen
+    at:relatedType <http://symbolicdata.org/autotool/Type/Graph.Bi-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Bi-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.Bisekt-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Bisekt-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.Cage>, <http://symbolicdata.org/autotool/Type/Graph.Circle-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Circle-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.Col-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Col.Gadget>, <http://symbolicdata.org/autotool/Type/Graph.Col.Greedy>, <http://symbolicdata.org/autotool/Type/Graph.Col-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.Cross>, <http://symbolicdata.org/autotool/Type/Graph.Graceful>, <http://symbolicdata.org/autotool/Type/Graph.Hamilton-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Hamilton-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.MST-Direct>, <http://symbolicdata.org/autotool/Type/Graph.MST-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.MinSep>, <http://symbolicdata.org/autotool/Type/Graph.Nachbar>, <http://symbolicdata.org/autotool/Type/Graph.PartialKTree-Direct>, <http://symbolicdata.org/autotool/Type/Graph.PartialKTree-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.Ramsey>, <http://symbolicdata.org/autotool/Type/Graph.Selfcom>, <http://symbolicdata.org/autotool/Type/Graph.TSP-Direct>, <http://symbolicdata.org/autotool/Type/Graph.TSP-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.TreeWidth>, <http://symbolicdata.org/autotool/Type/Graph.Way-Direct>, <http://symbolicdata.org/autotool/Type/Graph.Way-Quiz> ;
+    skos:narrower att:Graphoperationen ;
+    a at:Heading ;
+    rdfs:label "Graphen" .
+
+att:Graphoperationen
+    at:relatedType <http://symbolicdata.org/autotool/Type/Algebraic_Graph-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_Graph-Quiz>, <http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Graphoperationen" .
+
+<http://symbolicdata.org/autotool/Type/Hanoi-Quiz>
+    at:createCommand "Hanoi-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Hanoi-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Hanoi.Semantik>
+    at:createCommand "Hanoi.Semantik.make" ;
+    a at:Type ;
+    rdfs:label "Hanoi.Semantik" .
+
+att:Hilbert
+    at:relatedType <http://symbolicdata.org/autotool/Type/Hilbert-Direct> ;
+    a at:Heading ;
+    rdfs:label "Hilbert" .
+
+<http://symbolicdata.org/autotool/Type/Hilbert-Direct>
+    at:createCommand "Hilbert.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Hilbert-Direct" .
+
+att:Kellerautomaten
+    at:relatedType <http://symbolicdata.org/autotool/Type/Acceptor-NPDA-Direct>, <http://symbolicdata.org/autotool/Type/Acceptor-NPDA-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Kellerautomaten" .
+
+<http://symbolicdata.org/autotool/Type/KnapsackFraction.Central-Direct>
+    at:createCommand "KnapsackFraction.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "KnapsackFraction.Central-Direct" .
+
+<http://symbolicdata.org/autotool/Type/KnapsackFraction.Central-Quiz>
+    at:createCommand "KnapsackFraction.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "KnapsackFraction.Central-Quiz" .
+
+att:Kombinatorik
+    at:relatedType <http://symbolicdata.org/autotool/Type/Hanoi-Quiz>, <http://symbolicdata.org/autotool/Type/Hanoi.Semantik>, <http://symbolicdata.org/autotool/Type/PCProblem-Direct>, <http://symbolicdata.org/autotool/Type/PCProblem-Quiz> ;
+    skos:narrower att:Lunar_Lockout_original, att:Ramsey-Theorie, att:Solar_Lockout_modified, att:kurze_gemeinsame_Superfolge, att:lange_gemeinsame_Teilfolge ;
+    a at:Heading ;
+    rdfs:label "Kombinatorik" .
+
+att:Kombinatorische_Logik
+    at:relatedType <http://symbolicdata.org/autotool/Type/CL.Find-Direct> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Kombinatorische Logik" .
+
+att:Kompression
+    at:relatedType <http://symbolicdata.org/autotool/Type/Compress.LZ77-Direct>, <http://symbolicdata.org/autotool/Type/Compress.LZ77-Quiz>, <http://symbolicdata.org/autotool/Type/Compress.LZW-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Kompression" .
+
+<http://symbolicdata.org/autotool/Type/LCS.Instance-Direct>
+    at:createCommand "LCS.Instance.make_fixed" ;
+    a at:Type ;
+    rdfs:label "LCS.Instance-Direct" .
+
+<http://symbolicdata.org/autotool/Type/LCS.Instance-Quiz>
+    at:createCommand "LCS.Instance.make_quiz" ;
+    a at:Type ;
+    rdfs:label "LCS.Instance-Quiz" .
+
+att:Lambda-Kalkuel
+    at:relatedType <http://symbolicdata.org/autotool/Type/Lambda.Backward_Join-Direct>, <http://symbolicdata.org/autotool/Type/Lambda.Derive-Direct>, <http://symbolicdata.org/autotool/Type/Lambda.Derive-Quiz>, <http://symbolicdata.org/autotool/Type/Rewriting.Lambda.Lambda> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Lambda-Kalkül" .
+
+<http://symbolicdata.org/autotool/Type/Lambda.Backward_Join-Direct>
+    at:createCommand "Lambda.Backward_Join.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Lambda.Backward_Join-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Lambda.Derive-Direct>
+    at:createCommand "Lambda.Derive.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Lambda.Derive-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Lambda.Derive-Quiz>
+    at:createCommand "Lambda.Derive.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Lambda.Derive-Quiz" .
+
+att:Logik
+    skos:narrower att:Aussagenlogik, att:Praedikatenlogik ;
+    a at:Heading ;
+    rdfs:label "Logik" .
+
+att:Lunar_Lockout_original
+    at:relatedType <http://symbolicdata.org/autotool/Type/Robots.Interface-Direct>, <http://symbolicdata.org/autotool/Type/Robots.Interface-Quiz>, <http://symbolicdata.org/autotool/Type/Robots.Inverse-Direct>, <http://symbolicdata.org/autotool/Type/Robots.Inverse-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Lunar Lockout (original)" .
+
+att:Mengen_und_Relationen
+    at:relatedType <http://symbolicdata.org/autotool/Type/Algebraic_Relation-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_Relation-Quiz>, <http://symbolicdata.org/autotool/Type/Algebraic_Set-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_Set-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Mengen und Relationen" .
+
+<http://symbolicdata.org/autotool/Type/Nerode-Congruent-Direct>
+    at:createCommand "NFA.Nerode.Congruent-Direct.make" ;
+    a at:Type ;
+    rdfs:label "NFA.Nerode.Congruent-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Nerode-Congruent-Quiz>
+    at:createCommand "NFA.Nerode.Congruent-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "NFA.Nerode.Congruent-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Nerode-Incongruent-Direct>
+    at:createCommand "NFA.Nerode.Incongruent-Direct.make" ;
+    a at:Type ;
+    rdfs:label "NFA.Nerode.Incongruent-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Nerode-Incongruent-Quiz>
+    at:createCommand "NFA.Nerode.Incongruent-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "NFA.Nerode.Incongruent-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Nerode-Separation-Direct>
+    at:createCommand "NFA.Nerode.Separation-Direct.make" ;
+    a at:Type ;
+    rdfs:label "NFA.Nerode.Separation-Direct" .
+
+att:NP-vollstaendige_Probleme
+    at:relatedType <http://symbolicdata.org/autotool/Type/Binpack.FFD-Direct>, <http://symbolicdata.org/autotool/Type/Binpack.Interface-Direct>, <http://symbolicdata.org/autotool/Type/Binpack.Interface-Quiz>, <http://symbolicdata.org/autotool/Type/CNF_SAT-Direct>, <http://symbolicdata.org/autotool/Type/CNF_SAT-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.VC.Central-Direct>, <http://symbolicdata.org/autotool/Type/Graph.VC.Central-Quiz>, <http://symbolicdata.org/autotool/Type/Graph.VC.VCSAT-Direct>, <http://symbolicdata.org/autotool/Type/Graph.VC.VCSAT-Quiz>, <http://symbolicdata.org/autotool/Type/KnapsackFraction.Central-Direct>, <http://symbolicdata.org/autotool/Type/KnapsackFraction.Central-Quiz>, <http://symbolicdata.org/autotool/Type/Partition.Central-Direct>, <http://symbolicdata.org/autotool/Type/Partition.Central-Quiz> ;
+    a at:Heading ;
+    rdfs:label "NP-vollständige Probleme" .
+
+att:Nerode-Kongruenz
+    at:relatedType <http://symbolicdata.org/autotool/Type/Nerode-Congruent-Direct>, <http://symbolicdata.org/autotool/Type/Nerode-Congruent-Quiz>, <http://symbolicdata.org/autotool/Type/Nerode-Incongruent-Direct>, <http://symbolicdata.org/autotool/Type/Nerode-Incongruent-Quiz>, <http://symbolicdata.org/autotool/Type/Nerode-Separation-Direct> ;
+    a at:Heading ;
+    rdfs:label "Nerode-Kongruenz" .
+
+<http://symbolicdata.org/autotool/Type/Number.Base-Direct>
+    at:createCommand "Number.Base.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Number.Base-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Number.Base-Quiz>
+    at:createCommand "Number.Base.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Number.Base-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Number.Float.From-Direct>
+    at:createCommand "Number.Float.From.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Number.Float.From-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Number.Float.From-Quiz>
+    at:createCommand "Number.Float.From.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Number.Float.From-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Number.Float.To-Direct>
+    at:createCommand "Number.Float.To.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Number.Float.To-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Number.Float.To-Quiz>
+    at:createCommand "Number.Float.To.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Number.Float.To-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/PCProblem-Direct>
+    at:createCommand "PCProblem-Quiz.make_fixed" ;
+    a at:Type ;
+    rdfs:label "PCProblem-Direct" .
+
+<http://symbolicdata.org/autotool/Type/PCProblem-Quiz>
+    at:createCommand "PCProblem-Quiz.make_quiz" ;
+    a at:Type ;
+    rdfs:label "PCProblem-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Palindrom-Direct>
+    at:createCommand "Palindrom.Plain.make" ;
+    a at:Type ;
+    rdfs:comment "noch nicht eingeordnet" ;
+    rdfs:label "Palindrom-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Partition.Central-Direct>
+    at:createCommand "Partition.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Partition.Central-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Partition.Central-Quiz>
+    at:createCommand "Partition.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Partition.Central-Quiz" .
+
+att:Peano-Zahlen_und_Folds
+    at:relatedType <http://symbolicdata.org/autotool/Type/Peano-Direct> ;
+    a at:Heading ;
+    rdfs:label "Peano-Zahlen und Folds" .
+
+<http://symbolicdata.org/autotool/Type/Peano-Direct>
+    at:createCommand "Peano.Make.make" ;
+    a at:Type ;
+    rdfs:label "Peano-Direct" .
+
+att:Praedikatenlogik
+    skos:narrower att:Find_Model ;
+    a at:Heading ;
+    rdfs:label "Prädikatenlogik" .
+
+att:Primitiv_rekursive_Funktionen
+    at:relatedType <http://symbolicdata.org/autotool/Type/Primrec_2D-Direct>, <http://symbolicdata.org/autotool/Type/Primrec_2D-Quiz>, <http://symbolicdata.org/autotool/Type/Primrec_alt-Direct>, <http://symbolicdata.org/autotool/Type/Primrec_alt-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Primitiv rekursive Funktionen" .
+
+<http://symbolicdata.org/autotool/Type/Primrec_2D-Direct>
+    at:createCommand "Fun.Direct.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Primrec_2D-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Primrec_2D-Quiz>
+    at:createCommand "Fun.Direct.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Primrec_2D-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Primrec_alt-Direct>
+    at:createCommand "Fun.Make.make" ;
+    a at:Type ;
+    rdfs:comment "alt" ;
+    rdfs:label "Primrec_alt-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Primrec_alt-Quiz>
+    at:createCommand "Fun-Quiz.make" ;
+    a at:Type ;
+    rdfs:comment "alt" ;
+    rdfs:label "Primrec_alt-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Program.Array-Direct>
+    at:createCommand "$ Program.General.Central.make_fixed Program.Array.Instance.Program_Array" ;
+    a at:Type ;
+    rdfs:label "Program.Array-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Program.Array-Quiz>
+    at:createCommand "Program.Array.Instance.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Program.Array-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Program.Cexp.Interface>
+    at:createCommand "Program.Cexp.Interface.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Program.Cexp.Interface" .
+
+<http://symbolicdata.org/autotool/Type/Program.List-Direct>
+    at:createCommand "$ Program.General.Central.make_fixed Program.List.Instance.Program_List" ;
+    a at:Type ;
+    rdfs:label "Program.List-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Program.List-Quiz>
+    at:createCommand "Program.List.Instance.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Program.List-Quiz" .
+
+att:Programme_mit_Arrays
+    at:relatedType <http://symbolicdata.org/autotool/Type/Program.Array-Direct>, <http://symbolicdata.org/autotool/Type/Program.Array-Quiz> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Programme mit Arrays" .
+
+att:Programme_mit_Listen
+    at:relatedType <http://symbolicdata.org/autotool/Type/Program.List-Direct>, <http://symbolicdata.org/autotool/Type/Program.List-Quiz> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Programme mit Listen" .
+
+att:Programme_mit_Listen_Stacks_Queues
+    skos:narrower att:Programme_mit_Listen ;
+    a at:Heading ;
+    rdfs:label "Programme mit Listen, Stacks, Queues" .
+
+att:Programmierung
+    at:relatedType <http://symbolicdata.org/autotool/Type/FP-Direct>, <http://symbolicdata.org/autotool/Type/FP-Quiz>, att:Goto_to_Struct, <http://symbolicdata.org/autotool/Type/Specify.Inter>, att:Struct_to_Goto, <http://symbolicdata.org/autotool/Type/Type-Direct>, <http://symbolicdata.org/autotool/Type/Type-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Programmierung" .
+
+<http://symbolicdata.org/autotool/Type/Pump-CF-Direct>
+    at:createCommand "Pump.Inter2.cf" ;
+    a at:Type ;
+    rdfs:label "Pump-CF-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Pump-CF-Quiz>
+    at:createCommand "Pump.Inter.cf" ;
+    a at:Type ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "Pump-CF-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Pump-REG-Direct>
+    at:createCommand "Pump.Inter2.reg" ;
+    a at:Type ;
+    rdfs:label "Pump-REG-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Pump-REG-Quiz>
+    at:createCommand "Pump.Inter.reg" ;
+    a at:Type ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "Pump-REG-Quiz" .
+
+att:Pumping-Lemma
+    at:relatedType <http://symbolicdata.org/autotool/Type/Pump-CF-Direct>, <http://symbolicdata.org/autotool/Type/Pump-CF-Quiz>, <http://symbolicdata.org/autotool/Type/Pump-REG-Direct>, <http://symbolicdata.org/autotool/Type/Pump-REG-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Pumping-Lemma" .
+
+<http://symbolicdata.org/autotool/Type/RD-Quiz>
+    at:createCommand "RD.make_quiz" ;
+    a at:Type ;
+    rdfs:label "RD-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/RSA.Break>
+    at:createCommand "RSA.Break.make" ;
+    a at:Type ;
+    rdfs:label "RSA.Break" .
+
+<http://symbolicdata.org/autotool/Type/RSA-Quiz>
+    at:createCommand "RSA-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "RSA-Quiz" .
+
+att:Ramsey-Theorie
+    at:relatedType <http://symbolicdata.org/autotool/Type/Graph.Ramsey>, <http://symbolicdata.org/autotool/Type/Graph.Van_der_Waerden> ;
+    a at:Heading ;
+    rdfs:label "Ramsey-Theorie" .
+
+att:Resolution
+    at:relatedType <http://symbolicdata.org/autotool/Type/Resolution-Direct>, <http://symbolicdata.org/autotool/Type/Resolution-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Resolution" .
+
+<http://symbolicdata.org/autotool/Type/Resolution-Direct>
+    at:createCommand "Resolution.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Resolution-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Resolution-Quiz>
+    at:createCommand "Resolution.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Resolution-Quiz" .
+
+att:Rest
+    at:relatedType <http://symbolicdata.org/autotool/Type/Algebraic_Graph-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_Graph-Quiz>, <http://symbolicdata.org/autotool/Type/Algebraic_Integer-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_Integer-Quiz>, <http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Direct>, <http://symbolicdata.org/autotool/Type/Algebraic_STGraph-Quiz>, <http://symbolicdata.org/autotool/Type/Palindrom-Direct> ;
+    a at:Heading ;
+    rdfs:label "Rest" .
+
+<http://symbolicdata.org/autotool/Type/Rewriting.Lambda.Lambda>
+    at:createCommand "$ Rewriting.Derive.make_fixed Lambda.Apply.For_Lambda" ;
+    a at:Type ;
+    rdfs:label "Rewriting.Lambda.Lambda" .
+
+<http://symbolicdata.org/autotool/Type/Rewriting.SRS.SRS>
+    at:createCommand "$ Rewriting.Derive.make_fixed Rewriting.SRS.Apply.For_SRS" ;
+    a at:Type ;
+    rdfs:label "Rewriting.SRS.SRS" .
+
+<http://symbolicdata.org/autotool/Type/Rewriting.TRS.Numerical>
+    at:createCommand "Rewriting.TRS.Numerical.make" ;
+    a at:Type ;
+    rdfs:label "Rewriting.TRS.Numerical" .
+
+<http://symbolicdata.org/autotool/Type/Rewriting.TRS.TRS>
+    at:createCommand "$ Rewriting.Derive.make_fixed Rewriting.TRS.Apply.For_TRS" ;
+    a at:Type ;
+    rdfs:label "Rewriting.TRS.TRS" .
+
+<http://symbolicdata.org/autotool/Type/Robots.Interface-Direct>
+    at:createCommand "Robots.Interface.make" ;
+    a at:Type ;
+    rdfs:label "Robots.Interface-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Robots.Interface-Quiz>
+    at:createCommand "Robots.Interface.qmake" ;
+    a at:Type ;
+    rdfs:label "Robots.Interface-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Robots.Inverse-Direct>
+    at:createCommand "Robots.Inverse.make" ;
+    a at:Type ;
+    rdfs:label "Robots.Inverse-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Robots.Inverse-Quiz>
+    at:createCommand "Robots.Inverse.qmake" ;
+    a at:Type ;
+    rdfs:label "Robots.Inverse-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Robots3.Interface-Direct>
+    at:createCommand "Robots3.Interface.make" ;
+    a at:Type ;
+    rdfs:label "Robots3.Interface-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Robots3.Interface-Quiz>
+    at:createCommand "Robots3.Interface.qmake" ;
+    a at:Type ;
+    rdfs:label "Robots3.Interface-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Robots3.Inverse-Direct>
+    at:createCommand "Robots3.Inverse.make" ;
+    a at:Type ;
+    rdfs:label "Robots3.Inverse-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Robots3.Inverse-Quiz>
+    at:createCommand "Robots3.Inverse.qmake" ;
+    a at:Type ;
+    rdfs:label "Robots3.Inverse-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/Rushhour.Central>
+    at:createCommand "Rushhour.Central.make" ;
+    a at:Type ;
+    rdfs:label "Rushhour.Central" .
+
+<http://symbolicdata.org/autotool/Type/SCS.Instance-Direct>
+    at:createCommand "SCS.Instance.make_fixed" ;
+    a at:Type ;
+    rdfs:label "SCS.Instance-Direct" .
+
+<http://symbolicdata.org/autotool/Type/SCS.Instance-Quiz>
+    at:createCommand "SCS.Instance.make_quiz" ;
+    a at:Type ;
+    rdfs:label "SCS.Instance-Quiz" .
+
+att:Solar_Lockout_modified
+    at:relatedType <http://symbolicdata.org/autotool/Type/Robots3.Interface-Direct>, <http://symbolicdata.org/autotool/Type/Robots3.Interface-Quiz>, <http://symbolicdata.org/autotool/Type/Robots3.Inverse-Direct>, <http://symbolicdata.org/autotool/Type/Robots3.Inverse-Quiz>, <http://symbolicdata.org/autotool/Type/Rushhour.Central> ;
+    a at:Heading ;
+    rdfs:label "Solar Lockout (modified)" .
+
+<http://symbolicdata.org/autotool/Type/Sortier.Median-Direct>
+    at:createCommand "Sortier.Median-Direct.make" ;
+    a at:Type ;
+    rdfs:label "Sortier.Median-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Sortier.Merge-Direct>
+    at:createCommand "Sortier.Merge-Direct.make" ;
+    a at:Type ;
+    rdfs:label "Sortier.Merge-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Sortier.Netz-Direct>
+    at:createCommand "Sortier.Netz-Direct.make" ;
+    a at:Type ;
+    rdfs:label "Sortier.Netz-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Sortier.Programm-Direct>
+    at:createCommand "Sortier.Programm-Direct.make" ;
+    a at:Type ;
+    rdfs:label "Sortier.Programm-Direct" .
+
+att:Sortiernetze
+    at:relatedType <http://symbolicdata.org/autotool/Type/Sortier.Median-Direct>, <http://symbolicdata.org/autotool/Type/Sortier.Merge-Direct>, <http://symbolicdata.org/autotool/Type/Sortier.Netz-Direct> ;
+    a at:Heading ;
+    rdfs:label "Sortiernetze" .
+
+att:Sortierprogramme
+    at:relatedType <http://symbolicdata.org/autotool/Type/Sortier.Programm-Direct> ;
+    a at:Heading ;
+    rdfs:label "Sortierprogramme" .
+
+<http://symbolicdata.org/autotool/Type/Specify.Inter>
+    at:createCommand "Specify.Inter.make" ;
+    a at:Type ;
+    rdfs:label "Specify.Inter" .
+
+att:String-Matching
+    at:relatedType <http://symbolicdata.org/autotool/Type/String_Matching.BM-Direct>, <http://symbolicdata.org/autotool/Type/String_Matching.BM-Quiz>, <http://symbolicdata.org/autotool/Type/String_Matching.KMP-Direct>, <http://symbolicdata.org/autotool/Type/String_Matching.KMP-Quiz> ;
+    a at:Heading ;
+    rdfs:label "String-Matching" .
+
+<http://symbolicdata.org/autotool/Type/String_Matching.BM-Direct>
+    at:createCommand "String_Matching.BM.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "String_Matching.BM-Direct" .
+
+<http://symbolicdata.org/autotool/Type/String_Matching.BM-Quiz>
+    at:createCommand "String_Matching.BM.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "String_Matching.BM-Quiz" .
+
+<http://symbolicdata.org/autotool/Type/String_Matching.KMP-Direct>
+    at:createCommand "String_Matching.KMP.Central.make_fixed" ;
+    a at:Type ;
+    rdfs:label "String_Matching.KMP-Direct" .
+
+<http://symbolicdata.org/autotool/Type/String_Matching.KMP-Quiz>
+    at:createCommand "String_Matching.KMP.Central.make_quiz" ;
+    a at:Type ;
+    rdfs:label "String_Matching.KMP-Quiz" .
+
+att:Struct_to_Goto
+    at:createCommand "Flow.Central.struct_to_goto_fixed" ;
+    a at:Type ;
+    rdfs:label "Struct_to_Goto" .
+
+att:Terme_Ersetzungssysteme
+    skos:narrower att:Kombinatorische_Logik, att:Lambda-Kalkuel, att:Termersetzung, att:Unifikation, att:Wortersetzung ;
+    a at:Heading ;
+    rdfs:label "Terme, Ersetzungssysteme" .
+
+att:Termersetzung
+    at:relatedType <http://symbolicdata.org/autotool/Type/RD-Quiz>, <http://symbolicdata.org/autotool/Type/Rewriting.TRS.Numerical>, <http://symbolicdata.org/autotool/Type/Rewriting.TRS.TRS> ;
+    a at:Heading ;
+    rdfs:label "Termersetzung" .
+
+att:Turing-Maschine_als_Akzeptor
+    at:relatedType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Turing-Maschine (als Akzeptor)" .
+
+<http://symbolicdata.org/autotool/Type/Type-Direct>
+    at:createCommand "Type-Direct.make" ;
+    a at:Type ;
+    rdfs:label "Type-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Type-Quiz>
+    at:createCommand "Type-Quiz.make" ;
+    a at:Type ;
+    rdfs:label "Type-Quiz" .
+
+att:Umformen_alt
+    at:relatedType <http://symbolicdata.org/autotool/Type/Boolean-Direct>, <http://symbolicdata.org/autotool/Type/Boolean-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Umformen (alt)" .
+
+att:Umformen_neu
+    at:relatedType <http://symbolicdata.org/autotool/Type/Boolean2-Direct>, <http://symbolicdata.org/autotool/Type/Boolean2-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Umformen (neu)" .
+
+att:Unifikation
+    at:relatedType <http://symbolicdata.org/autotool/Type/Unify.Main-Direct>, <http://symbolicdata.org/autotool/Type/Unify.Main-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Unifikation" .
+
+<http://symbolicdata.org/autotool/Type/Unify.Main-Direct>
+    at:createCommand "$ Unify.Main.make_fixed" ;
+    a at:Type ;
+    rdfs:label "Unify.Main-Direct" .
+
+<http://symbolicdata.org/autotool/Type/Unify.Main-Quiz>
+    at:createCommand "$ Unify.Main.make_quiz" ;
+    a at:Type ;
+    rdfs:label "Unify.Main-Quiz" .
+
+att:Verschluesselung
+    at:relatedType <http://symbolicdata.org/autotool/Type/Diffie_Hellman.Break>, <http://symbolicdata.org/autotool/Type/Diffie_Hellman-Quiz>, <http://symbolicdata.org/autotool/Type/RSA.Break>, <http://symbolicdata.org/autotool/Type/RSA-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Verschlüsselung" .
+
+att:Wortersetzung
+    at:relatedType <http://symbolicdata.org/autotool/Type/Rewriting.SRS.SRS> ;
+    a at:Heading ;
+    rdfs:label "Wortersetzung" .
+
+att:Zahlensysteme
+    at:relatedType <http://symbolicdata.org/autotool/Type/Number.Base-Direct>, <http://symbolicdata.org/autotool/Type/Number.Base-Quiz>, <http://symbolicdata.org/autotool/Type/Number.Float.From-Direct>, <http://symbolicdata.org/autotool/Type/Number.Float.From-Quiz>, <http://symbolicdata.org/autotool/Type/Number.Float.To-Direct>, <http://symbolicdata.org/autotool/Type/Number.Float.To-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Zahlensysteme" .
+
+att:Zahlentheorie
+    at:relatedType <http://symbolicdata.org/autotool/Type/Collatz.Inverse-Direct>, <http://symbolicdata.org/autotool/Type/Collatz.Inverse-Quiz>, <http://symbolicdata.org/autotool/Type/Collatz.Long-Direct>, <http://symbolicdata.org/autotool/Type/Collatz.Plain-Direct>, <http://symbolicdata.org/autotool/Type/Collatz.Plain-Quiz>, <http://symbolicdata.org/autotool/Type/Faktor.Euklid-Direct>, <http://symbolicdata.org/autotool/Type/Faktor.Euklid-Quiz>, <http://symbolicdata.org/autotool/Type/Faktor.Faktor-Direct>, <http://symbolicdata.org/autotool/Type/Faktor.Faktor-Quiz>, <http://symbolicdata.org/autotool/Type/Faktor.Inverse-Direct>, <http://symbolicdata.org/autotool/Type/Faktor.Inverse-Quiz>, <http://symbolicdata.org/autotool/Type/Faktor.Times-Direct>, <http://symbolicdata.org/autotool/Type/Faktor.Times-Quiz> ;
+    a at:Heading ;
+    rdfs:label "Zahlentheorie" .
+
+att:endliche_Automaten
+    skos:narrower att:Convert_To_NFA, att:DFA_Compress, att:Equiv_Challenge ;
+    a at:Heading ;
+    rdfs:label "endliche Automaten" .
+
+att:kurze_gemeinsame_Superfolge
+    at:relatedType <http://symbolicdata.org/autotool/Type/SCS.Instance-Direct>, <http://symbolicdata.org/autotool/Type/SCS.Instance-Quiz> ;
+    a at:Heading ;
+    rdfs:label "kurze gemeinsame Superfolge" .
+
+att:lange_gemeinsame_Teilfolge
+    at:relatedType <http://symbolicdata.org/autotool/Type/LCS.Instance-Direct>, <http://symbolicdata.org/autotool/Type/LCS.Instance-Quiz> ;
+    a at:Heading ;
+    rdfs:label "lange gemeinsame Teilfolge" .
+
+att:regulaere_Ausdruecke
+    at:relatedType <http://symbolicdata.org/autotool/Type/Convert_To_Exp-Direct>, <http://symbolicdata.org/autotool/Type/Convert_To_Exp-Quiz>, <http://symbolicdata.org/autotool/Type/Exp.Shortest_Missing>, <http://symbolicdata.org/autotool/Type/Exp_Smaller-Direct> ;
+    a at:Heading ;
+    rdfs:label "reguläre Ausdrücke" .
+

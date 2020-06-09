@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-Turing-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { lang = Power&#13;
+                 "ab" 3&#13;
+    , max_length = 21 , max_num = 20 , properties = [ ] , cut = 20000&#13;
+    , start = Turing&#13;
+                  { eingabealphabet = mkSet ".1" , arbeitsalphabet = mkSet "#.01"&#13;
+                  , leerzeichen = '#'&#13;
+                  , zustandsmenge = mkSet [ 0 , 1 , 2 , 3 , 4 , 7 ]&#13;
+                  , tafel = collect [ ( '0' , 0 , '1' , 1 , L )&#13;
+                                    , ( '0' , 1 , '1' , 2 , L ) , ( '0' , 2 , '1' , 3 , L )&#13;
+                                    , ( '0' , 3 , '1' , 0 , R ) , ( '0' , 4 , '1' , 7 , L )&#13;
+                                    , ( '1' , 0 , '1' , 2 , R ) , ( '1' , 1 , '1' , 1 , L )&#13;
+                                    , ( '1' , 2 , '0' , 4 , R ) , ( '1' , 3 , '1' , 3 , R )&#13;
+                                    , ( '1' , 4 , '0' , 0 , R )&#13;
+                                    ]&#13;
+                  , startzustand = 0 , endzustandsmenge = mkSet [ 7 ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Config.html#t%3AConfig"&gt;Turing.Config.Config&lt;/Link&gt;</doc_text>
+<signature>8f5d0669a4d2300f7361d1eb728500c2d44e3fec</signature>
+<description>Entwerfen Sie eine Turingmaschine, die die Sprache {www | w ist Wort aus {a,b}*} akzeptiert.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Boolean2-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>BIC&#13;
+    { formula_size = 5&#13;
+    , operators_in_instance = Binu&#13;
+                                  { binary = [ &amp;&amp; , || , -&gt; , &lt;-&gt; ] , unary = [ ]&#13;
+                                  , nullary = [ true , false ]&#13;
+                                  }&#13;
+    , constraints_for_solution = [ Operators&#13;
+                                       [ ! , || , &amp;&amp; ]&#13;
+                                 , Normalform Konjunktiv &#13;
+                                 ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Boolean2-Instance.html#t%3ABIC"&gt;Boolean2.Instance.BIC&lt;/Link&gt;</doc_text>
+<signature>4e0106a857ca722ea2c8227bc05ed3ae1c5e0fdb</signature>
+<description>Gesucht ist eine äquivalente Formel in KNF.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

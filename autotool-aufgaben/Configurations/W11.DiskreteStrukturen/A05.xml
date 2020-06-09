@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Boolean2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>BI&#13;
+    { formula = (a || b) &lt;-&gt; ((a || ! c) -&gt; b)&#13;
+    , constraints = [ Operators&#13;
+                          [ || , -&gt; ]&#13;
+                    ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Boolean2-Instance.html#t%3ABI"&gt;Boolean2.Instance.BI&lt;/Link&gt;</doc_text>
+<signature>4ef9b4bd5cd1876f703c184488783477615d5e19</signature>
+<description>&lt;pre&gt;&#13;
+Kodierung der aussagenlogischen Operatoren:&#13;
+1. ! für "nicht", einstellig&#13;
+2. &amp;&amp; für "und", zweistellig&#13;
+3. || für "oder", zweistellig&#13;
+4. -&gt; für "impliziert"/"wenn-dann", zweistellig&#13;
+5. &lt;-&gt; für "äquivalent mit"/"genau dann, wenn", zweistellig&#13;
+6. true für eine Tautologie (immer wahre Aussage)&#13;
+7. false für eine Kontradiktion (Widerspruch, immer falsche Aussage)&#13;
+&#13;
+Ggf. müssen Sie Klammerungen hinzufügen. Ohne Klammern gelten die üblichen Vorrangregeln.&#13;
+&#13;
+Bug bei Negation: Sie müssen ein Leerzeichen nach dem Negationszeichen ! lassen,&#13;
+da ansonsten ein Syntaxfehler angezeigt wird.&#13;
+Beispielsweise wird "!p" als Syntaxfehler angezeigt, Abhilfe schafft "! p".&#13;
+&lt;/pre&gt;</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

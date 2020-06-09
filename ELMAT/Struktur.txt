@@ -1,0 +1,21 @@
+Struktur dea Aufgabenpools:
+
+Die Verzeichnisstruktur gibt die Strukturierung der 933 Aufgaben wieder, jede
+von denen liegt als zip-Datei vor. 
+
+Dort gibt es ein imsmanifest.xml, in dem die Ressourcen im LOM-Format
+beschrieben sind.
+
+https://meta.wikimedia.org/wiki/IEEE_LOM
+https://en.wikipedia.org/wiki/Learning_object_metadata
+
+Das ist aber mit den RDF-Entwicklungen und insbesonderfe mit DublinCore nicht
+wirklich kompatibel, siehe
+
+http://www.ariadne.ac.uk/issue55/currier
+
+Um 2002 herum gab es Bemühungen, ein RDF binding des entsprechenden
+Datenmodells zu machen, siehe 
+
+http://kmr.nada.kth.se/static/ims/md-lomrdf.html
+http://www.diva-portal.se/smash/get/diva2:359445/FULLTEXT01.pdf

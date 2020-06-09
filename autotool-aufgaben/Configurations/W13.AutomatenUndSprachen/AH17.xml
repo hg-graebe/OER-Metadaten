@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-NPDA-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Make&#13;
+    { machine_desc = "Kellerautomat"&#13;
+    , source = Sampler&#13;
+                   { language = Gleich&#13;
+                                    "ab" [ 1 , 1 ]&#13;
+                   , num_samples = 50 , min_sample_length = 4 , max_sample_length = 20&#13;
+                   }&#13;
+    , cut = 300 , properties = [ ]&#13;
+    , start = NPDA&#13;
+                  { eingabealphabet = mkSet "ab" , kelleralphabet = mkSet "AX"&#13;
+                  , zustandsmenge = mkSet [ 0 , 1 ] , startzustand = 0&#13;
+                  , startsymbol = 'X'&#13;
+                  , akzeptiert = Leerer_Keller&#13;
+                  , transitionen = collect [ ( Just 'a' , 0 , 'A' , 0 , "AA" )&#13;
+                                           , ( Just 'a' , 0 , 'X' , 0 , "AX" )&#13;
+                                           , ( Just 'b' , 0 , 'A' , 1 , "" )&#13;
+                                           , ( Just 'b' , 1 , 'A' , 1 , "" )&#13;
+                                           ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Acceptor-Type2.html#t%3AType" &gt;Machine.Acceptor.Type2.Type&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Type.html#t%3ANPDA" &gt;NPDA.Type.NPDA&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AInt" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NPDA-Property.html#t%3AProperty" &gt;NPDA.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>17f6bdd4b8de843945ebb71f7413efc0b80dc579</signature>
+<description>Empfehlung: Lösen Sie die Aufgabe unmittelbar mit Kellerautomaten,&#13;
+anstatt z.B. eine Grammatik für die Sprache in einen Kellerautomaten umzuwandeln.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

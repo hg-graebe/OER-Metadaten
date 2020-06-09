@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/2-2>
+    at:Aufgabenstellung "Berechnung der Maximumfunktion mit While-Programm" ;
+    at:Aufgabentext """Konstruieren Sie eine Maschine, 
+die die Funktion [ x1 , x2 ] -> (x1 `max` x2) berechnet. 
+Die Maschine soll die folgenden Bedingungen erfüllen: 
+Builtins [ Copy ], No_While """ ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S11.Berechenbarkeit/2-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:signature "1327cc6c6fc3eb9da6174654b2754a3c68c79809" ;
+    a at:Config ;
+    rdfs:comment "Zwei Aufgaben, die erste hat eine Beschränkung der Bearbeitungszeit auf 6 Stunden. \"Maximum2\" enthält die gleiche Aufgabe wie \"Maximum\" und kann gelöst werden, falls die 6 Stunden abgelaufen sind. Es spielt keine Rolle für die Bewertung, ob \"Maximum\" oder \"Maximum2\" gelöst wurde." ;
+    rdfs:label "S11.Berechenbarkeit/2-2" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/2-4>
+    at:Aufgabenstellung "Arithmetische Berechnung der Funktion log2 x1" ;
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> log2 x1 berechnet! 
+Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ Plus , Minus , Times , Div , Mod ]""" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S11.Berechenbarkeit/2-4.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:signature "bc2623a0933c92f73ec36849404df3fcba3b8825" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/2-4" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/2-5>
+    at:Aufgabenstellung "Loop-Programm, das die Fibonacci-Funktion berechnet" ;
+    at:Aufgabentext """Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> fib x1 berechnet! 
+Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ ], No_While """ ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S11.Berechenbarkeit/2-5.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:signature "1b2319c66e229d160cc397ecf9eeb215b585ec6b" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/2-5" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/3-2>
+    at:Aufgabenstellung "Entwerfen Sie eine WHILE-Programm, das für alle natürlichen Zahlen den ganzen Anteil der Quadratwurzel der Zahl berechnet." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.RAM> ;
+    at:hasXMLFile "S11.Berechenbarkeit/3-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Entwerfen Sie eine WHILE-Programm, dass für alle natürlichen Zahlen den ganzen Anteil der Quadratwurzel der Zahl berechnet." ;
+    at:signature "b5924822f61aae85d719f691396e7fde4c2f0b2a" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/3-2" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/3-3>
+    at:Aufgabenstellung "Turingmaschine, die {www | w ist Wort aus {a,b}*} akzeptiert." ;
+    at:Aufgabentext """Entwerfen Sie eine Turingmaschine, 
+die die Sprache {www | w ist Wort aus {a,b}*} akzeptiert.""" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    at:hasXMLFile "S11.Berechenbarkeit/3-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Entwerfen Sie eine Turingmaschine, die die Sprache {www | w ist Wort aus {a,b}*} akzeptiert." ;
+    at:signature "8f5d0669a4d2300f7361d1eb728500c2d44e3fec" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/3-3" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/3-4>
+    at:Aufgabenstellung "Deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    at:hasXMLFile "S11.Berechenbarkeit/3-4.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Entwerfen Sie eine deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert." ;
+    at:signature "70843c335789b3efc911fd062870db8f9190b6d3" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/3-4" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/4-2>
+    at:Aufgabenstellung "Konstruieren Sie eine Turingmaschine für f(x) = x^2." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    at:hasXMLFile "S11.Berechenbarkeit/4-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Konstruieren Sie eine Turingmaschine für f(x) = x^2." ;
+    at:signature "8093ffed68931e0761e768cc6edec2d59a958925" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/4-2" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/4-3>
+    at:Aufgabenstellung "Konstruieren Sie eine Turingmaschine für f(x,y)=max(x,y)." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    at:hasXMLFile "S11.Berechenbarkeit/4-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Konstruieren Sie eine Turingmaschine für f(x,y)=max(x,y)." ;
+    at:signature "4b4f30548980a72c148998eb5d400d35343cfbbb" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/4-3" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/5-2>
+    at:Aufgabenstellung "Turingmaschine für die Sprache {w | w ist nicht vv für alle v} über dem Alphabet {a,b}." ;
+    at:Aufgabentext """Konstruieren Sie eine Turingmaschine 
+für die Sprache {w | w ist nicht vv für alle v} über dem Alphabet {a,b}.""" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Acceptor-Turing-Quiz> ;
+    at:hasXMLFile "S11.Berechenbarkeit/5-2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Konstruieren Sie eine Turingmaschine für die Sprache {w | w ist nicht vv für alle v} über dem Alphabet {a,b}." ;
+    at:signature "947316a8209a13aab385c487feb3f354813a8217" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/5-2" .
+
+<http://symbolicdata.org/autotool/Configuration/S11.Berechenbarkeit/5-3>
+    at:Aufgabenstellung "Konstruieren Sie eine deterministische Turingmaschine mit höchstens 4 Zuständen und \"dead-end\" Finalzuständen für f(x1,x2)=x1^x2." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasType <http://symbolicdata.org/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    at:hasXMLFile "S11.Berechenbarkeit/5-3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit> ;
+    at:remark "Konstruieren Sie eine deterministische Turingmaschine mit höchstens 4 Zuständen und \"dead-end\" Finalzuständen für f(x1,x2)=x1^x2." ;
+    at:signature "3391dde869ea0fd4ac637f3e9701b1767116e16f" ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit/5-3" .
+

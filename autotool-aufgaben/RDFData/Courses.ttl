@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://symbolicdata.org/autotool/Courses/>
+    a owl:Ontology ;
+    rdfs:label "Courses using Autotool" .
+
+<http://symbolicdata.org/autotool/Course/S10.Berechenbarkeit>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Berechenbarkeit" ;
+    at:numberOfParticipants "58" ;
+    at:numberOfExams "38" ;
+    a at:Course ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Berechenbarkeit\" von Prof. G. Brewka, Sommersemester 2010" .
+
+<http://symbolicdata.org/autotool/Course/S11.Berechenbarkeit>
+    at:designedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasTitle "Berechenbarkeit" ;
+    a at:Course ;
+    at:numberOfExams "47" ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Berechenbarkeit\" von Prof. Droste, Sommersemester 2011" .
+
+<http://symbolicdata.org/autotool/Course/W11.AutomatenUndSprachen>
+    at:designedBy atp:Goetze_Doreen ;
+    at:hasTitle "Automaten und Sprachen" ;
+    a at:Course ;
+    at:numberOfParticipants "81" ;
+    at:numberOfExams "71" ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Automaten und Sprachen\" bei Prof. Dr. Lohrey, Wintersemester 2011/12" .
+
+<http://symbolicdata.org/autotool/Course/W12.AutomatenUndSprachen>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Automaten und Sprachen" ;
+    at:numberOfParticipants "79" ;
+    at:numberOfExams "71" ;
+    a at:Course ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Automaten und Sprachen\" bei Prof. Dr. Brewka, Wintersemester 2012/13" .
+
+<http://symbolicdata.org/autotool/Course/W11.DiskreteStrukturen>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Diskrete Strukturen" ;
+    at:numberOfParticipants "65" ;
+    at:numberOfExams "55" ;
+    a at:Course ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Diskrete Strukturen\" von Prof. G. Brewka, Wintersemester 2011/12" .
+
+<http://symbolicdata.org/autotool/Course/S13.Berechenbarkeit>
+    at:designedBy atp:Loebe_Frank, atp:Baumann_Ringo  ;
+    at:numberOfParticipants "68" ;
+    at:numberOfExams "51" ;
+    at:hasTitle "Berechenbarkeit" ;
+    a at:Course ; 
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Berechenbarkeit\" von Prof. Droste, Sommersemester 2013" .
+
+<http://symbolicdata.org/autotool/Course/W13.AutomatenUndSprachen>
+    at:designedBy atp:Loebe_Frank, atp:Baumann_Ringo ;
+    at:numberOfParticipants "108" ;
+    at:numberOfExams "76" ;
+    at:hasTitle "Automaten und Sprachen" ;
+    a at:Course ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Übungen zum Kurs \"Automaten und Sprachen\" bei Prof. Dr. Brewka, Wintersemester 2013/14" .
+
+<http://symbolicdata.org/autotool/Course/S15.CPWaldmann>
+    at:designedBy atp:Waldmann_Johannes ;
+    at:numberOfParticipants "8" ;
+    at:hasTitle "Constraint Programming" ;
+    a at:Course ;
+    at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+    rdfs:label "Kurs \"Constraint Programming\" bei Prof. Dr. Waldmann, Sommersemester 2015" .
+
+<http://symbolicdata.org/autotool/Course/S15.Berechenbarkeit> 
+at:designedBy atp:Goetze_Doreen, atp:Waldmann_Johannes, atp:Weidner_Thomas ;
+at:hasTitle "Berechenbarkeit" ;
+at:mediumSuccess "3.6" ;
+at:numberOfExams "85" ;
+at:numberOfParticipants "36" ;
+at:teachedAt <http://symbolicdata.org/autotool/Uni.Leipzig/IFI> ;
+a at:Course ;
+rdfs:label "Übungen zum Kurs \"Berechenbarkeit\" von Prof. Waldmann, Sommersemester 2015" .

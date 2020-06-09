@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.RAM" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "RAM" , conditions = [ ] , arity = 1 , op = sqrt x1&#13;
+    , num_args = 20 , max_arg = 100 , cut = 50000&#13;
+    , checks = [ Builtins&#13;
+                     [ Plus , Minus , Times , Div , Mod ]&#13;
+               ]&#13;
+    , start = [ Inc x1&#13;
+              , While&#13;
+                    x1&#13;
+                    [ Loop&#13;
+                          x1&#13;
+                          [ Builtin&#13;
+                                { name = Minus , res = x1 , args = [ x2 , x1 ] }&#13;
+                          ]&#13;
+                    ]&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Property.html#t%3AProperty" &gt;RAM.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Type.html#t%3AStatement" &gt;RAM.Type.Statement&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>b5924822f61aae85d719f691396e7fde4c2f0b2a</signature>
+<description>Entwerfen Sie eine WHILE-Programm, dass für alle natürlichen Zahlen den ganzen Anteil der Quadratwurzel der Zahl berechnet.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

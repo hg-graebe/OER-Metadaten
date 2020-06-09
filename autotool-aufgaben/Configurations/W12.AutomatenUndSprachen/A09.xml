@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_NFA-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Quiz&#13;
+    { generate = From_Exp&#13;
+                     [ Alphabet&#13;
+                           (mkSet "ab")&#13;
+                     , Max_Size&#13;
+                           11&#13;
+                     , Simple&#13;
+                     ]&#13;
+    , solve = [ Alphabet&#13;
+                    (mkSet "ab")&#13;
+              , Sane , Deterministic , Minimal&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/NFA-Quiz.html#t%3AQuiz" &gt;NFA.Quiz.Quiz&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>9c8fac065827d9b9e2d8d53497bb53dc5eba598c</signature>
+<description>&lt;pre&gt;&#13;
+Vereinfachen Sie den Ausdruck, sofern möglich, bevor Sie mit dem Automaten beginnen.&#13;
+&lt;/pre&gt;</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>10,7,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

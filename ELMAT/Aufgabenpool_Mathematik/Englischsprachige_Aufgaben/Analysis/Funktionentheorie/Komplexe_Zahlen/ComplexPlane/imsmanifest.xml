@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+	xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd 
+											http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1p1.xsd 
+											http://www.imsglobal.org/xsd/imsqti_metadata_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1p1.xsd
+											http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"
+	identifier="manifestID">
+	<metadata>
+		<schema>QTIv2.1 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+  </metadata>
+	<organizations />
+	<resources>
+		<resource identifier="id7e8fb199_48e1_496d_ab4c_adbafaeea304" type="imsqti_item_xmlv2p1" href="id7e8fb199-48e1-496d-ab4c-adbafaeea304.xml"><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general ><identifier><entry>id7e8fb199-48e1-496d-ab4c-adbafaeea304</entry></identifier><title><string language="de">ComplexPlane</string></title><language></language><description><string language="de">complex plane</string></description><keyword><string language="de">complex plane</string></keyword></general><lifeCycle ><contribute><date><dateTime>2014-11-11T09:39:26</dateTime></date><role><source>LOMv1.0</source><value>author</value></role><entity>BEGIN:VCARD&#xD;
+VERSION:4.0&#xD;
+N;LANGUAGE=de:Hielscher;Ralf;;;&#xD;
+FN:Ralf Hielscher&#xD;
+EMAIL:ralf.hielscher@mathematik.tu-chemnitz.de&#xD;
+PRODID:ONYX Editor 5.9.10&#xD;
+END:VCARD&#xD;
+</entity></contribute></lifeCycle><educational ><learningResourceType><source>QTIv2.1</source><value>AssessmentItem</value></learningResourceType><difficulty><source>LOMv1.0</source><value></value></difficulty><typicalLearningTime><duration></duration></typicalLearningTime></educational><qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1"><interactionType >matchInteraction</interactionType><toolName >ONYX Editor</toolName><toolVersion >5.6.1</toolVersion><toolVendor >BPS Bildungsportal Sachsen GmbH</toolVendor></qtiMetadata></lom></metadata><file href="id7e8fb199-48e1-496d-ab4c-adbafaeea304.xml" /><file href="media/medium8915659606440679089figure-1.1.png" /><file href="media/medium2764891840234746450figure-1.2.png" /><file href="media/medium5129216994067518350figure-1.3.png" /><file href="media/medium3315228438628817527figure-1.4.png" /><file href="media/medium6700384107778691042figure-1.5.png" /><file href="media/medium5017238691686082311figure-1.6.png" /><file href="media/medium5760456497808054853figure-1.7.png" /><file href="media/medium4785300153915614166figure-1.8.png" /><file href="media/medium2985891973231792184figure-1.9.png" /></resource>
+	</resources>
+</manifest>

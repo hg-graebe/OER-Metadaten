@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://symbolicdata.org/autotool/People/>
+    a owl:Ontology ;
+    rdfs:label "People teaching Courses using Autotool" .
+
+atp:Goetze_Doreen
+    a foaf:Person ; org:memberOf <http://symbolicdata.org/autotool/UniLeipzig/IFI> ;
+    foaf:name "Heusel, Doreen" .
+
+atp:Loebe_Frank
+    a foaf:Person ; org:memberOf <http://symbolicdata.org/autotool/UniLeipzig/IFI> ;
+    foaf:name "Loebe, Frank" .
+
+atp:Baumann_Ringo
+    a foaf:Person ; org:memberOf <http://symbolicdata.org/autotool/UniLeipzig/IFI> ;
+    foaf:name "Baumann, Ringo" .
+
+atp:Weidner_Thomas
+    a foaf:Person ; org:memberOf <http://symbolicdata.org/autotool/UniLeipzig/IFI> ;
+    foaf:name "Weidner, Thomas" .
+
+atp:Waldmann_Johannes
+    a foaf:Person ; org:memberOf <http://symbolicdata.org/autotool/HTWKLeipzig/IMN> ;
+    foaf:name "Waldmann, Johannes" .
+
+<http://symbolicdata.org/autotool/UniLeipzig/IFI> a org:Organization ; 
+skos:prefLabel  "Uni Leipzig, Institut für Informatik" .
+
+<http://symbolicdata.org/autotool/HTWKLeipzig/IMN> a org:Organization ; 
+skos:prefLabel  "HTWK Leipzig, Fachbereich IMN" .

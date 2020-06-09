@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Resolution-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { num_variables = 5&#13;
+    , literals_per_clause_bounds = ( 2&#13;
+                                   , 3 )&#13;
+    , target = Empty &#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/Resolution-Config.html#t:Config"&gt;Config&lt;/Link&gt;</doc_text>
+<signature>584c46339ac2619422994cfaf7369b0bf52a3083</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

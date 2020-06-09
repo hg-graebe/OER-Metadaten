@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Convert_To_Exp-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>( Convert&#13;
+      { name = Just&#13;
+                   [ " der die Sprache des folgenden Automaten akzeptiert"&#13;
+                   , "(Überführungsfunktion, -&gt; kennzeichnet Startzustand, * Endzustände):"&#13;
+                   , " " , "      |   a     b"&#13;
+                   , "   -----------------"&#13;
+                   , "-&gt; 1  |  {2}   {3}"&#13;
+                   , "   2  |  {2}   {1}"&#13;
+                   , "   3  |  {2}   {3}"&#13;
+                   ]&#13;
+      , input = NFA (NFA { alphabet = mkSet "ab"&#13;
+                         , states = mkSet [ 1 , 2 , 3 ]&#13;
+                         , starts = mkSet [ 1 ]&#13;
+                         , finals = mkSet [ 1 , 3 ]&#13;
+                         , trans = collect [&#13;
+  ( 1 , 'a' , 2 ) , ( 1 , 'b' , 3 )                                           , ( 2 , 'a' , 2 ) , ( 2 , 'b' , 1 )&#13;
+, ( 3 , 'a' , 2 ) , ( 3 , 'b' , 3 )        ]&#13;
+                         })&#13;
+      }&#13;
+, [ Simple&#13;
+  , Alphabet&#13;
+        (mkSet "ab")&#13;
+  , AllowedKeys&#13;
+        (mkSet [ "Empty" , "Eps" ])&#13;
+  , Max_Size 8&#13;
+  ]&#13;
+)</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Convert-Type.html#t%3AConvert" &gt;Convert.Type.Convert&lt;/Link &gt;&lt;Text &gt;, &lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Exp-Property.html#t%3AProperty" &gt;Exp.Property.Property&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>8084d69ed04bc077f7fff3e9aa148947f50cb0f7</signature>
+<description>Sie benötigen hier ein unkonventionelles Herangehen. Es handelt sich erneut um den Automaten aus der schriftlichen Hausaufgabe H4.1. Überlegen Sie sich anhand des bisherigen Vorlesungsstoffs eine Kombination von Verfahren/Techniken, um einen möglichst kurzen regulären Ausdruck für den Automaten zu ermitteln.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Acceptor-Turing-Quiz" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { lang = Pali "ab"&#13;
+    , max_length = 25 , max_num = 100&#13;
+    , properties = [ Det ] , cut = 500&#13;
+    , start = Turing&#13;
+      { eingabealphabet = mkSet "ab" , arbeitsalphabet = mkSet "ab$#"&#13;
+      , leerzeichen = '#'&#13;
+      , zustandsmenge = mkSet [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ]&#13;
+, tafel = collect&#13;
+[ ( 'a' , 0 , 'a' , 0 , R ) , ( 'a' , 0 , '$' , 1 , O )&#13;
+, ( '#' , 1 , '#' , 0 , L ) , ( 'b' , 1 , 'a' , 2 , L )&#13;
+, ( 'a' , 2 , 'b' , 4 , R )&#13;
+, ( 'b' , 4 , '#' , 4 , O )&#13;
+]&#13;
+      , startzustand = 0 , endzustandsmenge = mkSet [ 2 , 6 ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Config.html#t%3AConfig"&gt;Turing.Config.Config&lt;/Link&gt;</doc_text>
+<signature>f3bbef6f4c5e579095e820cee0852d1433b16735</signature>
+<description>Entwerfen Sie eine deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert.&#13;
+(Ein Wort w ist ein Palindrom, wenn w rückwärts gelesen ebenfalls w ergibt.)</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

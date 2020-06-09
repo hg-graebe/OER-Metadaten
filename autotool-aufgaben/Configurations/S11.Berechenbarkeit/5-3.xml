@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.Turing-Maschine (als Computer)" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "Turing-Maschine (als Computer)" , conditions = [ ]&#13;
+    , arity = 2 , op = x1 ^ x2 , num_args = 10 , max_arg = 5&#13;
+    , cut = 200000&#13;
+    , checks = [ Sane , Det , Final_States_Are_Dead&#13;
+               , Max_Number_Of_States&#13;
+                     4&#13;
+               ]&#13;
+    , start = Turing&#13;
+                  { eingabealphabet = mkSet ".1" , arbeitsalphabet = mkSet "#.01"&#13;
+                  , leerzeichen = '#' , zustandsmenge = mkSet [ 0 , 1 , 2 , 3 ]&#13;
+                  , tafel = collect [ ( '#' , 1 , '#' , 2 , O )&#13;
+                                    , ( '.' , 0 , '1' , 1 , L ) , ( '1' , 0 , '1' , 0 , R )&#13;
+                                    , ( '1' , 1 , '1' , 1 , L )&#13;
+                                    ]&#13;
+                  , startzustand = 0 , endzustandsmenge = mkSet [ 3 ]&#13;
+                  }&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Property.html#t%3AProperty" &gt;Turing.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Turing-Type.html#t%3ATuring" &gt;Turing.Type.Turing&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AChar" &gt;Char&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/GHC-Types.html#t%3AInt" &gt;Int&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>3391dde869ea0fd4ac637f3e9701b1767116e16f</signature>
+<description>Konstruieren Sie eine deterministische Turingmaschine mit höchstens 4 Zuständen und "dead-end" Finalzuständen für f(x1,x2)=x1^x2.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="DPLLT-Direct" type_scoring="n"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Instance&#13;
+    { modus = Modus&#13;
+          { require_complete_propagation = False&#13;
+          , decisions_must_be_negative = True&#13;
+          , clause_learning = False&#13;
+          , variable_elimination = False &#13;
+          }&#13;
+    , cnf = [ [ p , q , r ]&#13;
+            , [ ! p , 0 &lt;= + x + y ]&#13;
+            , [ q , ! r ]&#13;
+            , [ p , ! q , r , 0 &lt;= -1 * x ]&#13;
+            , [ ! q , r ] ]&#13;
+    , max_solution_length = Nothing &#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/DPLLT-Top.html#t:Instance"&gt;Instance&lt;/Link&gt;</doc_text>
+<signature>3e5d75a2ef9eb81b0281397340ddaf502b74e9fe</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints/>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig - Nightly (Nur zum Testen!)" version="0.0.0"/>
+</autotoolnode>

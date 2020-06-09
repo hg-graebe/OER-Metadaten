@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.RAM" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config&#13;
+    { name = "RAM" , conditions = [ ] , arity = 1 , op = log2 x1&#13;
+    , num_args = 15 , max_arg = 1000 , cut = 10000&#13;
+    , checks = [ Builtins&#13;
+                     [ Plus , Minus , Times , Div , Mod ]&#13;
+               ]&#13;
+    , start = [ Inc x1&#13;
+              , While&#13;
+                    x1&#13;
+                    [ Loop&#13;
+                          x1&#13;
+                          [ Builtin&#13;
+                                { name = Minus , res = x1 , args = [ x2 , x1 ] }&#13;
+                          ]&#13;
+                    ]&#13;
+              ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Property.html#t%3AProperty" &gt;RAM.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Type.html#t%3AStatement" &gt;RAM.Type.Statement&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>bc2623a0933c92f73ec36849404df3fcba3b8825</signature>
+<description/>
+</taskconfiguration>
+<configuration>
+<scorepoints>3</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

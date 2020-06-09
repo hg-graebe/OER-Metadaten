@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autotoolnode>
+<tasktype type_name="Machine.Numerical.RAM" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>Config { name = "RAM" , conditions = [ ] , arity = 3&#13;
+       , op = ((x1 `max` x2) `max` x3)&#13;
+       , num_args = 20 , max_arg = 20 , cut = 50000&#13;
+       , checks = [ Builtins [ Plus , Minus , Times , Div , Mod , Copy ] ]&#13;
+       , start = [ Inc x1&#13;
+                 , While x1&#13;
+                        [ Builtin { name = Minus , res = x1 , args = [ x2 , x1 ] } ]&#13;
+                 ]&#13;
+       }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Beside &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Machine-Numerical-Config.html#t%3AConfig" &gt;Machine.Numerical.Config.Config&lt;/Link &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Property.html#t%3AProperty" &gt;RAM.Property.Property&lt;/Link &gt;&lt;Text &gt;)&lt;/Text &gt;&lt;Text &gt;(&lt;/Text &gt;&lt;Text &gt;[&lt;/Text &gt;&lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/RAM-Type.html#t%3AStatement" &gt;RAM.Type.Statement&lt;/Link &gt;&lt;Text &gt;]&lt;/Text &gt;&lt;Text &gt;)&lt;/Text&gt;&lt;/Beside&gt;</doc_text>
+<signature>31f0a8392543a1a03499b8187aa81ee6b537b8bd</signature>
+<description>vgl. Doku zu WHILE-Programmen im Autotool und deren Builtins unter&lt;br /&gt;&#13;
+&lt;a href="https://wiki.imise.uni-leipzig.de/Groups/ISYS/Public/Lehre/AutotoolDoku#h5506-29" target="_blank"&gt;https://wiki.imise.uni-leipzig.de/Groups/ISYS/Public/Lehre/AutotoolDoku#h5506-29&lt;/a&gt;</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

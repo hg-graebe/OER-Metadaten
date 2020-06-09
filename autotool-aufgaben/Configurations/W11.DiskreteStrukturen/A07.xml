@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autotoolnode>
+<tasktype type_name="Boolean2-Direct" type_scoring="i"/>
+<taskconfiguration is_altered="true">
+<auth_comment/>
+<conf_text>BI&#13;
+    { formula = !((p -&gt; !(q -&gt; r))-&gt; !(p || q || r))&#13;
+    , constraints = [ Operators&#13;
+                          [ ! , || , &amp;&amp; ]&#13;
+                    , Normalform Konjunktiv&#13;
+                    ]&#13;
+    }</conf_text>
+<doc_text>&lt;?xml version='1.0' ?&gt; &lt;Link href="http://autolat.imn.htwk-leipzig.de/haddock/world/Boolean2-Instance.html#t%3ABI"&gt;Boolean2.Instance.BI&lt;/Link&gt;</doc_text>
+<signature>29175ef9ca2c5cd895bbf1ea97264c1447fe90de</signature>
+<description>Gesucht ist eine äquivalente Formel in Konjunktiver Normalform.</description>
+</taskconfiguration>
+<configuration>
+<scorepoints>20,15,10,7,6,5,4,3,2,1</scorepoints>
+</configuration>
+<server_conn name="Autotool Server HTWK Leipzig" version="0.2.0"/>
+</autotoolnode>

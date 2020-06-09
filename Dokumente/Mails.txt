@@ -1,0 +1,136 @@
+
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: ZUM Metadaten
+Datum: Sun, 26 Jun 2016 21:22:16 +0200
+Von: Hans-Gert Gräbe <graebe@informatik.uni-leipzig.de>
+An: Karl-Otto Kirst <post@karl-kirst.de>, graebe@informatik.uni-leipzig.de
+Kopie (CC): Johannes Schmidt - idexe.webdesign <info@idexe-design.de>
+
+Lieber Herr Kirst,
+
+leider bin ich noch nicht sehr viel weitergekommen, aber hier wenigstens ein
+kleiner Zwischenbericht.  Ich habe zunächst einmal ein paar relevante Daten aus
+verschiedenen Quellen in einem Repo zusammengetragen und unter
+
+http://pcai042.informatik.uni-leipzig.de/~graebe/OER-Demo/
+
+eine erste kleine Demo zusammengeschoben, die zeigt, wie man die
+KoSemNet-Datenbasis http://lsgm.uni-leipzig.de/KoSemNet/rdf/ nutzen kann, um
+remote eine Übersicht aufzubauen. Das ist eher technisch und soll hier zunächst
+nicht weiter besprochen werden. Allerdings ist hier grob ein ähnlicher
+Sammelprozess angedacht wie er etwa bei edutags.de durch die Nutzer getriggert
+wird. Was Vergleichbares - nicht über die Nutzer gehend, sondern über den
+Anbieter - soll Herr Schmidt (im CC) im Rahmen seiner Masterarbeit machen.
+
+Bei edutags.de ist, wie ich gesehen habe, die ZUM gut gelistet, allerdings
+scheint die Qualität der Links teilweise problematisch zu sein. Ein paar Gründe
+dafür und für einen Datenaustausch zwischen lokalen Plattformen habe ich in
+angehängten kleinen Text begonnen zu diskutieren. Vielleicht ergeben sich da
+aus Ihrer Sicht schon Anmerkungen.
+
+Mit freundlichen Grüßen,
+Hans-Gert Gräbe
+
+-----------------------------------------------
+Telefonat nach dem 18.5. mit Karl-Otto Kirst.
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Re: Nachtrag zu ecle16
+Datum: 	Thu, 28 Apr 2016 22:15:31 +0200
+Von: 	Karl-Otto Kirst <post@karl-kirst.de>
+An: 	Hans-Gert Gräbe <graebe@informatik.uni-leipzig.de>
+Kopie (CC): 	Mandy Schütze <mandy.schuetze@gmx.net>
+
+Hallo Gert,
+
+ich habe mitgelesen.
+
+Können wir uns in den nächsten Tagen mal telefonisch kurzschließen? ... 
+
+Beste Grüße
+Karl
+
+-------- Weitergeleitete Nachricht --------
+Am 28.04.2016 um 22:10 schrieb M. Schütze <mandy.schuetze@gmx.net>:
+
+Hallo Gert,
+
+herzlichen Dank für deine Erinnerung. Ich lasse Karl Kirst mitlesen, der sich
+um solche Dinge kümmert. Ihr nehmt einfach Kontakt zueinander auf und arbeitet
+gemeinsam weiter :-)
+
+viele Grüße,
+Mandy
+
+—————————————————
+1. Vorsitzende der ZUM e.V.
+www.zum.de <http://www.zum.de/
+twitter.com/ZUMTEAM <http://twitter.com/ZUMTEAM
+facebook.de/ZUM.de <http://facebook.de/ZUM.de
+flattr.com/profile/zumteam <http://flattr.com/profile/zumteam
+————————————————
+
+-------- Weitergeleitete Nachricht --------
+Am 17.04.2016 um 12:16 schrieb Hans-Gert Gräbe 
+<graebe@informatik.uni-leipzig.de>:
+
+Hallo Mandy, ich schicke das mal wie auf der ecle16 besprochen weiter, siehe
+Punkt 4) (als Aufhänger, gern weitere Ideen).
+
+Viele Grüße,
+Hans-Gert
+
+-------- Weitergeleitete Nachricht --------
+Betreff: Nachtrag zu ecle16
+Datum: Sun, 17 Apr 2016 12:00:45 +0200
+Von: Hans-Gert Gräbe <graebe@informatik.uni-leipzig.de>
+An: ... info@zum.de , 
+Johannes Schmidt - idexe.webdesign <info@idexe-design.de>
+
+Hallo allerseits,
+
+ich habe ein paar Anmerkungen zu OER-Metadaten in den Etherpad unter
+
+https://ecle16.educamps.org/session/datenbank-digitale-bildung-fuer-gefluechtete/
+
+Hatte ich auch mit Thomas Hoyer diskutiert, aber da habe ich keine
+E-Mail-Adresse.
+
+Ich würde gern als nächste Schritte in Richtung OER-Metadaten
+
+1) mit den Sachen unter http://pcai003.informatik.uni-leipzig.de/kosemnet/ nach
+http://oer.uni-leipzig.de <http://oer.uni-leipzig.de/ umziehen und dort - das
+dort installierte Wordpress würde das erst einmal nicht tangieren - und dort
+eine schlanke php-basierte Info-Site wie unter http://leipzig-data.de/info/ zu
+den bisherigen Projekten aufbauen.
+
+Wie's prinzipiell technisch geht ist bei github zu finden
+https://github.com/LeipzigData/web/tree/master/info. Wenn einverstanden, dann
+müsste ich mit einem Portal-Admin (mit Zugang auf den Account) klären, wie dort
+Virtuoso und OntoWiki installiert werden können.
+
+2) würde ich mir gern die Excel-Tabelle von Jördis anschauen und versuchen,
+daraus sinnvolles RDF zu machen.
+
+3) genauso würde ich mir unter diesem Aspekt gern mal das Material auf
+oer.uni-leipzig.de <http://oer.uni-leipzig.de/ anschauen - die gestern gezeigte
+Übersicht finde ich leider nicht.
+
+4) Im Etherpad wird auf http://wikis.zum.de/willkommen/Materialien/Apps
+hingewiesen, auch da eine Tabellendarstellung, die vielleicht nicht nur als
+Webtabelle existiert??
+
+5) Zusammengehen mit EduTags war eine spannende Idee, würde ich gern auf
+längere Sicht verfolgen. Meine Fragen dazu am Ende des Etherpads.
+
+So weit mal eine erste Bilanz nach einem halben spannenden Wochenende,
+dessen zweiter Teil nun den "Pflichtaufgaben" zu widmen ist.
+
+Mit freundlichen Grüßen,
+Hans-Gert Gräbe
+
+
+

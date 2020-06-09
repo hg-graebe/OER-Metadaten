@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+	xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd 
+											http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1p1.xsd 
+											http://www.imsglobal.org/xsd/imsqti_metadata_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1p1.xsd
+											http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"
+	identifier="manifestID">
+	<metadata>
+		<schema>QTIv2.1 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+  </metadata>
+	<organizations />
+	<resources>
+		<resource identifier="idce30053e_dd6d_4ff8_8327_a60b9251e38e" type="imsqti_item_xmlv2p1" href="idce30053e-dd6d-4ff8-8327-a60b9251e38e.xml"><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general ><identifier><entry>idce30053e-dd6d-4ff8-8327-a60b9251e38e</entry></identifier><title><string language="de">Teilaufgabe Termumformung 1</string></title><description><string language="de">Teilaufgabe zur Aufgabenstellung: Geben Sie eine korrekte Vereinfachung der folgenden Terme an:</string></description></general><lifeCycle ><contribute><date><dateTime>2015-01-09T15:03:42</dateTime></date><role><source>LOMv1.0</source><value>author</value></role><entity>BEGIN:VCARD&#xD;
+VERSION:4.0&#xD;
+N;LANGUAGE=de:Kalmes;Thomas;;;&#xD;
+FN:Thomas Kalmes&#xD;
+EMAIL:thomas.kalmes@mathematik.tu-chemnitz.de&#xD;
+PRODID:ONYX Editor 5.9.12&#xD;
+END:VCARD&#xD;
+</entity></contribute></lifeCycle><educational ><learningResourceType><source>QTIv2.1</source><value>AssessmentItem</value></learningResourceType></educational><qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1"><interactionType >choiceInteraction</interactionType><toolName >ONYX Editor</toolName><toolVersion >5.9.12</toolVersion><toolVendor >BPS Bildungsportal Sachsen GmbH</toolVendor></qtiMetadata></lom></metadata><file href="idce30053e-dd6d-4ff8-8327-a60b9251e38e.xml" /></resource>
+	</resources>
+</manifest>

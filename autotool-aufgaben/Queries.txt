@@ -1,0 +1,23 @@
+Matching von Ontology und at:hasType
+
+PREFIX at: <http://symbolicdata.org/autotool/Model/> 
+select ?a ?l ?as
+from <http://symbolicdata.org/autotool/Aufgabentypen/>
+from <http://symbolicdata.org/autotool/Configurations/>
+where {
+ ?a a at:Config ; at:hasType ?i .
+optional { ?a at:Aufgabenstellung ?as . }
+optional { ?i a at:Type; rdfs:label ?l . }
+} order by ?a
+
+# -----------------------------------------
+# Extrahiere Beschreibungen einzelner Kurse in separate RDF-Dateien.
+
+PREFIX at: <http://symbolicdata.org/autotool/Model/> 
+construct { ?a ?b ?c . }
+from <http://symbolicdata.org/autotool/Configurations/>
+where {
+ ?a a at:Config; ?b ?c .
+filter regex(?a, "S10.Berechenbarkeit")
+}
+

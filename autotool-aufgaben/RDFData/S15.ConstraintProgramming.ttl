@@ -1,0 +1,192 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://symbolicdata.org/autotool/Model/> .
+@prefix atp: <http://symbolicdata.org/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A1.1> a at:Config;
+  rdfs:label "A1.1";
+    at:Aufgabentext """Gesucht ist eine Formel G in konjunktiver Normalform, die äquivalent ist zu F:
+    (a <-> b) <-> (c <-> d) 
+mit  size(G) <=  100
+G darf zusätzliche Variablen enthalten, über diese wird existentiell quantifiziert. """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A1.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91381614908604";
+  at:signature "3bbb3cfd3565891ee2bdfb197c6ebdb24ca0ce32";
+  at:remark """Bsp. für CNF-Notation:   a && (b || not c)""";
+  at:hasType <http://symbolicdata.org/autotool/Type/CNF_Optimize-Direct> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A1.2> a at:Config;
+  rdfs:label "A1.2";
+    at:Aufgabentext """Gesucht ist eine Formel G in konjunktiver Normalform, die äquivalent ist zu F:
+    (r <-> not (x <-> y)) && (c <-> x && y)
+mit  size(G) <=  100
+G darf zusätzliche Variablen enthalten, über diese wird existentiell quantifiziert. """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A1.2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91381614965118";
+  at:signature "9a5bcdfa0d5c560449402a991cb1e904b064d4be";
+  at:hasType <http://symbolicdata.org/autotool/Type/CNF_Optimize-Direct> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A1.3> a at:Config;
+  rdfs:label "A1.3";
+    at:Aufgabentext """Gesucht ist ein aussagenlogischer Ausdruck, der äquivalent ist zu:
+    t <-> (a <-> b)
+(die Baumstruktur dieses Ausdrucks ist:
+    <->
+    |
+    +- <->
+    |  |
+    |  +- b
+    |  |
+    |  `- a
+    |
+    `- t)
+und diese Bedingungen erfüllt:
+    [ Normalform    Konjunktiv, Operators    [ ! , || , && ] ] """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A1.3.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91381615022476";
+  at:signature "a5a965ddcc9f62c82a5098327df3281ef63d5e92";
+  at:hasType <http://symbolicdata.org/autotool/Type/Boolean2-Direct> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A2.1> a at:Config;
+  rdfs:label "A2.1";
+    at:Aufgabentext """Gesucht ist eine vollständige DPLL-Rechnung mit höchstens 12 Schritten mit diesen Eigenschaften:
+    Modus
+        { require_complete_propagation = False
+        , decisions_must_be_negative = True
+        , clause_learning = False
+        , variable_elimination = False 
+        }
+für diese Formel:
+    [ [ -1 , 2 , -3 , -4 ]
+    , [ -1 , 4 ]
+    , [ -1 , -2 , 3 , -4 ]
+    , [ -3 , -4 ]
+    , [ 1 , -2 , -3 , -4 ]
+    , [ 2 , -3 , 4 ]
+    , [ -1 , 2 , 3 , -4 ]
+    , [ 1 , -2 , 3 , -4 ]
+    , [ 1 , -2 ] , [ 1 , 2 , 3 ] ] """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A2.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133641234";
+  at:signature "d1064266d219a65fa1e5e410575eafa13136fc16";
+  at:hasType <http://symbolicdata.org/autotool/Type/DPLL-Quiz> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A2.2> a at:Config;
+  rdfs:label "A2.2";
+    at:Aufgabentext """Gesucht ist eine vollständige DPLL-Rechnung mit höchstens 13 Schritten mit diesen Eigenschaften:
+    Modus
+        { require_complete_propagation = False
+        , decisions_must_be_negative = True
+        , clause_learning = True
+        , variable_elimination = False 
+        }
+für diese Formel:
+    [ [ -1 , 2 , -3 , -4 ]
+    , [ 3 , 4 ] , [ 1 , 2 , -3 ]
+    , [ -2 , -3 ] , [ -1 , 4 ]
+    , [ 1 , -2 , 3 ]
+    , [ -1 , 3 , -4 ]
+    , [ -1 , 2 , -3 , 4 ]
+    , [ 1 , -3 , 4 ] , [ 1 , 2 , 3 ]
+    ] """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A2.2.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133641608";
+  at:signature "d0041d8add318267e880235a927b93ef88aa54d6";
+  at:hasType <http://symbolicdata.org/autotool/Type/DPLL-Quiz> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A3.1> a at:Config;
+  rdfs:label "A3.1";
+    at:Aufgabentext """Gesucht ist eine Resolutions-Ableitung für die Klausel
+    False
+aus der Klauselmenge
+    0 : ! e || b
+    1 : ! a || ! b
+    2 : ! d || a || ! b
+    3 : e || b
+    4 : ! d || ! e || a
+    5 : e || a || c
+    6 : d || ! e || ! b
+    7 : ! d || b || c
+    8 : ! d || ! b || c
+    9 : e || c
+    10 : a || ! b || c
+    11 : ! e || ! a
+    12 : ! b || ! c
+    13 : ! e || a || ! c
+    14 : ! d || a || c
+    15 : ! e || ! b || c """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A3.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133705149";
+  at:signature "584c46339ac2619422994cfaf7369b0bf52a3083";
+  at:hasType <http://symbolicdata.org/autotool/Type/Resolution-Quiz> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A4.1> a at:Config;
+  rdfs:label "A4.1";
+    at:Aufgabentext """Gesucht ist ein ROBDD
+mit der Variablenordnung
+    [ p , q , r , s ]
+für die Funktion
+    not not not not ((q && q <-> p) <-> p) <-> (r && p <-> s) """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A4.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133732498";
+  at:signature "92d7502f0897be929087ec23351f84fcf6e6ea88";
+  at:remark """Operatorpräzedenzen: siehe http://autotool.imn.htwk-leipzig.de/docs/autotool-collection/src/Boolean-Op.html""";
+  at:hasType <http://symbolicdata.org/autotool/Type/Construct_BDD-Quiz> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A5.1> a at:Config;
+  rdfs:label "A5.1";
+    at:Aufgabentext """Assign nonnegative integers to variables
+such that the value of the polynomial is strictly positive:
+    (k+2)*(1-(w*z+h+j-q)^2-((g*k+2*g+k+1)*(h+j)+h-z)^2-(2*n+p+q+z-e)^2-(16*(k+1)^3*(k+2)*(n+1)^2+1-f^2)^2-(e^3*(e+2)*(a+1)^2+1-o^2)^2
+    -((a^2-1)*y^2+1-x^2)^2-(16*r^2*y^4*(a^2-1)+1-u^2)^2-(((a+u^2*(u^2-a))^2-1)*(n+4*d*y)^2+1-(x+c*u)^2)^2-(n+l+v-y)^2
+    -((a^2-1)*l^2+1-m^2)^2-(a*i+k+1-l-i)^2-(p+l*(a-n-1)+b*(2*a*n+2*a-n^2-2*n-2)-m)^2-(q+y*(a-p-1)+s*(2*a*p+2*a-p^2-2*p-2)-x)^2
+    -(z+p*l*(a-p)+t*(2*a*p-p^2-1)-p*m)^2) """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A5.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133863389";
+  at:signature "af260b94c0dce2a4e2a78c92e0a9937e7d7eda85";
+  at:remark """Neuer Aufgabentyp. Wahrscheinlichkeit für Tippfehler ist über 0. Bitte mit Original vergleichen. http://primes.utm.edu/glossary/xpage/MatijasevicPoly.html. 
+Quelltext der Aufgabe: http://autolat.imn.htwk-leipzig.de/gitweb/?p=tool;a=blob;f=collection/src/Polynomial/Positive.hs;hb=for-ghc-7.8""";
+  at:hasType <http://symbolicdata.org/autotool/Type/Polynomial_Positive-Direct> .
+
+<http://symbolicdata.org/autotool/Configuration/S15.ConstraintProgramming/A6.1> a at:Config;
+  rdfs:label "A6.1";
+    at:Aufgabentext """Gesucht ist eine vollständige DPLLT-Rechnung mit diesen Eigenschaften:
+    Modus
+        { require_complete_propagation = False
+        , decisions_must_be_negative = True
+        , clause_learning = False
+        , variable_elimination = False 
+        }
+für diese Formel:
+    [ [ p , q , r ]
+    , [ ! p , 0 <= + x + y ]
+    , [ q , ! r ]
+    , [ p , ! q , r , 0 <= -1 * x ]
+    , [ ! q , r ] ] """;
+    at:contributedBy atp:Waldmann_Johannes ;
+    at:hasXMLFile "S15.ConstraintProgramming/A6.1.xml" ;
+    at:relatedCourse <http://symbolicdata.org/autotool/Course/S15.ConstraintProgramming> ;
+  at:nodeIdent "91519133942079";
+  at:signature "3e5d75a2ef9eb81b0281397340ddaf502b74e9fe";
+  at:hasType <http://symbolicdata.org/autotool/Type/DPLLT-Direct> .
+
+

@@ -1,0 +1,264 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix elmat: <http://symbolicdata.org/ELMAT/Model#> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabenpool/> a owl:Ontology ;
+   rdfs:label "ZUVEL Metadaten" ;
+   dct:creator <http://symbolicdata.org/Data/Person/Graebe_HG> ; 
+   dct:issued "2015-12-31"^^xsd:date ; 
+   rdfs:comment "Aus Dump vom 27.10.2015 generiert" .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/23__Grundlagen_Projektmanagement> elmat:hasIdentifier "ida09aaf08-1b5d-4d84-b393-21582139d6b5";
+dct:title "23. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/23__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/9__Grundlagen_Projektmanagement> elmat:hasIdentifier "id71d098fa-704e-4bdf-9b22-c1c74b639ea2";
+dct:title "9. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/9__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/14__Grundlagen_Projektmanagement> elmat:hasIdentifier "id45202ac9-b945-4e11-ad6d-698550f1979e";
+dct:title "14. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/14__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/22__Grundlagen_Projektmanagement> elmat:hasIdentifier "id03e32404-fbe6-491f-bc53-5bdfbbf031d6";
+dct:title "22. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/22__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/4__Grundlagen_Projektmanagement> elmat:hasIdentifier "ida758de36-85a9-4ca2-a759-f7ec28b8b038";
+dct:title "4. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/4__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/15__Grundlagen_Projektmanagement> elmat:hasIdentifier "id3380d7b6-0549-44c9-9284-618715d61493";
+dct:title "15. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/15__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/3__Grundlagen_Projektmanagement> elmat:hasIdentifier "idef60681a-71aa-4719-bf30-0dbb897b4209";
+dct:title "3. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/3__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/8__Grundlagen_Projektmanagement> elmat:hasIdentifier "id73d36c68-3bea-4a61-bd95-fc079bc3951c";
+dct:title "8. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/8__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/18__Grundlagen_Projektmanagement> elmat:hasIdentifier "id51a0d3e7-f243-47aa-81ec-40c9e80ee06f";
+dct:title "18. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/18__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/20__Grundlagen_Projektmanagement> elmat:hasIdentifier "id8398bfee-fdfa-4607-8b9f-9a6c5951cb16";
+dct:title "20. Grundlagen Projektmanagement";
+dct:description """ProjektmanagementP""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/20__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/1__Grundlagen_Projektmanagement> elmat:hasIdentifier "idd877f149-d96f-4acf-8481-664bc8f01a85";
+dct:title "1. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/1__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/10__Grundlagen_Projektmanagement> elmat:hasIdentifier "id8441987b-f56b-4496-bc1e-59a17a953ed3";
+dct:title "10. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/10__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/12__Grundlagen_Projektmanagement> elmat:hasIdentifier "id51f1df7b-e7da-4e17-9744-5c32315ec1a0";
+dct:title "12. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/12__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/28__Grundlagen_Projektmanagement> elmat:hasIdentifier "idb4bb2f19-b7bb-4896-87f4-477cafb2a731";
+dct:title "28. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/28__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/Test_Grundlagen_Projektmanagement> elmat:hasIdentifier "idbb1d4ec5-0959-4b34-b7e5-e4f85166954d_1";
+dct:title "Test_Grundlagen_Projektmanagement";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/Test_Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/21__Grundlagen_Projektmanagement> elmat:hasIdentifier "idd1196264-a8f4-4a69-b8b3-6f137a5cc8e9";
+dct:title "21. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/21__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/11__Grundlagen_Projektmanagement> elmat:hasIdentifier "idf05cb9a8-08d0-4694-9e7c-93a611b8bdb1";
+dct:title "11. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/11__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/17__Grundlagen_Projektmanagement> elmat:hasIdentifier "id18153615-8636-4610-89a9-c4145f3ef905";
+dct:title "17. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/17__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/26__Grundlagen_Projektmanagement> elmat:hasIdentifier "id4d828e22-e21d-4771-aabc-b94a7bfd03d9";
+dct:title "26. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/26__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/5__Grundlagen_Projektmanagement> elmat:hasIdentifier "id35518c8d-4184-4bd0-8db7-cdfbdf7ff9f5";
+dct:title "5. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/5__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/13__Grundlagen_Projektmanagement> elmat:hasIdentifier "idc58d7c79-d338-4827-8941-776c43aefcc2";
+dct:title "13. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/13__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/25__Grundlagen_Projektmanagement> elmat:hasIdentifier "idb6e85056-2252-45ad-9375-d3a8766b880b";
+dct:title "25. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/25__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/6__Grundlagen_Projektmanagement> elmat:hasIdentifier "id771c2bcb-bba8-463c-bf1b-d40702b80671";
+dct:title "6. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/6__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/29__Grundlagen_Projektmanagement> elmat:hasIdentifier "id7be482ea-a89f-465d-b73e-0e44e9a4b6a6";
+dct:title "29. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/29__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/7__Grundlagen_Projektmanagement> elmat:hasIdentifier "id710a526b-708b-4e8a-88be-1dbd39141c60";
+dct:title "7. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/7__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/24__Grundlagen_Projektmanagement> elmat:hasIdentifier "id7fbb2b12-7576-41e2-a29e-2119a57eea88";
+dct:title "24. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/24__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/30__Grundlagen_Projektmanagement> elmat:hasIdentifier "idc5581c70-bac0-4937-b982-74470e59fa22";
+dct:title "30. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/30__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/16__Grundlagen_Projektmanagement> elmat:hasIdentifier "id06024ce4-3ad1-4652-bfef-ee37856f074f";
+dct:title "16. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/16__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/2__Grundlagen_Projektmanagement> elmat:hasIdentifier "ide75e1a17-3c70-4a9e-ac80-306f92d6814e";
+dct:title "2. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/2__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/27__Grundlagen_Projektmanagement> elmat:hasIdentifier "idce83805d-2c42-4461-b1fe-b62f3976f161";
+dct:title "27. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/27__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Aufgabe/19__Grundlagen_Projektmanagement> elmat:hasIdentifier "idcd371af2-d751-48f2-913f-176f21002bf8";
+dct:title "19. Grundlagen Projektmanagement";
+dct:description """Projektmanagement""";
+dct:creator <http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677>;
+dct:subject "Projektmanagement";
+a elmat:Aufgabe;
+elmat:hasSource <file://ZUVEL/ZuVel_Projektmanagement/19__Grundlagen_Projektmanagement.zip> .
+
+<http://symbolicdata.org/ZUVEL/Person/22dbce42713d4ff57061a8f944a43677> a foaf:Person;
+  foaf:name "rfreudenreich@ihi-zittau.de" .
+
+

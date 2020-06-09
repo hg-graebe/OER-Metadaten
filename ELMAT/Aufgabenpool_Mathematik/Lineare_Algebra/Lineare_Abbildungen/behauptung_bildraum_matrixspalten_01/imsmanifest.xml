@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+	xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd 
+											http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1p1.xsd 
+											http://www.imsglobal.org/xsd/imsqti_metadata_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1p1.xsd
+											http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"
+	identifier="manifestID">
+	<metadata>
+		<schema>QTIv2.1 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+  </metadata>
+	<organizations />
+	<resources>
+		<resource identifier="ide856c34f_73dd_4621_a5a4_793e748afa5d" type="imsqti_item_xmlv2p1" href="ide856c34f-73dd-4621-a5a4-793e748afa5d.xml"><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general ><identifier><entry>ide856c34f-73dd-4621-a5a4-793e748afa5d</entry></identifier><title><string language="en_US">behauptung_bildraum_matrixspalten_01</string></title><keyword><string language="en_US">Bildraum</string></keyword><keyword><string language="en_US">Lineare Abbildung</string></keyword><keyword><string language="en_US">Matrixdarstellung</string></keyword></general><lifeCycle ><contribute><role><source>LOMv1.0</source><value>author</value></role><entity>nesfr@tu-chemnitz.de</entity><date><dateTime>2014-04-29T08:33:24</dateTime></date></contribute></lifeCycle><educational ><learningResourceType><source>QTIv2.1</source><value>AssessmentItem</value></learningResourceType></educational><qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1"><interactionType >SINGLE_CHOICE</interactionType><toolName >ONYX Editor</toolName><toolVersion >5.4</toolVersion><toolVendor >BPS Bildungsportal Sachsen GmbH</toolVendor></qtiMetadata></lom></metadata><file href="ide856c34f-73dd-4621-a5a4-793e748afa5d.xml" /></resource>
+	</resources>
+</manifest>
